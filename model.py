@@ -12,7 +12,7 @@ from torch.distributions import Categorical
 from torchvision import transforms
 from collections import deque
 from variables import *
-
+from utility import *
 
 
 class actor_net(nn.Module):
@@ -66,17 +66,14 @@ class critic_net(nn.Module):
 
 class Policy(nn.Module):
 
-    def __init__(self):
+    def __init__(self, load = False):
         super(Policy, self).__init__()
 
       
         # Get the state space and action space
-        n_actions = self.env.action_space.n
+        n_actions = env.action_space.n
         self.seed_everything(seed = seed)
-        self.transform = transforms.Compose([  # Transformation are just the gray scale and a resizing to 64,64 
-            transforms.Grayscale(),
-            transforms.Resize((64,64))
-        ])
+        
         self.gamma = gamma
         self.lam = lamb
         self.n_frames = n_frames   # Number of frames to consider 
@@ -84,7 +81,7 @@ class Policy(nn.Module):
         self.batch_size = batch_size # total number of sample is 128 at most.
         self.eps = loss_eps
         self.M = M #rollout steps, this is an arbitrary number dependant on the environment
-        
+        self.maximum = 0
         self.c1 = c1  # These are hyperparameters
         self.c2 = c2 # These are hyperparameters
 
@@ -98,23 +95,8 @@ class Policy(nn.Module):
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.MseLoss = nn.MSELoss(self.device)
         self.to(self.device)
-        # self.load()
-        
-
-
-    def transform_state(self, state):
-        ''' This function takes the numpy array state, and return its preprocessed version. 
-            INPUT: state: is the numpy array,
-            OUTPUT: new_state: is the result of the set of transformation.
-        '''
-
-        state = state[:83,:].transpose(2,0,1) #
-        state = torch.from_numpy(state)
-        state = self.transform(state)
-        
-        state = (state/255)
-
-        return state.to(self.device)
+        if load:
+            self.load()
     
     def forward(self, x, who = 'actor'):
         
@@ -130,8 +112,7 @@ class Policy(nn.Module):
 
     def stack_frames(self, state):
 
-        state = self.transform_state(state) #apply the classical transformation embeddeed inside the transform_state method
-        
+        state = transform_state(state, game, device = self.device) #apply the classical transformation embeddeed inside the transform_state method
         self.states.append(state) # If the last state has not been added yet
              
         if len(self.states) < self.n_frames: # If the set of consecutive states is not filled yet.
@@ -234,21 +215,20 @@ class Policy(nn.Module):
         return advantages
 
 
-    def train(self, n_training_episodes=training_episodes):
+    def trainer(self, n_training_episodes=training_episodes):
        
          # Lists of parameters to save in the meanwhile
         # Optimizer definition #
 
         for i_episode in range(1, n_training_episodes+1):
             args = Rollout_arguments()
-            negative_reward_patience = MAX_PATIENCE
             print(i_episode)
             # init episode
-            state = self.env.reset()
+            state = env.reset()
             
 
             for i in range(60): # Noisy start, Same function from the practical
-                state,_,_,_,_ = self.env.step(0)
+                state,_,_,_,_ = env.step(0)
 
             new_state = state #[0] Versioning problems
             done_pat = False
@@ -261,10 +241,7 @@ class Policy(nn.Module):
                     done = new_done
                     action_sampled, action_logprob, value, states = self.rollout_act(state)
 
-                    new_state, reward, new_done, _, _ = self.env.step(action_sampled.item())
-
-                    if action_sampled.item() == 4 and args.actions[-1] ==4: # If the car keep staying still, we penalize it.
-                        reward-=0.1
+                    new_state, reward, new_done, _, _ = env.step(action_sampled.item())
 
                     args.rewards.append(reward)
                     args.states.append(states.detach().squeeze(0))
@@ -273,18 +250,7 @@ class Policy(nn.Module):
                     args.dones.append(done)
 
                     args.logP.append(action_logprob.detach())
-                    
-                    #This block is introduced to avoid that we are out of the track for too long, inspired from the practical.
-                    if reward >=0:
-                        negative_reward_patience = MAX_PATIENCE
-                    else:
-                        negative_reward_patience -= 1
-                        if negative_reward_patience == 0:
-                            done_pat = True
-                    if done_pat: reward = -100
-                    
-                    if done_pat:
-                        break 
+
                 done_pat = True
 
                 
@@ -299,7 +265,7 @@ class Policy(nn.Module):
             # Initialize the Buffer   
             buffer = BufferDataset(args)
             buffer_dataset = DataLoader(buffer, self.batch_size, shuffle = False)
-            
+            self.train()
             for epoch in range(self.n_epochs):
                 for batch in buffer_dataset:
                
@@ -328,16 +294,19 @@ class Policy(nn.Module):
                     loss.mean().backward()
                     self.optimizer.step()
                     self.scheduler.step()
-                
+            self.eval()
             if i_episode%1 == 0:
-                self.save()
-                mean_reward = evaluate_agent(n_eval_episodes = 1)
                 
+                
+                mean_reward = evaluate_agent(self, n_eval_episodes = 1)
+                if mean_reward > self.maximum:
+                    self.maximum = mean_reward
+                    self.save()
                 print("The reward at episode {} is {:.4f}".format(i_episode, mean_reward))
             
             
             # evaluation step
-        
+        print('The best model has achieved {} as reward....'.format(self.maximum))
         
 
     def save(self):
@@ -391,15 +360,19 @@ class BufferDataset(Dataset): # Dataset class pytorch.
 
         return self.data.states[idx], self.data.R[idx], self.data.actions[idx], self.data.logP[idx], self.data.values[idx], self.data.advantages[idx]
 
-def evaluate_agent(n_eval_episodes = 1):
+def evaluate_agent(agent, n_eval_episodes = 5, render = False):
 
         ''' This function is useful to evaluate at the end of each iteration episode what are the current agent performances 
             INPUT: n_eval_episodes: Number of episodes used for the evaluation,
             OUTPUT: Reward statistics of the agent. '''
-        agent = Policy()
-        agent.load()
+
+  
         max_steps_per_episode = 1000
-        env = gym.make('CarRacing-v2', continuous=False)
+        if render:
+            env = gym.make(game, render_mode = 'human')
+        else:
+            env = gym.make(game)
+
         agent.eval()
         with torch.no_grad():    
             rewards = []
@@ -410,7 +383,9 @@ def evaluate_agent(n_eval_episodes = 1):
                 for i in range(max_steps_per_episode):
                     action = agent.act(s)
                     
-                    s, reward, done, truncated, info = env.step(action)
+                    s, reward, done, truncated, _ = env.step(action)
+                    if render:
+                        env.render()
                     total_reward += reward
                     if done or truncated: break
                 

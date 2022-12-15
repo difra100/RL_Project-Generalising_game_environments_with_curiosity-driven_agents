@@ -1,22 +1,13 @@
-import gym
-
-phoenix = "ALE/Phoenix-v5"
-
-
-env_id = phoenix
-
-env = gym.make(env_id, )
-
-
+game = "ALE/Phoenix-v5"
 seed = 30
 gamma = 0.99
 lamb = 0.95
-n_frames = 6
-n_epochs = 20
+n_frames = 4
+n_epochs = 10
 batch_size = 256
 MAX_PATIENCE = 100 # To avoid a learning phase with too many failures.
 loss_eps = 0.2 #eps for the clip of the loss
-M = 2000 # rollout steps
+M = 128 # rollout steps
 c1 = 0.5 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
 training_episodes = 150
@@ -38,3 +29,13 @@ Buffer ={'states' : 0,
          'LogProb' : 3,
          'values' : 4,
          'advantages' : 5}
+
+# This dictionary contains the values to remove the irrelevant/non-informative features from the images/state representation. 
+transform_diz = {
+                        'ALE/Phoenix-v5': (17, 179),   
+                        'ALE/SpaceInvaders-v5': (20,195),
+                        'ALE/Assault-v5': (10, 187)
+}
+
+
+
