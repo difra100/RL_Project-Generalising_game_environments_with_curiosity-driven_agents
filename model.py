@@ -91,7 +91,7 @@ class Policy(nn.Module):
         # NETWORK INIT. #
         self.actor = actor_net(n_actions = n_actions) 
         self.critic = critic_net()
-        
+        self.model_name = model_name
         self.states = deque(maxlen = self.n_frames)
         self.optimizer = optim.Adam(self.parameters(), lr=lr) ## Play with THE LR, epsilon is due to implementation details
         self.scheduler = StepLR(self.optimizer, step_size=10000, gamma=0.85) # learning rate's scheduler.
@@ -230,10 +230,9 @@ class Policy(nn.Module):
             state = env.reset()
             
 
-            for i in range(60): # Noisy start, Same function from the practical
-                state,_,_,_,_ = env.step(0)
+            
 
-            new_state = state #[0] Versioning problems
+            new_state = state[0] #Versioning problems
             done_pat = False
             new_done = done = False
             # ROLLOUT STEPS #
@@ -295,7 +294,7 @@ class Policy(nn.Module):
                     # take gradient step
                     self.optimizer.zero_grad()
                     loss.mean().backward()
-
+                    nn.utils.clip_grad_norm_(self.parameters(), 0.5)
                     self.optimizer.step()
                     self.scheduler.step()
             self.eval()
@@ -305,7 +304,7 @@ class Policy(nn.Module):
                 mean_reward = evaluate_agent(self, n_eval_episodes = 1)
                 if mean_reward > self.maximum:
                     self.maximum = mean_reward
-                    self.save()
+                    self.save(self.model_name)
                 print("The reward at episode {} is {:.4f}".format(i_episode, mean_reward))
             
             
@@ -313,11 +312,11 @@ class Policy(nn.Module):
         print('The best model has achieved {} as reward....'.format(self.maximum))
         
 
-    def save(self):
-        torch.save(self.state_dict(), 'model.pt')
+    def save(self, model_name):
+        torch.save(self.state_dict(), game[3:]+'.pt')
 
-    def load(self):
-        self.load_state_dict(torch.load('model.pt', map_location=self.device))
+    def load(self, model_name = game[3:]+'.pt'):
+        self.load_state_dict(torch.load(model_name, map_location=self.device))
 
     def to(self, device):
         ret = super().to(device)
@@ -364,14 +363,14 @@ class BufferDataset(Dataset): # Dataset class pytorch.
 
         return self.data.states[idx], self.data.R[idx], self.data.actions[idx], self.data.logP[idx], self.data.values[idx], self.data.advantages[idx]
 
-def evaluate_agent(agent, n_eval_episodes = 5, render = False):
+def evaluate_agent(agent, n_eval_episodes = 1, render = False):
 
         ''' This function is useful to evaluate at the end of each iteration episode what are the current agent performances 
             INPUT: n_eval_episodes: Number of episodes used for the evaluation,
             OUTPUT: Reward statistics of the agent. '''
 
   
-        max_steps_per_episode = 1000
+        max_steps_per_episode = 2000
         if render:
             env = gym.make(game, render_mode = 'human')
         else:

@@ -1,13 +1,14 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
 game = "ALE/Phoenix-v5"
+
+model_name = game[4:] + '.pt'
 seed = 30
 gamma = 0.99
 lamb = 0.95
-n_frames = 4
-n_epochs = 3
+n_frames = 6
+n_epochs = 20
 batch_size = 32
-MAX_PATIENCE = 100 # To avoid a learning phase with too many failures.
 loss_eps = 0.1 #eps for the clip of the loss # ATARI Games uses 0.1
 M = 128 # rollout steps
 c1 = 1 # Lv weight in the objective
