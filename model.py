@@ -19,21 +19,23 @@ class actor_net(nn.Module):
     ''' Actor network to estimate the action probability distribution '''
     def __init__(self, n_actions):
         super(actor_net, self).__init__()
-        self.conv1 = nn.Conv2d(n_frames, cnn['mid_feat'], kernel_size = cnn['kernel_size'], padding = 'same')
-        self.conv2 = nn.Conv2d(cnn['mid_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size'], padding = 'same')
-        self.pool1 =  nn.MaxPool2d(cnn['pool'])
-        self.pool2 =  nn.MaxPool2d(cnn['pool'])
-
-        self.linear = nn.Linear(cnn['linear_input'], n_actions)
+        self.conv1 = nn.Conv2d(n_frames, cnn['mid_feat'], kernel_size = cnn['kernel_size1'], stride = cnn['stride1'])
+        self.conv2 = nn.Conv2d(cnn['mid_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size2'], stride = cnn['stride2'])
+        self.conv3 = nn.Conv2d(cnn['last_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size3'], stride = cnn['stride3'])
+        self.linear1 = nn.Linear(cnn['linear_input'], cnn['linear_hidden_size']) # 32 is used as an intermidiate layer
+        self.linear2 = nn.Linear(cnn['linear_hidden_size'], n_actions) 
+        
         self.flat = Flatten()
-
     
     def forward(self, state):
+        state = F.relu(self.conv1(state))
+        state = F.relu(self.conv2(state))
+        state = F.relu(self.conv3(state))
 
-        state = self.pool1(F.relu(self.conv1(state)))
-        state = self.pool2(F.relu(self.conv2(state)))
         state = self.flat(state)
-        state = self.linear(state)
+        state = F.relu(self.linear1(state))
+        state = self.linear2(state)
+
         log_prob = F.softmax(state, dim = -1)
 
         return log_prob
@@ -43,21 +45,22 @@ class critic_net(nn.Module):
     ''' Critic network to estimate the value function of a state'''
     def __init__(self):
         super(critic_net, self).__init__()
-        self.conv1 = nn.Conv2d(n_frames, cnn['mid_feat'], kernel_size = cnn['kernel_size'], padding = 'same')
-        self.conv2 = nn.Conv2d(cnn['mid_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size'], padding = 'same')
-        self.pool1 =  nn.MaxPool2d(cnn['pool'])
-        self.pool2 =  nn.MaxPool2d(cnn['pool'])
-        self.linear = nn.Linear(cnn['linear_input'], 32) # 32 is used as an intermidiate layer
+        self.conv1 = nn.Conv2d(n_frames, cnn['mid_feat'], kernel_size = cnn['kernel_size1'], stride = cnn['stride1'])
+        self.conv2 = nn.Conv2d(cnn['mid_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size2'], stride = cnn['stride2'])
+        self.conv3 = nn.Conv2d(cnn['last_feat'], cnn['last_feat'], kernel_size = cnn['kernel_size3'], stride = cnn['stride3'])
+        self.linear1 = nn.Linear(cnn['linear_input'], cnn['linear_hidden_size']) # 32 is used as an intermidiate layer
+        self.linear2 = nn.Linear(cnn['linear_hidden_size'], 1) 
+        
         self.flat = Flatten()
-        self.linear2 = nn.Linear(32, 1)
     
     def forward(self, state):
-        state = self.pool1(F.relu(self.conv1(state)))
-        state = self.pool2(F.relu(self.conv2(state)))
-        state = self.flat(state)
-        state = self.linear(state)
-        value = self.linear2(state)
+        state = F.relu(self.conv1(state))
+        state = F.relu(self.conv2(state))
+        state = F.relu(self.conv3(state))
 
+        state = self.flat(state)
+        state = F.relu(self.linear1(state))
+        value = self.linear2(state)
 
         return value
 
@@ -90,7 +93,7 @@ class Policy(nn.Module):
         self.critic = critic_net()
         
         self.states = deque(maxlen = self.n_frames)
-        self.optimizer = optim.Adam(self.parameters(), lr=lr, eps = ad_eps) ## Play with THE LR, epsilon is due to implementation details
+        self.optimizer = optim.Adam(self.parameters(), lr=lr) ## Play with THE LR, epsilon is due to implementation details
         self.scheduler = StepLR(self.optimizer, step_size=10000, gamma=0.85) # learning rate's scheduler.
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.MseLoss = nn.MSELoss(self.device)
@@ -292,6 +295,7 @@ class Policy(nn.Module):
                     # take gradient step
                     self.optimizer.zero_grad()
                     loss.mean().backward()
+
                     self.optimizer.step()
                     self.scheduler.step()
             self.eval()

@@ -1,26 +1,36 @@
+# Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
+
 game = "ALE/Phoenix-v5"
 seed = 30
 gamma = 0.99
 lamb = 0.95
 n_frames = 4
-n_epochs = 10
-batch_size = 256
+n_epochs = 3
+batch_size = 32
 MAX_PATIENCE = 100 # To avoid a learning phase with too many failures.
-loss_eps = 0.2 #eps for the clip of the loss
+loss_eps = 0.1 #eps for the clip of the loss # ATARI Games uses 0.1
 M = 128 # rollout steps
-c1 = 0.5 # Lv weight in the objective
+c1 = 1 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
-training_episodes = 150
-# https://github.com/elsheikh21/car-racing-ppo/blob/master/Report.pdf
-lr = 0.0003 # Adam optimizer learning rate
-ad_eps = 1e-5 #epsilon for adam.
+training_episodes = 1000
+
+
+lr = 0.00025 # Adam optimizer learning rate
 
 # Actor and critic are mostly the same, here are the cnn hyperparameters.
+
+# details in https://medium.com/nerd-for-tech/reinforcement-learning-deep-q-learning-with-atari-games-63f5242440b1
+
 cnn = {'mid_feat': 32,
         'last_feat': 64,
-        'kernel_size': 5,
-        'linear_input': 3136,
-        'pool' : 3}
+        'kernel_size1': 8,
+        'kernel_size2': 4,
+        'kernel_size3': 3,
+        'stride1': 4,
+        'stride2': 2,
+        'stride3': 1,
+        'linear_input': 1024,
+        'linear_hidden_size': 64}
 
 
 Buffer ={'states' : 0,
