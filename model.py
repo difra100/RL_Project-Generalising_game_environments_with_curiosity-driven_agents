@@ -26,7 +26,7 @@ class common_net(nn.Module):
         self.flat = Flatten()
 
 
-    def forward(self, x):
+    def forward(self, state):
         state = F.relu(self.conv1(state))
         state = F.relu(self.conv2(state))
         state = F.relu(self.conv3(state))
@@ -316,18 +316,18 @@ class Policy(nn.Module):
 
                     new_state, reward, new_done, _, _ = env.step(action_sampled.item())
 
-                    args_inner.rewards = torch.cat((args_inner.rewards,torch.tensor([reward]).clone().detach()))
+                    args_inner.rewards = torch.cat((args_inner.rewards,torch.tensor([reward], device = self.device).clone().detach()))
                     args_inner.states = torch.cat((args_inner.states,states.clone().detach()))
                     args_inner.actions = torch.cat((args_inner.actions,action_sampled.clone().detach()))
 
                     args_inner.values = torch.cat((args_inner.values,value.view(-1).clone().detach()))
-                    args_inner.dones = torch.cat((args_inner.dones, torch.tensor([done]).clone().detach()))
+                    args_inner.dones = torch.cat((args_inner.dones, torch.tensor([done], device = self.device).clone().detach()))
 
                     args_inner.logP = torch.cat((args_inner.logP,action_logprob.clone().detach()))
 
 
                 bootstrap = self.forward(self.stack_frames(new_state), who = 'critic')
-                args_inner.dones = torch.cat((args_inner.dones,torch.tensor([new_done])))
+                args_inner.dones = torch.cat((args_inner.dones,torch.tensor([new_done], device = self.device)))
             
                 args_inner.advantages = self.compute_gae(args_inner.rewards.tolist(), args_inner.values.tolist(), bootstrap, args_inner.dones.tolist(), self.gamma, self.lam) # Compute advantages using the GAE
                 
@@ -339,8 +339,8 @@ class Policy(nn.Module):
                 args_outer.values = torch.cat((args_outer.values, args_inner.values.unsqueeze(0)))
                 args_outer.dones = torch.cat((args_outer.dones, args_inner.dones.unsqueeze(0)))
                 args_outer.logP = torch.cat((args_outer.logP, args_inner.logP.unsqueeze(0)))
-                args_outer.R = torch.cat((args_outer.R, torch.tensor(args_inner.R).unsqueeze(0)))
-                args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages).unsqueeze(0)))
+                args_outer.R = torch.cat((args_outer.R, torch.tensor(args_inner.R, device = self.device).unsqueeze(0)))
+                args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
 
                 args_inner = Rollout_arguments()
 

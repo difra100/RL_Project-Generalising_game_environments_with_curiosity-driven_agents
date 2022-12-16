@@ -1,5 +1,7 @@
 from torchvision import transforms
 import gym
+from torch.utils.data import Dataset, DataLoader
+
 from variables import *
 from PIL import Image
 import torch
@@ -83,14 +85,15 @@ def evaluate_agent(agent, n_eval_episodes = 1, render = False):
 class Rollout_arguments:
 
     def __init__(self):
-        self.states = torch.tensor([])
-        self.actions = torch.tensor([])
-        self.logP = torch.tensor([])
-        self.dones = torch.tensor([])
-        self.rewards = torch.tensor([])
-        self.values = torch.tensor([])
-        self.advantages = torch.tensor([])
-        self.R = torch.tensor([])
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        self.states = torch.tensor([], device = device)
+        self.actions = torch.tensor([], device = device)
+        self.logP = torch.tensor([], device = device)
+        self.dones = torch.tensor([], device = device)
+        self.rewards = torch.tensor([], device = device)
+        self.values = torch.tensor([], device = device)
+        self.advantages = torch.tensor([], device = device)
+        self.R = torch.tensor([], device = device)
 
     def restore(self):
 
