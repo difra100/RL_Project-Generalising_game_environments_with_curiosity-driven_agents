@@ -312,10 +312,10 @@ class Policy(nn.Module):
         print('The best model has achieved {} as reward....'.format(self.maximum))
         
 
-    def save(self, model_name):
-        torch.save(self.state_dict(), game[3:]+'.pt')
+    def save(self, model_name = model_name):
+        torch.save(self.state_dict(), model_name)
 
-    def load(self, model_name = game[3:]+'.pt'):
+    def load(self, model_name = model_name):
         self.load_state_dict(torch.load(model_name, map_location=self.device))
 
     def to(self, device):

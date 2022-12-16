@@ -1,8 +1,8 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
-game = "ALE/Phoenix-v5"
+game = "ALE/SpaceInvaders-v5"
 
-model_name = game[4:] + '.pt'
+model_name = 'space_invaders_model.pt' #game[4:] + '.pt'
 seed = 30
 gamma = 0.99
 lamb = 0.95
