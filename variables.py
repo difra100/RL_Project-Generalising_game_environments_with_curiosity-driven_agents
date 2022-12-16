@@ -1,20 +1,20 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
-game = "ALE/SpaceInvaders-v5"
+game = "ALE/Phoenix-v5"
 
-model_name = 'space_invaders_model.pt' #game[4:] + '.pt'
+model_name = 'model.pt' #game[4:] + '.pt'
 seed = 30
 gamma = 0.99
 lamb = 0.95
 n_frames = 6
-n_epochs = 20
+n_epochs = 3
 batch_size = 32
 loss_eps = 0.1 #eps for the clip of the loss # ATARI Games uses 0.1
 M = 128 # rollout steps
 c1 = 1 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
 training_episodes = 1000
-
+n_actors = 8
 
 lr = 0.00025 # Adam optimizer learning rate
 
@@ -32,6 +32,13 @@ cnn = {'mid_feat': 32,
         'stride3': 1,
         'linear_input': 1024,
         'linear_hidden_size': 64}
+
+
+state_net = {'lin_feat': 7 * 7 * 64,
+             'out_size': 512    
+            }
+
+embed_dim = 32
 
 
 Buffer ={'states' : 0,
