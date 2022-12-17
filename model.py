@@ -2,6 +2,7 @@ import gym
 import torch
 import random
 import os
+import wandb
 import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
@@ -162,8 +163,9 @@ class Policy(nn.Module):
         self.critic = critic_net()
         self.model_name = model_name
         self.states = deque(maxlen = self.n_frames)
+        self.new_states = deque(maxlen = self.n_frames) # New states are required for the ICM module.
+
         self.optimizer = optim.Adam(self.parameters(), lr=lr) ## Play with THE LR, epsilon is due to implementation details
-        self.scheduler = StepLR(self.optimizer, step_size=10000, gamma=0.85) # learning rate's scheduler.
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.MseLoss = nn.MSELoss(self.device)
         self.to(self.device)
@@ -182,16 +184,16 @@ class Policy(nn.Module):
 
     
 
-    def stack_frames(self, state):
+    def stack_frames(self, state, current_stack):
 
         state = transform_state(state, game, device = self.device) #apply the classical transformation embeddeed inside the transform_state method
-        self.states.append(state) # If the last state has not been added yet
+        current_stack.append(state) # If the last state has not been added yet
              
-        if len(self.states) < self.n_frames: # If the set of consecutive states is not filled yet.
-            while len(self.states) < self.n_frames:
-                self.states.append(state)
+        if len(current_stack) < self.n_frames: # If the set of consecutive states is not filled yet.
+            while len(current_stack) < self.n_frames:
+                current_stack.append(state)
         
-        states = torch.vstack([state for state in self.states]).unsqueeze(0) # New pytorch represented state.
+        states = torch.vstack([state for state in current_stack]).unsqueeze(0) # New pytorch represented state.
         
         return states
         
@@ -211,7 +213,7 @@ class Policy(nn.Module):
             OUTPUT: action_sample: We evaluate the best action at inference time. '''
         self.eval()
         with torch.no_grad():
-            states = self.stack_frames(state)
+            states = self.stack_frames(state, self.states)
 
             action = self.forward(states)
 
@@ -225,7 +227,7 @@ class Policy(nn.Module):
             OUTPUT: action_sample: We return the sampled log prob action, and the respective action. '''
         self.eval()
         with torch.no_grad():
-            states = self.stack_frames(state)
+            states = self.stack_frames(state, self.states)
 
             action = self.forward(states)
             value = self.forward(states, 'critic')
@@ -281,16 +283,25 @@ class Policy(nn.Module):
 
     
     def normalize_advantages(self, advantages):
-        eps = 1e-7
-        advantages = (advantages - advantages.mean())/(advantages.std() + eps) 
+        epss = 1e-7
+        advantages = (advantages - advantages.mean())/(advantages.std() + epss) 
 
         return advantages
 
 
-    def trainer(self, n_training_episodes=training_episodes):
+    def trainer(self, n_training_episodes=training_episodes, exp_name = 'experiment'):
        
          # Lists of parameters to save in the meanwhile
         # Optimizer definition #
+        if wb:
+            wandb.init(
+                    project= project_name, 
+
+                    name = exp_name, 
+
+                    config = config)
+    
+        scores_deque = deque(maxlen=20) # To print always the mjean of the last 20 episodes
 
         for i_episode in range(1, n_training_episodes+1):
             
@@ -298,26 +309,34 @@ class Policy(nn.Module):
             print(i_episode)
             # init episode
             state = env.reset()
-            
-
+            global_step = 0
+            epsilon_now = self.eps
             
 
             new_state = state[0] #Versioning problems
             new_done = done = False
             # ROLLOUT STEPS #
             args_inner = Rollout_arguments()
+  
+
             for actor in range(self.n_actors):
                 
                 for m in range(self.M):
-
+                    
                     state = new_state
                     done = new_done
+          
                     action_sampled, action_logprob, value, states = self.rollout_act(state)
 
                     new_state, reward, new_done, _, _ = env.step(action_sampled.item())
 
+                    new_states = self.stack_frames(new_state, self.new_states)
+                   
                     args_inner.rewards = torch.cat((args_inner.rewards,torch.tensor([reward], device = self.device).clone().detach()))
                     args_inner.states = torch.cat((args_inner.states,states.clone().detach()))
+                    args_inner.next_states = torch.cat((args_inner.next_states,new_states.clone().detach()))
+
+
                     args_inner.actions = torch.cat((args_inner.actions,action_sampled.clone().detach()))
 
                     args_inner.values = torch.cat((args_inner.values,value.view(-1).clone().detach()))
@@ -326,7 +345,7 @@ class Policy(nn.Module):
                     args_inner.logP = torch.cat((args_inner.logP,action_logprob.clone().detach()))
 
 
-                bootstrap = self.forward(self.stack_frames(new_state), who = 'critic')
+                bootstrap = self.forward(self.stack_frames(new_state, self.states), who = 'critic')
                 args_inner.dones = torch.cat((args_inner.dones,torch.tensor([new_done], device = self.device)))
             
                 args_inner.advantages = self.compute_gae(args_inner.rewards.tolist(), args_inner.values.tolist(), bootstrap, args_inner.dones.tolist(), self.gamma, self.lam) # Compute advantages using the GAE
@@ -375,7 +394,7 @@ class Policy(nn.Module):
 
                     
                         p1 = ratio * advantages_new
-                        p2 = torch.clamp(ratio, 1-self.eps, 1+self.eps) * advantages_new
+                        p2 = torch.clamp(ratio, 1-epsilon_now, 1+epsilon_now) * advantages_new
                         Lpi = torch.min(p1, p2) # Clipped loss
 
                         #MSE loss
@@ -390,7 +409,18 @@ class Policy(nn.Module):
                         loss.mean().backward()
                         nn.utils.clip_grad_norm_(self.parameters(), 0.5)
                         self.optimizer.step()
-                        self.scheduler.step()
+                        global_step+=1
+
+            
+            if lr_annealing:
+                frac = 1.0 - (global_step - 1.0) / n_steps
+                lr_now = lr * frac
+                self.optimizer.param_groups[0]['lr'] = lr_now
+
+            # Epsilon Annealing
+            if eps_annealing:
+                epsilon_now = self.eps * frac
+            
               
             
             self.eval()
@@ -398,15 +428,25 @@ class Policy(nn.Module):
                 
                 
                 mean_reward = evaluate_agent(self, n_eval_episodes = 1)
+                scores_deque.append(mean_reward)
+
+                if wb:
+                    wandb.log({
+                        'reward_per_episodes' : mean_reward,
+                        'last20eps_mean_reward': np.mean(scores_deque)
+                    })
+
+
                 if mean_reward > self.maximum:
                     self.maximum = mean_reward
                     self.save(self.model_name)
-                print("The reward at episode {} is {:.4f}".format(i_episode, mean_reward))
+                print("The reward at episode {} is {:.4f}, and the mean over the last 20 episodes is {:.4f}".format(i_episode, mean_reward, np.mean(scores_deque)))
             
             
             # evaluation step
         print('The best model has achieved {} as reward....'.format(self.maximum))
-        
+        if wb:
+            wandb.finish()
 
     def save(self, model_name = model_name):
         torch.save(self.state_dict(), model_name)

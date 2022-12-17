@@ -1,0 +1,152 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:353: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+The reward at episode 1 is 100.0000, and the mean over the last 20 episodes is 100.0000
+2
+The reward at episode 2 is 0.0000, and the mean over the last 20 episodes is 50.0000
+3
+The reward at episode 3 is 180.0000, and the mean over the last 20 episodes is 93.3333
+4
+The reward at episode 4 is 240.0000, and the mean over the last 20 episodes is 130.0000
+5
+The reward at episode 5 is 140.0000, and the mean over the last 20 episodes is 132.0000
+6
+The reward at episode 6 is 80.0000, and the mean over the last 20 episodes is 123.3333
+7
+The reward at episode 7 is 80.0000, and the mean over the last 20 episodes is 117.1429
+8
+The reward at episode 8 is 0.0000, and the mean over the last 20 episodes is 102.5000
+9
+The reward at episode 9 is 80.0000, and the mean over the last 20 episodes is 100.0000
+10
+The reward at episode 10 is 20.0000, and the mean over the last 20 episodes is 92.0000
+11
+The reward at episode 11 is 40.0000, and the mean over the last 20 episodes is 87.2727
+12
+The reward at episode 12 is 140.0000, and the mean over the last 20 episodes is 91.6667
+13
+The reward at episode 13 is 300.0000, and the mean over the last 20 episodes is 107.6923
+14
+The reward at episode 14 is 220.0000, and the mean over the last 20 episodes is 115.7143
+15
+The reward at episode 15 is 200.0000, and the mean over the last 20 episodes is 121.3333
+16
+The reward at episode 16 is 380.0000, and the mean over the last 20 episodes is 137.5000
+17
+The reward at episode 17 is 280.0000, and the mean over the last 20 episodes is 145.8824
+18
+The reward at episode 18 is 100.0000, and the mean over the last 20 episodes is 143.3333
+19
+The reward at episode 19 is 180.0000, and the mean over the last 20 episodes is 145.2632
+20
+The reward at episode 20 is 200.0000, and the mean over the last 20 episodes is 148.0000
+21
+The reward at episode 21 is 100.0000, and the mean over the last 20 episodes is 148.0000
+22
+The reward at episode 22 is 120.0000, and the mean over the last 20 episodes is 154.0000
+23
+The reward at episode 23 is 100.0000, and the mean over the last 20 episodes is 150.0000
+24
+The reward at episode 24 is 200.0000, and the mean over the last 20 episodes is 148.0000
+25
+The reward at episode 25 is 340.0000, and the mean over the last 20 episodes is 158.0000
+26
+The reward at episode 26 is 280.0000, and the mean over the last 20 episodes is 168.0000
+27
+The reward at episode 27 is 160.0000, and the mean over the last 20 episodes is 172.0000
+28
+The reward at episode 28 is 120.0000, and the mean over the last 20 episodes is 178.0000
+29
+The reward at episode 29 is 120.0000, and the mean over the last 20 episodes is 180.0000
+30
+The reward at episode 30 is 240.0000, and the mean over the last 20 episodes is 191.0000
+31
+The reward at episode 31 is 220.0000, and the mean over the last 20 episodes is 200.0000
+32
+The reward at episode 32 is 140.0000, and the mean over the last 20 episodes is 200.0000
+33
+The reward at episode 33 is 240.0000, and the mean over the last 20 episodes is 197.0000
+34
+The reward at episode 34 is 260.0000, and the mean over the last 20 episodes is 199.0000
+35
+The reward at episode 35 is 200.0000, and the mean over the last 20 episodes is 199.0000
+36
+The reward at episode 36 is 320.0000, and the mean over the last 20 episodes is 196.0000
+37
+The reward at episode 37 is 240.0000, and the mean over the last 20 episodes is 194.0000
+38
+The reward at episode 38 is 260.0000, and the mean over the last 20 episodes is 202.0000
+39
+The reward at episode 39 is 460.0000, and the mean over the last 20 episodes is 216.0000
+40
+The reward at episode 40 is 120.0000, and the mean over the last 20 episodes is 212.0000
+41
+The reward at episode 41 is 120.0000, and the mean over the last 20 episodes is 213.0000
+42
+The reward at episode 42 is 360.0000, and the mean over the last 20 episodes is 225.0000
+43
+The reward at episode 43 is 260.0000, and the mean over the last 20 episodes is 233.0000
+44
+The reward at episode 44 is 340.0000, and the mean over the last 20 episodes is 240.0000
+45
+The reward at episode 45 is 120.0000, and the mean over the last 20 episodes is 229.0000
+46
+The reward at episode 46 is 260.0000, and the mean over the last 20 episodes is 228.0000
+47
+The reward at episode 47 is 260.0000, and the mean over the last 20 episodes is 233.0000
+48
+The reward at episode 48 is 320.0000, and the mean over the last 20 episodes is 243.0000
+49
+The reward at episode 49 is 180.0000, and the mean over the last 20 episodes is 246.0000
+50
+The reward at episode 50 is 240.0000, and the mean over the last 20 episodes is 246.0000
+51
+The reward at episode 51 is 420.0000, and the mean over the last 20 episodes is 256.0000
+52
+The reward at episode 52 is 300.0000, and the mean over the last 20 episodes is 264.0000
+53
+The reward at episode 53 is 140.0000, and the mean over the last 20 episodes is 259.0000
+54
+The reward at episode 54 is 200.0000, and the mean over the last 20 episodes is 256.0000
+55
+The reward at episode 55 is 160.0000, and the mean over the last 20 episodes is 254.0000
+56
+The reward at episode 56 is 180.0000, and the mean over the last 20 episodes is 247.0000
+57
+The reward at episode 57 is 160.0000, and the mean over the last 20 episodes is 243.0000
+58
+The reward at episode 58 is 300.0000, and the mean over the last 20 episodes is 245.0000
+59
+The reward at episode 59 is 200.0000, and the mean over the last 20 episodes is 232.0000
+60
+The reward at episode 60 is 80.0000, and the mean over the last 20 episodes is 230.0000
+61
+The reward at episode 61 is 100.0000, and the mean over the last 20 episodes is 229.0000
+62
+The reward at episode 62 is 140.0000, and the mean over the last 20 episodes is 218.0000
+63
+The reward at episode 63 is 180.0000, and the mean over the last 20 episodes is 214.0000
+64
+The reward at episode 64 is 120.0000, and the mean over the last 20 episodes is 203.0000
+65
+The reward at episode 65 is 80.0000, and the mean over the last 20 episodes is 201.0000
+66
+The reward at episode 66 is 80.0000, and the mean over the last 20 episodes is 192.0000
+67
+The reward at episode 67 is 180.0000, and the mean over the last 20 episodes is 188.0000
+68
+The reward at episode 68 is 380.0000, and the mean over the last 20 episodes is 191.0000
+69
+The reward at episode 69 is 500.0000, and the mean over the last 20 episodes is 207.0000
+70
+The reward at episode 70 is 400.0000, and the mean over the last 20 episodes is 215.0000
+71
+The reward at episode 71 is 480.0000, and the mean over the last 20 episodes is 218.0000
+72
+The reward at episode 72 is 420.0000, and the mean over the last 20 episodes is 224.0000
+73
+The reward at episode 73 is 140.0000, and the mean over the last 20 episodes is 224.0000
+74
+The reward at episode 74 is 200.0000, and the mean over the last 20 episodes is 224.0000
+75

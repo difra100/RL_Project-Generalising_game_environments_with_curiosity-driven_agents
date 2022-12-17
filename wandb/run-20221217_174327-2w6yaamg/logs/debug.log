@@ -1,0 +1,37 @@
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_setup.py:_flush():68] Configure stats pid to 13335
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_setup.py:_flush():68] Loading settings from /home/peppe/.config/wandb/settings
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_setup.py:_flush():68] Loading settings from /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/settings
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_init.py:_log_setup():476] Logging user logs to /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221217_174327-2w6yaamg/logs/debug.log
+2022-12-17 17:43:27,560 INFO    MainThread:13335 [wandb_init.py:_log_setup():477] Logging internal logs to /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221217_174327-2w6yaamg/logs/debug-internal.log
+2022-12-17 17:43:27,561 INFO    MainThread:13335 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fe520b54be0>
+2022-12-17 17:43:27,561 INFO    MainThread:13335 [wandb_init.py:init():516] calling init triggers
+2022-12-17 17:43:27,561 INFO    MainThread:13335 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'n_frames': 6, 'epochs': 10, 'batch_size': 32, 'rollout_steps': 128, 'episodes': 5, 'actors': 8}
+2022-12-17 17:43:27,561 INFO    MainThread:13335 [wandb_init.py:init():569] starting backend
+2022-12-17 17:43:27,561 INFO    MainThread:13335 [wandb_init.py:init():573] setting up manager
+2022-12-17 17:43:27,562 INFO    MainThread:13335 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-12-17 17:43:27,564 INFO    MainThread:13335 [wandb_init.py:init():580] backend started and connected
+2022-12-17 17:43:27,572 INFO    MainThread:13335 [wandb_run.py:_label_probe_notebook():1116] probe notebook
+2022-12-17 17:43:27,572 INFO    MainThread:13335 [wandb_run.py:_label_probe_notebook():1126] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-12-17 17:43:27,572 INFO    MainThread:13335 [wandb_init.py:init():658] updated telemetry
+2022-12-17 17:43:27,577 INFO    MainThread:13335 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-17 17:43:28,001 INFO    MainThread:13335 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-17 17:43:28,115 INFO    MainThread:13335 [wandb_run.py:_on_init():2010] got version response 
+2022-12-17 17:43:28,116 INFO    MainThread:13335 [wandb_init.py:init():728] starting run threads in backend
+2022-12-17 17:43:30,551 INFO    MainThread:13335 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-17 17:43:30,551 INFO    MainThread:13335 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-17 17:43:30,551 INFO    MainThread:13335 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-17 17:43:30,551 INFO    MainThread:13335 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-17 17:43:30,551 INFO    MainThread:13335 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-17 17:43:49,433 INFO    MainThread:13335 [wandb_run.py:_finish():1753] finishing run difra00/RL_Curiosity_agent/2w6yaamg
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [jupyter.py:save_history():448] not saving jupyter history
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [wandb_run.py:_restore():1938] restore
+2022-12-17 17:43:49,434 INFO    MainThread:13335 [wandb_run.py:_restore():1944] restore done
+2022-12-17 17:43:55,886 INFO    MainThread:13335 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2022-12-17 17:43:55,886 INFO    MainThread:13335 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2022-12-17 17:43:55,895 INFO    MainThread:13335 [wandb_run.py:_footer_sync_info():3364] logging synced files

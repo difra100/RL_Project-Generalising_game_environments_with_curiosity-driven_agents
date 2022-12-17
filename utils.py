@@ -87,6 +87,8 @@ class Rollout_arguments:
     def __init__(self):
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.states = torch.tensor([], device = device)
+        self.next_states = torch.tensor([], device = device)
+
         self.actions = torch.tensor([], device = device)
         self.logP = torch.tensor([], device = device)
         self.dones = torch.tensor([], device = device)
@@ -105,3 +107,4 @@ class Rollout_arguments:
         del self.dones
         del self.advantages
         del self.R
+        del self.next_states
