@@ -103,17 +103,15 @@ class inverse_model(nn.Module):
     ''' This class is the network core of the self-supervised technique. This tries to predict what is the action that transitioned a state s to s'. '''
     def __init__(self):
         super(inverse_model, self).__init__()
-        self.linear1 = nn.Linear(state_net['lin_feat']*2, state_net['lin_feat']) # This layer takes as input the concatenation of two states.
-        self.linear2 = nn.Linear(state_net['lin_feat'], n_actions)
+        self.linear1 = nn.Linear(state_net['out_size']*2, state_net['out_size']) # This layer takes as input the concatenation of two states.
+        self.linear2 = nn.Linear(state_net['out_size'], n_actions)
 
     def forward(self, states):
 
         encode = F.relu(self.linear1(states))
         prediction =  self.linear2(encode)
-
-        action = F.softmax(prediction, dim = -1)
         
-        return action
+        return prediction
 
 class forward_model(nn.Module):
     ''' This class defines the network that tries to predict the next state representation, given the action, and the current state representation. '''
@@ -126,11 +124,68 @@ class forward_model(nn.Module):
     def forward(self, state, action):
 
         embedded_action = self.emb(action)
-        input = torch.cat((state, embedded_action), dim = 1)
+        input = torch.cat((state, embedded_action), dim = -1)
 
-        output = F.leaky_relu(input)
+        output = F.leaky_relu(self.linear(input))
 
         return output        
+
+
+
+
+class ICM(nn.Module):
+    ''' This class implements the Intrinsic Curiosity Model, it is useful to get the reward and the losses to train the curiosity agent '''
+    def __init__(self, device):
+        super(ICM, self).__init__()
+        self.device = device
+        self.for_model = forward_model().to(self.device)
+        self.inv_model = inverse_model().to(self.device)
+        self.s_encode =  state_encoding_net().to(self.device)
+        self.eta = eta
+        self.fl = nn.MSELoss()
+        self.invl = nn.CrossEntropyLoss()
+        
+
+    def forward_block(self, state, action):
+
+        encoded_state = self.s_encode(state) # New state representation according to the state encoding net.
+
+        next_state = self.for_model(encoded_state, action) # next state representation as required for the forward block.
+
+        return next_state
+
+    def inverse_block(self, state, next_state):
+        enc_state = self.s_encode(state) # New state representation according to the state encoding net.
+        enc_next_state = self.s_encode(next_state) # New new-state representation according to the state encoding net.
+
+        inv_input = torch.cat((enc_state, enc_next_state), dim = -1)
+
+        action = self.inv_model(inv_input)
+
+        return action
+
+    def get_loss(self, state, next_state, action):
+
+        predicted_next_state = self.forward_block(state, action)
+        predicted_action = self.inverse_block(state, next_state)
+        real_next_state = self.s_encode(next_state)
+
+        forward_loss = self.fl(predicted_next_state, real_next_state)
+        inverse_loss = self.invl(predicted_action, action)
+
+        loss = w2*forward_loss + (1-w2)*inverse_loss
+
+        return loss
+
+    def get_intrinsic_reward(self, state, next_state, action):
+
+        predicted_next_state = self.forward_block(state, action)
+        real_next_state = self.s_encode(next_state)
+
+        intrinsic_reward = self.eta * F.mse_loss(real_next_state, predicted_next_state, reduction='none').mean(-1)
+
+        return intrinsic_reward
+    
 
 
 
@@ -138,7 +193,7 @@ class forward_model(nn.Module):
 
 class Policy(nn.Module):
 
-    def __init__(self, load = False):
+    def __init__(self, model_name, ext, intr, load = False):
         super(Policy, self).__init__()
 
       
@@ -157,6 +212,8 @@ class Policy(nn.Module):
         self.c1 = c1  # These are hyperparameters
         self.c2 = c2 # These are hyperparameters
         self.n_actors = n_actors
+        self.ext = ext
+        self.intr = intr
 
         # NETWORK INIT. #
         self.actor = actor_net(n_actions = n_actions) 
@@ -165,8 +222,11 @@ class Policy(nn.Module):
         self.states = deque(maxlen = self.n_frames)
         self.new_states = deque(maxlen = self.n_frames) # New states are required for the ICM module.
 
-        self.optimizer = optim.Adam(self.parameters(), lr=lr) ## Play with THE LR, epsilon is due to implementation details
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        if self.intr:
+            self.icm = ICM(self.device)
+        
+        self.optimizer = optim.Adam(self.parameters(), lr=lr) 
         self.MseLoss = nn.MSELoss(self.device)
         self.to(self.device)
         if load:
@@ -293,6 +353,9 @@ class Policy(nn.Module):
        
          # Lists of parameters to save in the meanwhile
         # Optimizer definition #
+
+
+
         if wb:
             wandb.init(
                     project= project_name, 
@@ -301,7 +364,9 @@ class Policy(nn.Module):
 
                     config = config)
     
-        scores_deque = deque(maxlen=20) # To print always the mjean of the last 20 episodes
+        scores_deque = deque(maxlen=100) # To print always the mean of the last 20 episodes
+        intr_loss_deque = deque(maxlen=100) # To print always the mean of the last 20 episodes
+
 
         for i_episode in range(1, n_training_episodes+1):
             
@@ -320,7 +385,7 @@ class Policy(nn.Module):
   
 
             for actor in range(self.n_actors):
-                
+                reward_deque = deque(maxlen = patience)
                 for m in range(self.M):
                     
                     state = new_state
@@ -330,8 +395,21 @@ class Policy(nn.Module):
 
                     new_state, reward, new_done, _, _ = env.step(action_sampled.item())
 
+                    reward_deque.append(reward)
+
                     new_states = self.stack_frames(new_state, self.new_states)
-                   
+                    intr_reward = 0
+                    if self.intr:
+                        intr_reward = self.icm.get_intrinsic_reward(states, new_states, action_sampled)
+                    
+                    reward = int(self.ext)*reward + int(self.intr)*intr_reward
+                    
+                    
+                    
+                    # Penalty if the agent do not gain enough 
+                    if np.mean(reward_deque) == 0.0:
+                        reward-=1
+
                     args_inner.rewards = torch.cat((args_inner.rewards,torch.tensor([reward], device = self.device).clone().detach()))
                     args_inner.states = torch.cat((args_inner.states,states.clone().detach()))
                     args_inner.next_states = torch.cat((args_inner.next_states,new_states.clone().detach()))
@@ -358,6 +436,8 @@ class Policy(nn.Module):
                 args_outer.values = torch.cat((args_outer.values, args_inner.values.unsqueeze(0)))
                 args_outer.dones = torch.cat((args_outer.dones, args_inner.dones.unsqueeze(0)))
                 args_outer.logP = torch.cat((args_outer.logP, args_inner.logP.unsqueeze(0)))
+                args_outer.next_states = torch.cat((args_outer.next_states, args_inner.next_states.unsqueeze(0)))
+
                 args_outer.R = torch.cat((args_outer.R, torch.tensor(args_inner.R, device = self.device).unsqueeze(0)))
                 args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
 
@@ -367,6 +447,8 @@ class Policy(nn.Module):
                 new_state = state[0] #Versioning problems
                 self.states = deque(maxlen = self.n_frames) # Re-initialize
             
+            intr_loss_list = [] # Intrinsic loss for each actor
+            tot_loss = [] # total loss for each actor
             for n_actor in range(args_outer.advantages.shape[0]):
 
                 args = Rollout_arguments()
@@ -376,6 +458,8 @@ class Policy(nn.Module):
                 args.R = args_outer.R[n_actor].clone()
                 args.logP = args_outer.logP[n_actor].clone()
                 args.advantages = args_outer.advantages[n_actor].clone()
+                args.next_states = args_outer.next_states[n_actor].clone()
+
                 # Initialize the Buffer   
                 buffer = BufferDataset(args)
                 buffer_dataset = DataLoader(buffer, self.batch_size, shuffle = False)
@@ -398,18 +482,28 @@ class Policy(nn.Module):
                         Lpi = torch.min(p1, p2) # Clipped loss
 
                         #MSE loss
-                        Lv = self.MseLoss(value_new.view(-1), batch[Buffer['Return']].to(self.device)) if torch.cuda.is_available() else self.MseLoss(value_new.view(-1), batch[Buffer['Return']].to(self.device))
+                        Lv = self.MseLoss(value_new.view(-1), batch[Buffer['Return']].to(self.device))
                     
                         #Entropy loss
                         Ls = entropy
+                        intrinsic_loss = 0
+                        if self.intr:
+
+                            intrinsic_loss = self.icm.get_loss(batch[Buffer['states']].to(self.device), batch[Buffer['next_states']].to(self.device), batch[Buffer['actions']].type(torch.long).to(self.device))
+                            intr_loss_list.append(intrinsic_loss.item())
+
                         # final loss of clipped objective PPO
-                        loss = -Lpi - self.c2*Ls + self.c1*Lv 
+                        loss = w1*(-Lpi - self.c2*Ls + self.c1*Lv) + int(self.intr)*intrinsic_loss 
+
+                        tot_loss.append(loss.mean().item())
+
                         # take gradient step
                         self.optimizer.zero_grad()
                         loss.mean().backward()
                         nn.utils.clip_grad_norm_(self.parameters(), 0.5)
                         self.optimizer.step()
                         global_step+=1
+                        
 
             
             if lr_annealing:
@@ -429,18 +523,36 @@ class Policy(nn.Module):
                 
                 mean_reward = evaluate_agent(self, n_eval_episodes = 1)
                 scores_deque.append(mean_reward)
+                mean_tot_loss = sum(tot_loss)/len(tot_loss)
+                if self.intr:
+                    mean_intr_loss = sum(intr_loss_list)/len(intr_loss_list)
+                    intr_loss_deque.append(mean_intr_loss)
+                # print(np.mean(intr_loss_deque))
+                # print(np.mean(intr_loss_deque).dtype)
+                # print(np.mean(tot_loss_deque).dtype)
 
-                if wb:
+                # print(np.mean(tot_loss_deque))
+
+                if wb and self.intr:
                     wandb.log({
+                        'loss' : mean_tot_loss,
                         'reward_per_episodes' : mean_reward,
-                        'last20eps_mean_reward': np.mean(scores_deque)
+                        'last100eps_mean_reward': np.mean(scores_deque),
+                        'Intrinsic_loss': np.mean(intr_loss_deque)
+                    })
+                
+                elif wb and not(self.intr):
+                    wandb.log({
+                        'loss' : mean_tot_loss,
+                        'reward_per_episodes' : mean_reward,
+                        'last100eps_mean_reward': np.mean(scores_deque)
                     })
 
 
                 if mean_reward > self.maximum:
                     self.maximum = mean_reward
-                    self.save(self.model_name)
-                print("The reward at episode {} is {:.4f}, and the mean over the last 20 episodes is {:.4f}".format(i_episode, mean_reward, np.mean(scores_deque)))
+                    self.save()
+                print("The reward at episode {} is {:.4f}, and the mean over the last 100 episodes is {:.4f}".format(i_episode, mean_reward, np.mean(scores_deque)))
             
             
             # evaluation step
@@ -448,11 +560,11 @@ class Policy(nn.Module):
         if wb:
             wandb.finish()
 
-    def save(self, model_name = model_name):
-        torch.save(self.state_dict(), model_name)
+    def save(self):
+        torch.save(self.state_dict(), self.model_name)
 
-    def load(self, model_name = model_name):
-        self.load_state_dict(torch.load(model_name, map_location=self.device))
+    def load(self):
+        self.load_state_dict(torch.load(self.model_name, map_location=self.device))
 
     def to(self, device):
         ret = super().to(device)

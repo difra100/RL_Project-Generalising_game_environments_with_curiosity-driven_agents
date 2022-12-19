@@ -1,0 +1,16 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:434: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+The reward at episode 1 is 20.0000, and the mean over the last 20 episodes is 20.0000
+2
+The reward at episode 2 is 160.0000, and the mean over the last 20 episodes is 90.0000
+3
+The reward at episode 3 is 320.0000, and the mean over the last 20 episodes is 166.6667
+4
+The reward at episode 4 is 520.0000, and the mean over the last 20 episodes is 255.0000
+5
+The reward at episode 5 is 300.0000, and the mean over the last 20 episodes is 264.0000
+6
+The reward at episode 6 is 300.0000, and the mean over the last 20 episodes is 270.0000
+7

@@ -1,0 +1,2004 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:434: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+The reward at episode 1 is 120.0000, and the mean over the last 20 episodes is 120.0000
+2
+The reward at episode 2 is 200.0000, and the mean over the last 20 episodes is 160.0000
+3
+The reward at episode 3 is 0.0000, and the mean over the last 20 episodes is 106.6667
+4
+The reward at episode 4 is 200.0000, and the mean over the last 20 episodes is 130.0000
+5
+The reward at episode 5 is 60.0000, and the mean over the last 20 episodes is 116.0000
+6
+The reward at episode 6 is 40.0000, and the mean over the last 20 episodes is 103.3333
+7
+The reward at episode 7 is 120.0000, and the mean over the last 20 episodes is 105.7143
+8
+The reward at episode 8 is 140.0000, and the mean over the last 20 episodes is 110.0000
+9
+The reward at episode 9 is 200.0000, and the mean over the last 20 episodes is 120.0000
+10
+The reward at episode 10 is 200.0000, and the mean over the last 20 episodes is 128.0000
+11
+The reward at episode 11 is 60.0000, and the mean over the last 20 episodes is 121.8182
+12
+The reward at episode 12 is 240.0000, and the mean over the last 20 episodes is 131.6667
+13
+The reward at episode 13 is 80.0000, and the mean over the last 20 episodes is 127.6923
+14
+The reward at episode 14 is 100.0000, and the mean over the last 20 episodes is 125.7143
+15
+The reward at episode 15 is 120.0000, and the mean over the last 20 episodes is 125.3333
+16
+The reward at episode 16 is 220.0000, and the mean over the last 20 episodes is 131.2500
+17
+The reward at episode 17 is 200.0000, and the mean over the last 20 episodes is 135.2941
+18
+The reward at episode 18 is 260.0000, and the mean over the last 20 episodes is 142.2222
+19
+The reward at episode 19 is 180.0000, and the mean over the last 20 episodes is 144.2105
+20
+The reward at episode 20 is 240.0000, and the mean over the last 20 episodes is 149.0000
+21
+The reward at episode 21 is 280.0000, and the mean over the last 20 episodes is 157.0000
+22
+The reward at episode 22 is 100.0000, and the mean over the last 20 episodes is 152.0000
+23
+The reward at episode 23 is 240.0000, and the mean over the last 20 episodes is 164.0000
+24
+The reward at episode 24 is 180.0000, and the mean over the last 20 episodes is 163.0000
+25
+The reward at episode 25 is 100.0000, and the mean over the last 20 episodes is 165.0000
+26
+The reward at episode 26 is 400.0000, and the mean over the last 20 episodes is 183.0000
+27
+The reward at episode 27 is 460.0000, and the mean over the last 20 episodes is 200.0000
+28
+The reward at episode 28 is 240.0000, and the mean over the last 20 episodes is 205.0000
+29
+The reward at episode 29 is 100.0000, and the mean over the last 20 episodes is 200.0000
+30
+The reward at episode 30 is 200.0000, and the mean over the last 20 episodes is 200.0000
+31
+The reward at episode 31 is 20.0000, and the mean over the last 20 episodes is 198.0000
+32
+The reward at episode 32 is 20.0000, and the mean over the last 20 episodes is 187.0000
+33
+The reward at episode 33 is 20.0000, and the mean over the last 20 episodes is 184.0000
+34
+The reward at episode 34 is 100.0000, and the mean over the last 20 episodes is 184.0000
+35
+The reward at episode 35 is 0.0000, and the mean over the last 20 episodes is 178.0000
+36
+The reward at episode 36 is 260.0000, and the mean over the last 20 episodes is 180.0000
+37
+The reward at episode 37 is 120.0000, and the mean over the last 20 episodes is 176.0000
+38
+The reward at episode 38 is 160.0000, and the mean over the last 20 episodes is 171.0000
+39
+The reward at episode 39 is 100.0000, and the mean over the last 20 episodes is 167.0000
+40
+The reward at episode 40 is 100.0000, and the mean over the last 20 episodes is 160.0000
+41
+The reward at episode 41 is 180.0000, and the mean over the last 20 episodes is 155.0000
+42
+The reward at episode 42 is 80.0000, and the mean over the last 20 episodes is 154.0000
+43
+The reward at episode 43 is 180.0000, and the mean over the last 20 episodes is 151.0000
+44
+The reward at episode 44 is 180.0000, and the mean over the last 20 episodes is 151.0000
+45
+The reward at episode 45 is 120.0000, and the mean over the last 20 episodes is 152.0000
+46
+The reward at episode 46 is 200.0000, and the mean over the last 20 episodes is 142.0000
+47
+The reward at episode 47 is 120.0000, and the mean over the last 20 episodes is 125.0000
+48
+The reward at episode 48 is 140.0000, and the mean over the last 20 episodes is 120.0000
+49
+The reward at episode 49 is 260.0000, and the mean over the last 20 episodes is 128.0000
+50
+The reward at episode 50 is 140.0000, and the mean over the last 20 episodes is 125.0000
+51
+The reward at episode 51 is 200.0000, and the mean over the last 20 episodes is 134.0000
+52
+The reward at episode 52 is 180.0000, and the mean over the last 20 episodes is 142.0000
+53
+The reward at episode 53 is 180.0000, and the mean over the last 20 episodes is 150.0000
+54
+The reward at episode 54 is 300.0000, and the mean over the last 20 episodes is 160.0000
+55
+The reward at episode 55 is 220.0000, and the mean over the last 20 episodes is 171.0000
+56
+The reward at episode 56 is 700.0000, and the mean over the last 20 episodes is 193.0000
+57
+The reward at episode 57 is 1470.0000, and the mean over the last 20 episodes is 260.5000
+58
+The reward at episode 58 is 180.0000, and the mean over the last 20 episodes is 261.5000
+59
+The reward at episode 59 is 140.0000, and the mean over the last 20 episodes is 263.5000
+60
+The reward at episode 60 is 380.0000, and the mean over the last 20 episodes is 277.5000
+61
+The reward at episode 61 is 120.0000, and the mean over the last 20 episodes is 274.5000
+62
+The reward at episode 62 is 260.0000, and the mean over the last 20 episodes is 283.5000
+63
+The reward at episode 63 is 640.0000, and the mean over the last 20 episodes is 306.5000
+64
+The reward at episode 64 is 180.0000, and the mean over the last 20 episodes is 306.5000
+65
+The reward at episode 65 is 380.0000, and the mean over the last 20 episodes is 319.5000
+66
+The reward at episode 66 is 260.0000, and the mean over the last 20 episodes is 322.5000
+67
+The reward at episode 67 is 160.0000, and the mean over the last 20 episodes is 324.5000
+68
+The reward at episode 68 is 260.0000, and the mean over the last 20 episodes is 330.5000
+69
+The reward at episode 69 is 200.0000, and the mean over the last 20 episodes is 327.5000
+70
+The reward at episode 70 is 680.0000, and the mean over the last 20 episodes is 354.5000
+71
+The reward at episode 71 is 240.0000, and the mean over the last 20 episodes is 356.5000
+72
+The reward at episode 72 is 180.0000, and the mean over the last 20 episodes is 356.5000
+73
+The reward at episode 73 is 100.0000, and the mean over the last 20 episodes is 352.5000
+74
+The reward at episode 74 is 140.0000, and the mean over the last 20 episodes is 344.5000
+75
+The reward at episode 75 is 100.0000, and the mean over the last 20 episodes is 338.5000
+76
+The reward at episode 76 is 320.0000, and the mean over the last 20 episodes is 319.5000
+77
+The reward at episode 77 is 160.0000, and the mean over the last 20 episodes is 254.0000
+78
+The reward at episode 78 is 160.0000, and the mean over the last 20 episodes is 253.0000
+79
+The reward at episode 79 is 120.0000, and the mean over the last 20 episodes is 252.0000
+80
+The reward at episode 80 is 100.0000, and the mean over the last 20 episodes is 238.0000
+81
+The reward at episode 81 is 320.0000, and the mean over the last 20 episodes is 248.0000
+82
+The reward at episode 82 is 260.0000, and the mean over the last 20 episodes is 248.0000
+83
+The reward at episode 83 is 240.0000, and the mean over the last 20 episodes is 228.0000
+84
+The reward at episode 84 is 540.0000, and the mean over the last 20 episodes is 246.0000
+85
+The reward at episode 85 is 180.0000, and the mean over the last 20 episodes is 236.0000
+86
+The reward at episode 86 is 260.0000, and the mean over the last 20 episodes is 236.0000
+87
+The reward at episode 87 is 180.0000, and the mean over the last 20 episodes is 237.0000
+88
+The reward at episode 88 is 320.0000, and the mean over the last 20 episodes is 240.0000
+89
+The reward at episode 89 is 1560.0000, and the mean over the last 20 episodes is 308.0000
+90
+The reward at episode 90 is 180.0000, and the mean over the last 20 episodes is 283.0000
+91
+The reward at episode 91 is 240.0000, and the mean over the last 20 episodes is 283.0000
+92
+The reward at episode 92 is 1620.0000, and the mean over the last 20 episodes is 355.0000
+93
+The reward at episode 93 is 320.0000, and the mean over the last 20 episodes is 366.0000
+94
+The reward at episode 94 is 420.0000, and the mean over the last 20 episodes is 380.0000
+95
+The reward at episode 95 is 780.0000, and the mean over the last 20 episodes is 414.0000
+96
+The reward at episode 96 is 200.0000, and the mean over the last 20 episodes is 408.0000
+97
+The reward at episode 97 is 360.0000, and the mean over the last 20 episodes is 418.0000
+98
+The reward at episode 98 is 380.0000, and the mean over the last 20 episodes is 429.0000
+99
+The reward at episode 99 is 180.0000, and the mean over the last 20 episodes is 432.0000
+100
+The reward at episode 100 is 200.0000, and the mean over the last 20 episodes is 437.0000
+101
+The reward at episode 101 is 120.0000, and the mean over the last 20 episodes is 427.0000
+102
+The reward at episode 102 is 140.0000, and the mean over the last 20 episodes is 421.0000
+103
+The reward at episode 103 is 200.0000, and the mean over the last 20 episodes is 419.0000
+104
+The reward at episode 104 is 120.0000, and the mean over the last 20 episodes is 398.0000
+105
+The reward at episode 105 is 340.0000, and the mean over the last 20 episodes is 406.0000
+106
+The reward at episode 106 is 500.0000, and the mean over the last 20 episodes is 418.0000
+107
+The reward at episode 107 is 180.0000, and the mean over the last 20 episodes is 418.0000
+108
+The reward at episode 108 is 560.0000, and the mean over the last 20 episodes is 430.0000
+109
+The reward at episode 109 is 400.0000, and the mean over the last 20 episodes is 372.0000
+110
+The reward at episode 110 is 100.0000, and the mean over the last 20 episodes is 368.0000
+111
+The reward at episode 111 is 200.0000, and the mean over the last 20 episodes is 366.0000
+112
+The reward at episode 112 is 120.0000, and the mean over the last 20 episodes is 291.0000
+113
+The reward at episode 113 is 140.0000, and the mean over the last 20 episodes is 282.0000
+114
+The reward at episode 114 is 200.0000, and the mean over the last 20 episodes is 271.0000
+115
+The reward at episode 115 is 140.0000, and the mean over the last 20 episodes is 239.0000
+116
+The reward at episode 116 is 200.0000, and the mean over the last 20 episodes is 239.0000
+117
+The reward at episode 117 is 100.0000, and the mean over the last 20 episodes is 226.0000
+118
+The reward at episode 118 is 120.0000, and the mean over the last 20 episodes is 213.0000
+119
+The reward at episode 119 is 160.0000, and the mean over the last 20 episodes is 212.0000
+120
+The reward at episode 120 is 260.0000, and the mean over the last 20 episodes is 215.0000
+121
+The reward at episode 121 is 260.0000, and the mean over the last 20 episodes is 222.0000
+122
+The reward at episode 122 is 100.0000, and the mean over the last 20 episodes is 220.0000
+123
+The reward at episode 123 is 540.0000, and the mean over the last 20 episodes is 237.0000
+124
+The reward at episode 124 is 420.0000, and the mean over the last 20 episodes is 252.0000
+125
+The reward at episode 125 is 200.0000, and the mean over the last 20 episodes is 245.0000
+126
+The reward at episode 126 is 420.0000, and the mean over the last 20 episodes is 241.0000
+127
+The reward at episode 127 is 660.0000, and the mean over the last 20 episodes is 265.0000
+128
+The reward at episode 128 is 540.0000, and the mean over the last 20 episodes is 264.0000
+129
+The reward at episode 129 is 220.0000, and the mean over the last 20 episodes is 255.0000
+130
+The reward at episode 130 is 260.0000, and the mean over the last 20 episodes is 263.0000
+131
+The reward at episode 131 is 360.0000, and the mean over the last 20 episodes is 271.0000
+132
+The reward at episode 132 is 200.0000, and the mean over the last 20 episodes is 275.0000
+133
+The reward at episode 133 is 400.0000, and the mean over the last 20 episodes is 288.0000
+134
+The reward at episode 134 is 100.0000, and the mean over the last 20 episodes is 283.0000
+135
+The reward at episode 135 is 260.0000, and the mean over the last 20 episodes is 289.0000
+136
+The reward at episode 136 is 500.0000, and the mean over the last 20 episodes is 304.0000
+137
+The reward at episode 137 is 180.0000, and the mean over the last 20 episodes is 308.0000
+138
+The reward at episode 138 is 990.0000, and the mean over the last 20 episodes is 351.5000
+139
+The reward at episode 139 is 140.0000, and the mean over the last 20 episodes is 350.5000
+140
+The reward at episode 140 is 320.0000, and the mean over the last 20 episodes is 353.5000
+141
+The reward at episode 141 is 340.0000, and the mean over the last 20 episodes is 357.5000
+142
+The reward at episode 142 is 400.0000, and the mean over the last 20 episodes is 372.5000
+143
+The reward at episode 143 is 200.0000, and the mean over the last 20 episodes is 355.5000
+144
+The reward at episode 144 is 560.0000, and the mean over the last 20 episodes is 362.5000
+145
+The reward at episode 145 is 360.0000, and the mean over the last 20 episodes is 370.5000
+146
+The reward at episode 146 is 380.0000, and the mean over the last 20 episodes is 368.5000
+147
+The reward at episode 147 is 360.0000, and the mean over the last 20 episodes is 353.5000
+148
+The reward at episode 148 is 400.0000, and the mean over the last 20 episodes is 346.5000
+149
+The reward at episode 149 is 360.0000, and the mean over the last 20 episodes is 353.5000
+150
+The reward at episode 150 is 1570.0000, and the mean over the last 20 episodes is 419.0000
+151
+The reward at episode 151 is 900.0000, and the mean over the last 20 episodes is 446.0000
+152
+The reward at episode 152 is 460.0000, and the mean over the last 20 episodes is 459.0000
+153
+The reward at episode 153 is 320.0000, and the mean over the last 20 episodes is 455.0000
+154
+The reward at episode 154 is 420.0000, and the mean over the last 20 episodes is 471.0000
+155
+The reward at episode 155 is 340.0000, and the mean over the last 20 episodes is 475.0000
+156
+The reward at episode 156 is 140.0000, and the mean over the last 20 episodes is 457.0000
+157
+The reward at episode 157 is 340.0000, and the mean over the last 20 episodes is 465.0000
+158
+The reward at episode 158 is 540.0000, and the mean over the last 20 episodes is 442.5000
+159
+The reward at episode 159 is 260.0000, and the mean over the last 20 episodes is 448.5000
+160
+The reward at episode 160 is 140.0000, and the mean over the last 20 episodes is 439.5000
+161
+The reward at episode 161 is 810.0000, and the mean over the last 20 episodes is 463.0000
+162
+The reward at episode 162 is 220.0000, and the mean over the last 20 episodes is 454.0000
+163
+The reward at episode 163 is 540.0000, and the mean over the last 20 episodes is 471.0000
+164
+The reward at episode 164 is 440.0000, and the mean over the last 20 episodes is 465.0000
+165
+The reward at episode 165 is 600.0000, and the mean over the last 20 episodes is 477.0000
+166
+The reward at episode 166 is 700.0000, and the mean over the last 20 episodes is 493.0000
+167
+The reward at episode 167 is 2090.0000, and the mean over the last 20 episodes is 579.5000
+168
+The reward at episode 168 is 260.0000, and the mean over the last 20 episodes is 572.5000
+169
+The reward at episode 169 is 400.0000, and the mean over the last 20 episodes is 574.5000
+170
+The reward at episode 170 is 340.0000, and the mean over the last 20 episodes is 513.0000
+171
+The reward at episode 171 is 480.0000, and the mean over the last 20 episodes is 492.0000
+172
+The reward at episode 172 is 620.0000, and the mean over the last 20 episodes is 500.0000
+173
+The reward at episode 173 is 160.0000, and the mean over the last 20 episodes is 492.0000
+174
+The reward at episode 174 is 1350.0000, and the mean over the last 20 episodes is 538.5000
+175
+The reward at episode 175 is 320.0000, and the mean over the last 20 episodes is 537.5000
+176
+The reward at episode 176 is 400.0000, and the mean over the last 20 episodes is 550.5000
+177
+The reward at episode 177 is 140.0000, and the mean over the last 20 episodes is 540.5000
+178
+The reward at episode 178 is 460.0000, and the mean over the last 20 episodes is 536.5000
+179
+The reward at episode 179 is 120.0000, and the mean over the last 20 episodes is 529.5000
+180
+The reward at episode 180 is 400.0000, and the mean over the last 20 episodes is 542.5000
+181
+The reward at episode 181 is 380.0000, and the mean over the last 20 episodes is 521.0000
+182
+The reward at episode 182 is 480.0000, and the mean over the last 20 episodes is 534.0000
+183
+The reward at episode 183 is 420.0000, and the mean over the last 20 episodes is 528.0000
+184
+The reward at episode 184 is 220.0000, and the mean over the last 20 episodes is 517.0000
+185
+The reward at episode 185 is 400.0000, and the mean over the last 20 episodes is 507.0000
+186
+The reward at episode 186 is 460.0000, and the mean over the last 20 episodes is 495.0000
+187
+The reward at episode 187 is 770.0000, and the mean over the last 20 episodes is 429.0000
+188
+The reward at episode 188 is 320.0000, and the mean over the last 20 episodes is 432.0000
+189
+The reward at episode 189 is 600.0000, and the mean over the last 20 episodes is 442.0000
+190
+The reward at episode 190 is 480.0000, and the mean over the last 20 episodes is 449.0000
+191
+The reward at episode 191 is 220.0000, and the mean over the last 20 episodes is 436.0000
+192
+The reward at episode 192 is 980.0000, and the mean over the last 20 episodes is 454.0000
+193
+The reward at episode 193 is 320.0000, and the mean over the last 20 episodes is 462.0000
+194
+The reward at episode 194 is 400.0000, and the mean over the last 20 episodes is 414.5000
+195
+The reward at episode 195 is 670.0000, and the mean over the last 20 episodes is 432.0000
+196
+The reward at episode 196 is 750.0000, and the mean over the last 20 episodes is 449.5000
+197
+The reward at episode 197 is 240.0000, and the mean over the last 20 episodes is 454.5000
+198
+The reward at episode 198 is 480.0000, and the mean over the last 20 episodes is 455.5000
+199
+The reward at episode 199 is 360.0000, and the mean over the last 20 episodes is 467.5000
+200
+The reward at episode 200 is 200.0000, and the mean over the last 20 episodes is 457.5000
+201
+The reward at episode 201 is 360.0000, and the mean over the last 20 episodes is 456.5000
+202
+The reward at episode 202 is 540.0000, and the mean over the last 20 episodes is 459.5000
+203
+The reward at episode 203 is 220.0000, and the mean over the last 20 episodes is 449.5000
+204
+The reward at episode 204 is 340.0000, and the mean over the last 20 episodes is 455.5000
+205
+The reward at episode 205 is 140.0000, and the mean over the last 20 episodes is 442.5000
+206
+The reward at episode 206 is 320.0000, and the mean over the last 20 episodes is 435.5000
+207
+The reward at episode 207 is 340.0000, and the mean over the last 20 episodes is 414.0000
+208
+The reward at episode 208 is 480.0000, and the mean over the last 20 episodes is 422.0000
+209
+The reward at episode 209 is 600.0000, and the mean over the last 20 episodes is 422.0000
+210
+The reward at episode 210 is 140.0000, and the mean over the last 20 episodes is 405.0000
+211
+The reward at episode 211 is 280.0000, and the mean over the last 20 episodes is 408.0000
+212
+The reward at episode 212 is 100.0000, and the mean over the last 20 episodes is 364.0000
+213
+The reward at episode 213 is 340.0000, and the mean over the last 20 episodes is 365.0000
+214
+The reward at episode 214 is 120.0000, and the mean over the last 20 episodes is 351.0000
+215
+The reward at episode 215 is 200.0000, and the mean over the last 20 episodes is 327.5000
+216
+The reward at episode 216 is 420.0000, and the mean over the last 20 episodes is 311.0000
+217
+The reward at episode 217 is 380.0000, and the mean over the last 20 episodes is 318.0000
+218
+The reward at episode 218 is 260.0000, and the mean over the last 20 episodes is 307.0000
+219
+The reward at episode 219 is 1230.0000, and the mean over the last 20 episodes is 350.5000
+220
+The reward at episode 220 is 400.0000, and the mean over the last 20 episodes is 360.5000
+221
+The reward at episode 221 is 180.0000, and the mean over the last 20 episodes is 351.5000
+222
+The reward at episode 222 is 340.0000, and the mean over the last 20 episodes is 341.5000
+223
+The reward at episode 223 is 280.0000, and the mean over the last 20 episodes is 344.5000
+224
+The reward at episode 224 is 260.0000, and the mean over the last 20 episodes is 340.5000
+225
+The reward at episode 225 is 200.0000, and the mean over the last 20 episodes is 343.5000
+226
+The reward at episode 226 is 220.0000, and the mean over the last 20 episodes is 338.5000
+227
+The reward at episode 227 is 120.0000, and the mean over the last 20 episodes is 327.5000
+228
+The reward at episode 228 is 100.0000, and the mean over the last 20 episodes is 308.5000
+229
+The reward at episode 229 is 160.0000, and the mean over the last 20 episodes is 286.5000
+230
+The reward at episode 230 is 140.0000, and the mean over the last 20 episodes is 286.5000
+231
+The reward at episode 231 is 400.0000, and the mean over the last 20 episodes is 292.5000
+232
+The reward at episode 232 is 1010.0000, and the mean over the last 20 episodes is 338.0000
+233
+The reward at episode 233 is 360.0000, and the mean over the last 20 episodes is 339.0000
+234
+The reward at episode 234 is 120.0000, and the mean over the last 20 episodes is 339.0000
+235
+The reward at episode 235 is 1630.0000, and the mean over the last 20 episodes is 410.5000
+236
+The reward at episode 236 is 180.0000, and the mean over the last 20 episodes is 398.5000
+237
+The reward at episode 237 is 360.0000, and the mean over the last 20 episodes is 397.5000
+238
+The reward at episode 238 is 300.0000, and the mean over the last 20 episodes is 399.5000
+239
+The reward at episode 239 is 120.0000, and the mean over the last 20 episodes is 344.0000
+240
+The reward at episode 240 is 240.0000, and the mean over the last 20 episodes is 336.0000
+241
+The reward at episode 241 is 120.0000, and the mean over the last 20 episodes is 333.0000
+242
+The reward at episode 242 is 80.0000, and the mean over the last 20 episodes is 320.0000
+243
+The reward at episode 243 is 200.0000, and the mean over the last 20 episodes is 316.0000
+244
+The reward at episode 244 is 200.0000, and the mean over the last 20 episodes is 313.0000
+245
+The reward at episode 245 is 200.0000, and the mean over the last 20 episodes is 313.0000
+246
+The reward at episode 246 is 160.0000, and the mean over the last 20 episodes is 310.0000
+247
+The reward at episode 247 is 200.0000, and the mean over the last 20 episodes is 314.0000
+248
+The reward at episode 248 is 180.0000, and the mean over the last 20 episodes is 318.0000
+249
+The reward at episode 249 is 360.0000, and the mean over the last 20 episodes is 328.0000
+250
+The reward at episode 250 is 140.0000, and the mean over the last 20 episodes is 328.0000
+251
+The reward at episode 251 is 180.0000, and the mean over the last 20 episodes is 317.0000
+252
+The reward at episode 252 is 360.0000, and the mean over the last 20 episodes is 284.5000
+253
+The reward at episode 253 is 140.0000, and the mean over the last 20 episodes is 273.5000
+254
+The reward at episode 254 is 180.0000, and the mean over the last 20 episodes is 276.5000
+255
+The reward at episode 255 is 120.0000, and the mean over the last 20 episodes is 201.0000
+256
+The reward at episode 256 is 200.0000, and the mean over the last 20 episodes is 202.0000
+257
+The reward at episode 257 is 260.0000, and the mean over the last 20 episodes is 197.0000
+258
+The reward at episode 258 is 260.0000, and the mean over the last 20 episodes is 195.0000
+259
+The reward at episode 259 is 300.0000, and the mean over the last 20 episodes is 204.0000
+260
+The reward at episode 260 is 720.0000, and the mean over the last 20 episodes is 228.0000
+261
+The reward at episode 261 is 320.0000, and the mean over the last 20 episodes is 238.0000
+262
+The reward at episode 262 is 380.0000, and the mean over the last 20 episodes is 253.0000
+263
+The reward at episode 263 is 480.0000, and the mean over the last 20 episodes is 267.0000
+264
+The reward at episode 264 is 80.0000, and the mean over the last 20 episodes is 261.0000
+265
+The reward at episode 265 is 140.0000, and the mean over the last 20 episodes is 258.0000
+266
+The reward at episode 266 is 540.0000, and the mean over the last 20 episodes is 277.0000
+267
+The reward at episode 267 is 480.0000, and the mean over the last 20 episodes is 291.0000
+268
+The reward at episode 268 is 240.0000, and the mean over the last 20 episodes is 294.0000
+269
+The reward at episode 269 is 200.0000, and the mean over the last 20 episodes is 286.0000
+270
+The reward at episode 270 is 260.0000, and the mean over the last 20 episodes is 292.0000
+271
+The reward at episode 271 is 590.0000, and the mean over the last 20 episodes is 312.5000
+272
+The reward at episode 272 is 970.0000, and the mean over the last 20 episodes is 343.0000
+273
+The reward at episode 273 is 320.0000, and the mean over the last 20 episodes is 352.0000
+274
+The reward at episode 274 is 920.0000, and the mean over the last 20 episodes is 389.0000
+275
+The reward at episode 275 is 360.0000, and the mean over the last 20 episodes is 401.0000
+276
+The reward at episode 276 is 260.0000, and the mean over the last 20 episodes is 404.0000
+277
+The reward at episode 277 is 810.0000, and the mean over the last 20 episodes is 431.5000
+278
+The reward at episode 278 is 180.0000, and the mean over the last 20 episodes is 427.5000
+279
+The reward at episode 279 is 480.0000, and the mean over the last 20 episodes is 436.5000
+280
+The reward at episode 280 is 360.0000, and the mean over the last 20 episodes is 418.5000
+281
+The reward at episode 281 is 140.0000, and the mean over the last 20 episodes is 409.5000
+282
+The reward at episode 282 is 420.0000, and the mean over the last 20 episodes is 411.5000
+283
+The reward at episode 283 is 120.0000, and the mean over the last 20 episodes is 393.5000
+284
+The reward at episode 284 is 140.0000, and the mean over the last 20 episodes is 396.5000
+285
+The reward at episode 285 is 280.0000, and the mean over the last 20 episodes is 403.5000
+286
+The reward at episode 286 is 120.0000, and the mean over the last 20 episodes is 382.5000
+287
+The reward at episode 287 is 200.0000, and the mean over the last 20 episodes is 368.5000
+288
+The reward at episode 288 is 200.0000, and the mean over the last 20 episodes is 366.5000
+289
+The reward at episode 289 is 120.0000, and the mean over the last 20 episodes is 362.5000
+290
+The reward at episode 290 is 80.0000, and the mean over the last 20 episodes is 353.5000
+291
+The reward at episode 291 is 80.0000, and the mean over the last 20 episodes is 328.0000
+292
+The reward at episode 292 is 120.0000, and the mean over the last 20 episodes is 285.5000
+293
+The reward at episode 293 is 80.0000, and the mean over the last 20 episodes is 273.5000
+294
+The reward at episode 294 is 80.0000, and the mean over the last 20 episodes is 231.5000
+295
+The reward at episode 295 is 300.0000, and the mean over the last 20 episodes is 228.5000
+296
+The reward at episode 296 is 120.0000, and the mean over the last 20 episodes is 221.5000
+297
+The reward at episode 297 is 180.0000, and the mean over the last 20 episodes is 190.0000
+298
+The reward at episode 298 is 80.0000, and the mean over the last 20 episodes is 185.0000
+299
+The reward at episode 299 is 100.0000, and the mean over the last 20 episodes is 166.0000
+300
+The reward at episode 300 is 100.0000, and the mean over the last 20 episodes is 153.0000
+301
+The reward at episode 301 is 100.0000, and the mean over the last 20 episodes is 151.0000
+302
+The reward at episode 302 is 120.0000, and the mean over the last 20 episodes is 136.0000
+303
+The reward at episode 303 is 120.0000, and the mean over the last 20 episodes is 136.0000
+304
+The reward at episode 304 is 100.0000, and the mean over the last 20 episodes is 134.0000
+305
+The reward at episode 305 is 180.0000, and the mean over the last 20 episodes is 129.0000
+306
+The reward at episode 306 is 100.0000, and the mean over the last 20 episodes is 128.0000
+307
+The reward at episode 307 is 540.0000, and the mean over the last 20 episodes is 145.0000
+308
+The reward at episode 308 is 420.0000, and the mean over the last 20 episodes is 156.0000
+309
+The reward at episode 309 is 200.0000, and the mean over the last 20 episodes is 160.0000
+310
+The reward at episode 310 is 260.0000, and the mean over the last 20 episodes is 169.0000
+311
+The reward at episode 311 is 140.0000, and the mean over the last 20 episodes is 172.0000
+312
+The reward at episode 312 is 120.0000, and the mean over the last 20 episodes is 172.0000
+313
+The reward at episode 313 is 100.0000, and the mean over the last 20 episodes is 173.0000
+314
+The reward at episode 314 is 320.0000, and the mean over the last 20 episodes is 185.0000
+315
+The reward at episode 315 is 120.0000, and the mean over the last 20 episodes is 176.0000
+316
+The reward at episode 316 is 260.0000, and the mean over the last 20 episodes is 183.0000
+317
+The reward at episode 317 is 180.0000, and the mean over the last 20 episodes is 183.0000
+318
+The reward at episode 318 is 120.0000, and the mean over the last 20 episodes is 185.0000
+319
+The reward at episode 319 is 200.0000, and the mean over the last 20 episodes is 190.0000
+320
+The reward at episode 320 is 80.0000, and the mean over the last 20 episodes is 189.0000
+321
+The reward at episode 321 is 320.0000, and the mean over the last 20 episodes is 200.0000
+322
+The reward at episode 322 is 540.0000, and the mean over the last 20 episodes is 221.0000
+323
+The reward at episode 323 is 360.0000, and the mean over the last 20 episodes is 233.0000
+324
+The reward at episode 324 is 180.0000, and the mean over the last 20 episodes is 237.0000
+325
+The reward at episode 325 is 100.0000, and the mean over the last 20 episodes is 233.0000
+326
+The reward at episode 326 is 260.0000, and the mean over the last 20 episodes is 241.0000
+327
+The reward at episode 327 is 140.0000, and the mean over the last 20 episodes is 221.0000
+328
+The reward at episode 328 is 120.0000, and the mean over the last 20 episodes is 206.0000
+329
+The reward at episode 329 is 200.0000, and the mean over the last 20 episodes is 206.0000
+330
+The reward at episode 330 is 120.0000, and the mean over the last 20 episodes is 199.0000
+331
+The reward at episode 331 is 400.0000, and the mean over the last 20 episodes is 212.0000
+332
+The reward at episode 332 is 200.0000, and the mean over the last 20 episodes is 216.0000
+333
+The reward at episode 333 is 480.0000, and the mean over the last 20 episodes is 235.0000
+334
+The reward at episode 334 is 140.0000, and the mean over the last 20 episodes is 226.0000
+335
+The reward at episode 335 is 260.0000, and the mean over the last 20 episodes is 233.0000
+336
+The reward at episode 336 is 100.0000, and the mean over the last 20 episodes is 225.0000
+337
+The reward at episode 337 is 120.0000, and the mean over the last 20 episodes is 222.0000
+338
+The reward at episode 338 is 160.0000, and the mean over the last 20 episodes is 224.0000
+339
+The reward at episode 339 is 220.0000, and the mean over the last 20 episodes is 225.0000
+340
+The reward at episode 340 is 100.0000, and the mean over the last 20 episodes is 226.0000
+341
+The reward at episode 341 is 100.0000, and the mean over the last 20 episodes is 215.0000
+342
+The reward at episode 342 is 260.0000, and the mean over the last 20 episodes is 201.0000
+343
+The reward at episode 343 is 140.0000, and the mean over the last 20 episodes is 190.0000
+344
+The reward at episode 344 is 120.0000, and the mean over the last 20 episodes is 187.0000
+345
+The reward at episode 345 is 200.0000, and the mean over the last 20 episodes is 192.0000
+346
+The reward at episode 346 is 120.0000, and the mean over the last 20 episodes is 185.0000
+347
+The reward at episode 347 is 240.0000, and the mean over the last 20 episodes is 190.0000
+348
+The reward at episode 348 is 260.0000, and the mean over the last 20 episodes is 197.0000
+349
+The reward at episode 349 is 200.0000, and the mean over the last 20 episodes is 197.0000
+350
+The reward at episode 350 is 140.0000, and the mean over the last 20 episodes is 198.0000
+351
+The reward at episode 351 is 200.0000, and the mean over the last 20 episodes is 188.0000
+352
+The reward at episode 352 is 340.0000, and the mean over the last 20 episodes is 195.0000
+353
+The reward at episode 353 is 180.0000, and the mean over the last 20 episodes is 180.0000
+354
+The reward at episode 354 is 320.0000, and the mean over the last 20 episodes is 189.0000
+355
+The reward at episode 355 is 140.0000, and the mean over the last 20 episodes is 183.0000
+356
+The reward at episode 356 is 460.0000, and the mean over the last 20 episodes is 201.0000
+357
+The reward at episode 357 is 420.0000, and the mean over the last 20 episodes is 216.0000
+358
+The reward at episode 358 is 560.0000, and the mean over the last 20 episodes is 236.0000
+359
+The reward at episode 359 is 420.0000, and the mean over the last 20 episodes is 246.0000
+360
+The reward at episode 360 is 540.0000, and the mean over the last 20 episodes is 268.0000
+361
+The reward at episode 361 is 540.0000, and the mean over the last 20 episodes is 290.0000
+362
+The reward at episode 362 is 200.0000, and the mean over the last 20 episodes is 287.0000
+363
+The reward at episode 363 is 260.0000, and the mean over the last 20 episodes is 293.0000
+364
+The reward at episode 364 is 1090.0000, and the mean over the last 20 episodes is 341.5000
+365
+The reward at episode 365 is 420.0000, and the mean over the last 20 episodes is 352.5000
+366
+The reward at episode 366 is 440.0000, and the mean over the last 20 episodes is 368.5000
+367
+The reward at episode 367 is 120.0000, and the mean over the last 20 episodes is 362.5000
+368
+The reward at episode 368 is 280.0000, and the mean over the last 20 episodes is 363.5000
+369
+The reward at episode 369 is 460.0000, and the mean over the last 20 episodes is 376.5000
+370
+The reward at episode 370 is 220.0000, and the mean over the last 20 episodes is 380.5000
+371
+The reward at episode 371 is 560.0000, and the mean over the last 20 episodes is 398.5000
+372
+The reward at episode 372 is 2320.0000, and the mean over the last 20 episodes is 497.5000
+373
+The reward at episode 373 is 600.0000, and the mean over the last 20 episodes is 518.5000
+374
+The reward at episode 374 is 420.0000, and the mean over the last 20 episodes is 523.5000
+375
+The reward at episode 375 is 460.0000, and the mean over the last 20 episodes is 539.5000
+376
+The reward at episode 376 is 200.0000, and the mean over the last 20 episodes is 526.5000
+377
+The reward at episode 377 is 480.0000, and the mean over the last 20 episodes is 529.5000
+378
+The reward at episode 378 is 1290.0000, and the mean over the last 20 episodes is 566.0000
+379
+The reward at episode 379 is 500.0000, and the mean over the last 20 episodes is 570.0000
+380
+The reward at episode 380 is 860.0000, and the mean over the last 20 episodes is 586.0000
+381
+The reward at episode 381 is 600.0000, and the mean over the last 20 episodes is 589.0000
+382
+The reward at episode 382 is 860.0000, and the mean over the last 20 episodes is 622.0000
+383
+The reward at episode 383 is 260.0000, and the mean over the last 20 episodes is 622.0000
+384
+The reward at episode 384 is 260.0000, and the mean over the last 20 episodes is 580.5000
+385
+The reward at episode 385 is 600.0000, and the mean over the last 20 episodes is 589.5000
+386
+The reward at episode 386 is 1020.0000, and the mean over the last 20 episodes is 618.5000
+387
+The reward at episode 387 is 340.0000, and the mean over the last 20 episodes is 629.5000
+388
+The reward at episode 388 is 360.0000, and the mean over the last 20 episodes is 633.5000
+389
+The reward at episode 389 is 200.0000, and the mean over the last 20 episodes is 620.5000
+390
+The reward at episode 390 is 1440.0000, and the mean over the last 20 episodes is 681.5000
+391
+The reward at episode 391 is 180.0000, and the mean over the last 20 episodes is 662.5000
+392
+The reward at episode 392 is 320.0000, and the mean over the last 20 episodes is 562.5000
+393
+The reward at episode 393 is 580.0000, and the mean over the last 20 episodes is 561.5000
+394
+The reward at episode 394 is 440.0000, and the mean over the last 20 episodes is 562.5000
+395
+The reward at episode 395 is 540.0000, and the mean over the last 20 episodes is 566.5000
+396
+The reward at episode 396 is 280.0000, and the mean over the last 20 episodes is 570.5000
+397
+The reward at episode 397 is 360.0000, and the mean over the last 20 episodes is 564.5000
+398
+The reward at episode 398 is 780.0000, and the mean over the last 20 episodes is 539.0000
+399
+The reward at episode 399 is 340.0000, and the mean over the last 20 episodes is 531.0000
+400
+The reward at episode 400 is 380.0000, and the mean over the last 20 episodes is 507.0000
+401
+The reward at episode 401 is 1360.0000, and the mean over the last 20 episodes is 545.0000
+402
+The reward at episode 402 is 520.0000, and the mean over the last 20 episodes is 528.0000
+403
+The reward at episode 403 is 140.0000, and the mean over the last 20 episodes is 522.0000
+404
+The reward at episode 404 is 360.0000, and the mean over the last 20 episodes is 527.0000
+405
+The reward at episode 405 is 540.0000, and the mean over the last 20 episodes is 524.0000
+406
+The reward at episode 406 is 440.0000, and the mean over the last 20 episodes is 495.0000
+407
+The reward at episode 407 is 870.0000, and the mean over the last 20 episodes is 521.5000
+408
+The reward at episode 408 is 360.0000, and the mean over the last 20 episodes is 521.5000
+409
+The reward at episode 409 is 600.0000, and the mean over the last 20 episodes is 541.5000
+410
+The reward at episode 410 is 480.0000, and the mean over the last 20 episodes is 493.5000
+411
+The reward at episode 411 is 480.0000, and the mean over the last 20 episodes is 508.5000
+412
+The reward at episode 412 is 420.0000, and the mean over the last 20 episodes is 513.5000
+413
+The reward at episode 413 is 360.0000, and the mean over the last 20 episodes is 502.5000
+414
+The reward at episode 414 is 240.0000, and the mean over the last 20 episodes is 492.5000
+415
+The reward at episode 415 is 760.0000, and the mean over the last 20 episodes is 503.5000
+416
+The reward at episode 416 is 2290.0000, and the mean over the last 20 episodes is 604.0000
+417
+The reward at episode 417 is 2300.0000, and the mean over the last 20 episodes is 701.0000
+418
+The reward at episode 418 is 720.0000, and the mean over the last 20 episodes is 698.0000
+419
+The reward at episode 419 is 990.0000, and the mean over the last 20 episodes is 730.5000
+420
+The reward at episode 420 is 540.0000, and the mean over the last 20 episodes is 738.5000
+421
+The reward at episode 421 is 320.0000, and the mean over the last 20 episodes is 686.5000
+422
+The reward at episode 422 is 140.0000, and the mean over the last 20 episodes is 667.5000
+423
+The reward at episode 423 is 520.0000, and the mean over the last 20 episodes is 686.5000
+424
+The reward at episode 424 is 380.0000, and the mean over the last 20 episodes is 687.5000
+425
+The reward at episode 425 is 300.0000, and the mean over the last 20 episodes is 675.5000
+426
+The reward at episode 426 is 600.0000, and the mean over the last 20 episodes is 683.5000
+427
+The reward at episode 427 is 3740.0000, and the mean over the last 20 episodes is 827.0000
+428
+The reward at episode 428 is 460.0000, and the mean over the last 20 episodes is 832.0000
+429
+The reward at episode 429 is 540.0000, and the mean over the last 20 episodes is 829.0000
+430
+The reward at episode 430 is 280.0000, and the mean over the last 20 episodes is 819.0000
+431
+The reward at episode 431 is 200.0000, and the mean over the last 20 episodes is 805.0000
+432
+The reward at episode 432 is 240.0000, and the mean over the last 20 episodes is 796.0000
+433
+The reward at episode 433 is 260.0000, and the mean over the last 20 episodes is 791.0000
+434
+The reward at episode 434 is 340.0000, and the mean over the last 20 episodes is 796.0000
+435
+The reward at episode 435 is 1250.0000, and the mean over the last 20 episodes is 820.5000
+436
+The reward at episode 436 is 180.0000, and the mean over the last 20 episodes is 715.0000
+437
+The reward at episode 437 is 1730.0000, and the mean over the last 20 episodes is 686.5000
+438
+The reward at episode 438 is 160.0000, and the mean over the last 20 episodes is 658.5000
+439
+The reward at episode 439 is 460.0000, and the mean over the last 20 episodes is 632.0000
+440
+The reward at episode 440 is 2810.0000, and the mean over the last 20 episodes is 745.5000
+441
+The reward at episode 441 is 420.0000, and the mean over the last 20 episodes is 750.5000
+442
+The reward at episode 442 is 320.0000, and the mean over the last 20 episodes is 759.5000
+443
+The reward at episode 443 is 400.0000, and the mean over the last 20 episodes is 753.5000
+444
+The reward at episode 444 is 1030.0000, and the mean over the last 20 episodes is 786.0000
+445
+The reward at episode 445 is 400.0000, and the mean over the last 20 episodes is 791.0000
+446
+The reward at episode 446 is 360.0000, and the mean over the last 20 episodes is 779.0000
+447
+The reward at episode 447 is 1330.0000, and the mean over the last 20 episodes is 658.5000
+448
+The reward at episode 448 is 580.0000, and the mean over the last 20 episodes is 664.5000
+449
+The reward at episode 449 is 160.0000, and the mean over the last 20 episodes is 645.5000
+450
+The reward at episode 450 is 420.0000, and the mean over the last 20 episodes is 652.5000
+451
+The reward at episode 451 is 540.0000, and the mean over the last 20 episodes is 669.5000
+452
+The reward at episode 452 is 200.0000, and the mean over the last 20 episodes is 667.5000
+453
+The reward at episode 453 is 320.0000, and the mean over the last 20 episodes is 670.5000
+454
+The reward at episode 454 is 320.0000, and the mean over the last 20 episodes is 669.5000
+455
+The reward at episode 455 is 460.0000, and the mean over the last 20 episodes is 630.0000
+456
+The reward at episode 456 is 520.0000, and the mean over the last 20 episodes is 647.0000
+457
+The reward at episode 457 is 260.0000, and the mean over the last 20 episodes is 573.5000
+458
+The reward at episode 458 is 2320.0000, and the mean over the last 20 episodes is 681.5000
+459
+The reward at episode 459 is 890.0000, and the mean over the last 20 episodes is 703.0000
+460
+The reward at episode 460 is 560.0000, and the mean over the last 20 episodes is 590.5000
+461
+The reward at episode 461 is 1840.0000, and the mean over the last 20 episodes is 661.5000
+462
+The reward at episode 462 is 580.0000, and the mean over the last 20 episodes is 674.5000
+463
+The reward at episode 463 is 990.0000, and the mean over the last 20 episodes is 704.0000
+464
+The reward at episode 464 is 930.0000, and the mean over the last 20 episodes is 699.0000
+465
+The reward at episode 465 is 1310.0000, and the mean over the last 20 episodes is 744.5000
+466
+The reward at episode 466 is 360.0000, and the mean over the last 20 episodes is 744.5000
+467
+The reward at episode 467 is 970.0000, and the mean over the last 20 episodes is 726.5000
+468
+The reward at episode 468 is 420.0000, and the mean over the last 20 episodes is 718.5000
+469
+The reward at episode 469 is 690.0000, and the mean over the last 20 episodes is 745.0000
+470
+The reward at episode 470 is 160.0000, and the mean over the last 20 episodes is 732.0000
+471
+The reward at episode 471 is 460.0000, and the mean over the last 20 episodes is 728.0000
+472
+The reward at episode 472 is 140.0000, and the mean over the last 20 episodes is 725.0000
+473
+The reward at episode 473 is 140.0000, and the mean over the last 20 episodes is 716.0000
+474
+The reward at episode 474 is 140.0000, and the mean over the last 20 episodes is 707.0000
+475
+The reward at episode 475 is 420.0000, and the mean over the last 20 episodes is 705.0000
+476
+The reward at episode 476 is 600.0000, and the mean over the last 20 episodes is 709.0000
+477
+The reward at episode 477 is 260.0000, and the mean over the last 20 episodes is 709.0000
+478
+The reward at episode 478 is 120.0000, and the mean over the last 20 episodes is 599.0000
+479
+The reward at episode 479 is 420.0000, and the mean over the last 20 episodes is 575.5000
+480
+The reward at episode 480 is 340.0000, and the mean over the last 20 episodes is 564.5000
+481
+The reward at episode 481 is 180.0000, and the mean over the last 20 episodes is 481.5000
+482
+The reward at episode 482 is 300.0000, and the mean over the last 20 episodes is 467.5000
+483
+The reward at episode 483 is 100.0000, and the mean over the last 20 episodes is 423.0000
+484
+The reward at episode 484 is 200.0000, and the mean over the last 20 episodes is 386.5000
+485
+The reward at episode 485 is 100.0000, and the mean over the last 20 episodes is 326.0000
+486
+The reward at episode 486 is 520.0000, and the mean over the last 20 episodes is 334.0000
+487
+The reward at episode 487 is 140.0000, and the mean over the last 20 episodes is 292.5000
+488
+The reward at episode 488 is 100.0000, and the mean over the last 20 episodes is 276.5000
+489
+The reward at episode 489 is 100.0000, and the mean over the last 20 episodes is 247.0000
+490
+The reward at episode 490 is 480.0000, and the mean over the last 20 episodes is 263.0000
+491
+The reward at episode 491 is 180.0000, and the mean over the last 20 episodes is 249.0000
+492
+The reward at episode 492 is 200.0000, and the mean over the last 20 episodes is 252.0000
+493
+The reward at episode 493 is 200.0000, and the mean over the last 20 episodes is 255.0000
+494
+The reward at episode 494 is 180.0000, and the mean over the last 20 episodes is 257.0000
+495
+The reward at episode 495 is 180.0000, and the mean over the last 20 episodes is 245.0000
+496
+The reward at episode 496 is 620.0000, and the mean over the last 20 episodes is 246.0000
+497
+The reward at episode 497 is 500.0000, and the mean over the last 20 episodes is 258.0000
+498
+The reward at episode 498 is 1840.0000, and the mean over the last 20 episodes is 344.0000
+499
+The reward at episode 499 is 280.0000, and the mean over the last 20 episodes is 337.0000
+500
+The reward at episode 500 is 1280.0000, and the mean over the last 20 episodes is 384.0000
+501
+The reward at episode 501 is 340.0000, and the mean over the last 20 episodes is 392.0000
+502
+The reward at episode 502 is 320.0000, and the mean over the last 20 episodes is 393.0000
+503
+The reward at episode 503 is 720.0000, and the mean over the last 20 episodes is 424.0000
+504
+The reward at episode 504 is 1280.0000, and the mean over the last 20 episodes is 478.0000
+505
+The reward at episode 505 is 1470.0000, and the mean over the last 20 episodes is 546.5000
+506
+The reward at episode 506 is 1820.0000, and the mean over the last 20 episodes is 611.5000
+507
+The reward at episode 507 is 700.0000, and the mean over the last 20 episodes is 639.5000
+508
+The reward at episode 508 is 400.0000, and the mean over the last 20 episodes is 654.5000
+509
+The reward at episode 509 is 870.0000, and the mean over the last 20 episodes is 693.0000
+510
+The reward at episode 510 is 1070.0000, and the mean over the last 20 episodes is 722.5000
+511
+The reward at episode 511 is 500.0000, and the mean over the last 20 episodes is 738.5000
+512
+The reward at episode 512 is 380.0000, and the mean over the last 20 episodes is 747.5000
+513
+The reward at episode 513 is 540.0000, and the mean over the last 20 episodes is 764.5000
+514
+The reward at episode 514 is 420.0000, and the mean over the last 20 episodes is 776.5000
+515
+The reward at episode 515 is 480.0000, and the mean over the last 20 episodes is 791.5000
+516
+The reward at episode 516 is 480.0000, and the mean over the last 20 episodes is 784.5000
+517
+The reward at episode 517 is 360.0000, and the mean over the last 20 episodes is 777.5000
+518
+The reward at episode 518 is 1030.0000, and the mean over the last 20 episodes is 737.0000
+519
+The reward at episode 519 is 930.0000, and the mean over the last 20 episodes is 769.5000
+520
+The reward at episode 520 is 1790.0000, and the mean over the last 20 episodes is 795.0000
+521
+The reward at episode 521 is 380.0000, and the mean over the last 20 episodes is 797.0000
+522
+The reward at episode 522 is 2960.0000, and the mean over the last 20 episodes is 929.0000
+523
+The reward at episode 523 is 3680.0000, and the mean over the last 20 episodes is 1077.0000
+524
+The reward at episode 524 is 220.0000, and the mean over the last 20 episodes is 1024.0000
+525
+The reward at episode 525 is 1820.0000, and the mean over the last 20 episodes is 1041.5000
+526
+The reward at episode 526 is 140.0000, and the mean over the last 20 episodes is 957.5000
+527
+The reward at episode 527 is 870.0000, and the mean over the last 20 episodes is 966.0000
+528
+The reward at episode 528 is 880.0000, and the mean over the last 20 episodes is 990.0000
+529
+The reward at episode 529 is 840.0000, and the mean over the last 20 episodes is 988.5000
+530
+The reward at episode 530 is 720.0000, and the mean over the last 20 episodes is 971.0000
+531
+The reward at episode 531 is 2400.0000, and the mean over the last 20 episodes is 1066.0000
+532
+The reward at episode 532 is 360.0000, and the mean over the last 20 episodes is 1065.0000
+533
+The reward at episode 533 is 540.0000, and the mean over the last 20 episodes is 1065.0000
+534
+The reward at episode 534 is 420.0000, and the mean over the last 20 episodes is 1065.0000
+535
+The reward at episode 535 is 340.0000, and the mean over the last 20 episodes is 1058.0000
+536
+The reward at episode 536 is 480.0000, and the mean over the last 20 episodes is 1058.0000
+537
+The reward at episode 537 is 950.0000, and the mean over the last 20 episodes is 1087.5000
+538
+The reward at episode 538 is 1020.0000, and the mean over the last 20 episodes is 1087.0000
+539
+The reward at episode 539 is 680.0000, and the mean over the last 20 episodes is 1074.5000
+540
+The reward at episode 540 is 500.0000, and the mean over the last 20 episodes is 1010.0000
+541
+The reward at episode 541 is 400.0000, and the mean over the last 20 episodes is 1011.0000
+542
+The reward at episode 542 is 540.0000, and the mean over the last 20 episodes is 890.0000
+543
+The reward at episode 543 is 920.0000, and the mean over the last 20 episodes is 752.0000
+544
+The reward at episode 544 is 600.0000, and the mean over the last 20 episodes is 771.0000
+545
+The reward at episode 545 is 480.0000, and the mean over the last 20 episodes is 704.0000
+546
+The reward at episode 546 is 340.0000, and the mean over the last 20 episodes is 714.0000
+547
+The reward at episode 547 is 360.0000, and the mean over the last 20 episodes is 688.5000
+548
+The reward at episode 548 is 180.0000, and the mean over the last 20 episodes is 653.5000
+549
+The reward at episode 549 is 440.0000, and the mean over the last 20 episodes is 633.5000
+550
+The reward at episode 550 is 200.0000, and the mean over the last 20 episodes is 607.5000
+551
+The reward at episode 551 is 830.0000, and the mean over the last 20 episodes is 529.0000
+552
+The reward at episode 552 is 400.0000, and the mean over the last 20 episodes is 531.0000
+553
+The reward at episode 553 is 560.0000, and the mean over the last 20 episodes is 532.0000
+554
+The reward at episode 554 is 140.0000, and the mean over the last 20 episodes is 518.0000
+555
+The reward at episode 555 is 280.0000, and the mean over the last 20 episodes is 515.0000
+556
+The reward at episode 556 is 280.0000, and the mean over the last 20 episodes is 505.0000
+557
+The reward at episode 557 is 500.0000, and the mean over the last 20 episodes is 482.5000
+558
+The reward at episode 558 is 440.0000, and the mean over the last 20 episodes is 453.5000
+559
+The reward at episode 559 is 1080.0000, and the mean over the last 20 episodes is 473.5000
+560
+The reward at episode 560 is 460.0000, and the mean over the last 20 episodes is 471.5000
+561
+The reward at episode 561 is 2040.0000, and the mean over the last 20 episodes is 553.5000
+562
+The reward at episode 562 is 480.0000, and the mean over the last 20 episodes is 550.5000
+563
+The reward at episode 563 is 1480.0000, and the mean over the last 20 episodes is 578.5000
+564
+The reward at episode 564 is 140.0000, and the mean over the last 20 episodes is 555.5000
+565
+The reward at episode 565 is 140.0000, and the mean over the last 20 episodes is 538.5000
+566
+The reward at episode 566 is 200.0000, and the mean over the last 20 episodes is 531.5000
+567
+The reward at episode 567 is 200.0000, and the mean over the last 20 episodes is 523.5000
+568
+The reward at episode 568 is 1730.0000, and the mean over the last 20 episodes is 601.0000
+569
+The reward at episode 569 is 1020.0000, and the mean over the last 20 episodes is 630.0000
+570
+The reward at episode 570 is 360.0000, and the mean over the last 20 episodes is 638.0000
+571
+The reward at episode 571 is 460.0000, and the mean over the last 20 episodes is 619.5000
+572
+The reward at episode 572 is 440.0000, and the mean over the last 20 episodes is 621.5000
+573
+The reward at episode 573 is 380.0000, and the mean over the last 20 episodes is 612.5000
+574
+The reward at episode 574 is 140.0000, and the mean over the last 20 episodes is 612.5000
+575
+The reward at episode 575 is 360.0000, and the mean over the last 20 episodes is 616.5000
+576
+The reward at episode 576 is 100.0000, and the mean over the last 20 episodes is 607.5000
+577
+The reward at episode 577 is 520.0000, and the mean over the last 20 episodes is 608.5000
+578
+The reward at episode 578 is 160.0000, and the mean over the last 20 episodes is 594.5000
+579
+The reward at episode 579 is 440.0000, and the mean over the last 20 episodes is 562.5000
+580
+The reward at episode 580 is 140.0000, and the mean over the last 20 episodes is 546.5000
+581
+The reward at episode 581 is 320.0000, and the mean over the last 20 episodes is 460.5000
+582
+The reward at episode 582 is 140.0000, and the mean over the last 20 episodes is 443.5000
+583
+The reward at episode 583 is 140.0000, and the mean over the last 20 episodes is 376.5000
+584
+The reward at episode 584 is 1370.0000, and the mean over the last 20 episodes is 438.0000
+585
+The reward at episode 585 is 360.0000, and the mean over the last 20 episodes is 449.0000
+586
+The reward at episode 586 is 200.0000, and the mean over the last 20 episodes is 449.0000
+587
+The reward at episode 587 is 420.0000, and the mean over the last 20 episodes is 460.0000
+588
+The reward at episode 588 is 440.0000, and the mean over the last 20 episodes is 395.5000
+589
+The reward at episode 589 is 440.0000, and the mean over the last 20 episodes is 366.5000
+590
+The reward at episode 590 is 280.0000, and the mean over the last 20 episodes is 362.5000
+591
+The reward at episode 591 is 140.0000, and the mean over the last 20 episodes is 346.5000
+592
+The reward at episode 592 is 400.0000, and the mean over the last 20 episodes is 344.5000
+593
+The reward at episode 593 is 200.0000, and the mean over the last 20 episodes is 335.5000
+594
+The reward at episode 594 is 500.0000, and the mean over the last 20 episodes is 353.5000
+595
+The reward at episode 595 is 480.0000, and the mean over the last 20 episodes is 359.5000
+596
+The reward at episode 596 is 280.0000, and the mean over the last 20 episodes is 368.5000
+597
+The reward at episode 597 is 560.0000, and the mean over the last 20 episodes is 370.5000
+598
+The reward at episode 598 is 480.0000, and the mean over the last 20 episodes is 386.5000
+599
+The reward at episode 599 is 3590.0000, and the mean over the last 20 episodes is 544.0000
+600
+The reward at episode 600 is 620.0000, and the mean over the last 20 episodes is 568.0000
+601
+The reward at episode 601 is 1130.0000, and the mean over the last 20 episodes is 608.5000
+602
+The reward at episode 602 is 320.0000, and the mean over the last 20 episodes is 617.5000
+603
+The reward at episode 603 is 360.0000, and the mean over the last 20 episodes is 628.5000
+604
+The reward at episode 604 is 540.0000, and the mean over the last 20 episodes is 587.0000
+605
+The reward at episode 605 is 280.0000, and the mean over the last 20 episodes is 583.0000
+606
+The reward at episode 606 is 360.0000, and the mean over the last 20 episodes is 591.0000
+607
+The reward at episode 607 is 400.0000, and the mean over the last 20 episodes is 590.0000
+608
+The reward at episode 608 is 360.0000, and the mean over the last 20 episodes is 586.0000
+609
+The reward at episode 609 is 950.0000, and the mean over the last 20 episodes is 611.5000
+610
+The reward at episode 610 is 300.0000, and the mean over the last 20 episodes is 612.5000
+611
+The reward at episode 611 is 200.0000, and the mean over the last 20 episodes is 615.5000
+612
+The reward at episode 612 is 1120.0000, and the mean over the last 20 episodes is 651.5000
+613
+The reward at episode 613 is 560.0000, and the mean over the last 20 episodes is 669.5000
+614
+The reward at episode 614 is 220.0000, and the mean over the last 20 episodes is 655.5000
+615
+The reward at episode 615 is 420.0000, and the mean over the last 20 episodes is 652.5000
+616
+The reward at episode 616 is 100.0000, and the mean over the last 20 episodes is 643.5000
+617
+The reward at episode 617 is 340.0000, and the mean over the last 20 episodes is 632.5000
+618
+The reward at episode 618 is 200.0000, and the mean over the last 20 episodes is 618.5000
+619
+The reward at episode 619 is 200.0000, and the mean over the last 20 episodes is 449.0000
+620
+The reward at episode 620 is 140.0000, and the mean over the last 20 episodes is 425.0000
+621
+The reward at episode 621 is 890.0000, and the mean over the last 20 episodes is 413.0000
+622
+The reward at episode 622 is 140.0000, and the mean over the last 20 episodes is 404.0000
+623
+The reward at episode 623 is 320.0000, and the mean over the last 20 episodes is 402.0000
+624
+The reward at episode 624 is 180.0000, and the mean over the last 20 episodes is 384.0000
+625
+The reward at episode 625 is 910.0000, and the mean over the last 20 episodes is 415.5000
+626
+The reward at episode 626 is 520.0000, and the mean over the last 20 episodes is 423.5000
+627
+The reward at episode 627 is 2010.0000, and the mean over the last 20 episodes is 504.0000
+628
+The reward at episode 628 is 1190.0000, and the mean over the last 20 episodes is 545.5000
+629
+The reward at episode 629 is 1750.0000, and the mean over the last 20 episodes is 585.5000
+630
+The reward at episode 630 is 160.0000, and the mean over the last 20 episodes is 578.5000
+631
+The reward at episode 631 is 380.0000, and the mean over the last 20 episodes is 587.5000
+632
+The reward at episode 632 is 380.0000, and the mean over the last 20 episodes is 550.5000
+633
+The reward at episode 633 is 420.0000, and the mean over the last 20 episodes is 543.5000
+634
+The reward at episode 634 is 200.0000, and the mean over the last 20 episodes is 542.5000
+635
+The reward at episode 635 is 340.0000, and the mean over the last 20 episodes is 538.5000
+636
+The reward at episode 636 is 1460.0000, and the mean over the last 20 episodes is 606.5000
+637
+The reward at episode 637 is 140.0000, and the mean over the last 20 episodes is 596.5000
+638
+The reward at episode 638 is 320.0000, and the mean over the last 20 episodes is 602.5000
+639
+The reward at episode 639 is 920.0000, and the mean over the last 20 episodes is 638.5000
+640
+The reward at episode 640 is 220.0000, and the mean over the last 20 episodes is 642.5000
+641
+The reward at episode 641 is 660.0000, and the mean over the last 20 episodes is 631.0000
+642
+The reward at episode 642 is 420.0000, and the mean over the last 20 episodes is 645.0000
+643
+The reward at episode 643 is 380.0000, and the mean over the last 20 episodes is 648.0000
+644
+The reward at episode 644 is 340.0000, and the mean over the last 20 episodes is 656.0000
+645
+The reward at episode 645 is 2170.0000, and the mean over the last 20 episodes is 719.0000
+646
+The reward at episode 646 is 1560.0000, and the mean over the last 20 episodes is 771.0000
+647
+The reward at episode 647 is 660.0000, and the mean over the last 20 episodes is 703.5000
+648
+The reward at episode 648 is 1530.0000, and the mean over the last 20 episodes is 720.5000
+649
+The reward at episode 649 is 1220.0000, and the mean over the last 20 episodes is 694.0000
+650
+The reward at episode 650 is 420.0000, and the mean over the last 20 episodes is 707.0000
+651
+The reward at episode 651 is 280.0000, and the mean over the last 20 episodes is 702.0000
+652
+The reward at episode 652 is 200.0000, and the mean over the last 20 episodes is 693.0000
+653
+The reward at episode 653 is 1150.0000, and the mean over the last 20 episodes is 729.5000
+654
+The reward at episode 654 is 3860.0000, and the mean over the last 20 episodes is 912.5000
+655
+The reward at episode 655 is 1320.0000, and the mean over the last 20 episodes is 961.5000
+656
+The reward at episode 656 is 480.0000, and the mean over the last 20 episodes is 912.5000
+657
+The reward at episode 657 is 1050.0000, and the mean over the last 20 episodes is 958.0000
+658
+The reward at episode 658 is 140.0000, and the mean over the last 20 episodes is 949.0000
+659
+The reward at episode 659 is 3210.0000, and the mean over the last 20 episodes is 1063.5000
+660
+The reward at episode 660 is 1060.0000, and the mean over the last 20 episodes is 1105.5000
+661
+The reward at episode 661 is 440.0000, and the mean over the last 20 episodes is 1094.5000
+662
+The reward at episode 662 is 1070.0000, and the mean over the last 20 episodes is 1127.0000
+663
+The reward at episode 663 is 940.0000, and the mean over the last 20 episodes is 1155.0000
+664
+The reward at episode 664 is 1700.0000, and the mean over the last 20 episodes is 1223.0000
+665
+The reward at episode 665 is 140.0000, and the mean over the last 20 episodes is 1121.5000
+666
+The reward at episode 666 is 600.0000, and the mean over the last 20 episodes is 1073.5000
+667
+The reward at episode 667 is 1860.0000, and the mean over the last 20 episodes is 1133.5000
+668
+The reward at episode 668 is 2410.0000, and the mean over the last 20 episodes is 1177.5000
+669
+The reward at episode 669 is 2540.0000, and the mean over the last 20 episodes is 1243.5000
+670
+The reward at episode 670 is 990.0000, and the mean over the last 20 episodes is 1272.0000
+671
+The reward at episode 671 is 380.0000, and the mean over the last 20 episodes is 1277.0000
+672
+The reward at episode 672 is 360.0000, and the mean over the last 20 episodes is 1285.0000
+673
+The reward at episode 673 is 440.0000, and the mean over the last 20 episodes is 1249.5000
+674
+The reward at episode 674 is 620.0000, and the mean over the last 20 episodes is 1087.5000
+675
+The reward at episode 675 is 830.0000, and the mean over the last 20 episodes is 1063.0000
+676
+The reward at episode 676 is 260.0000, and the mean over the last 20 episodes is 1052.0000
+677
+The reward at episode 677 is 420.0000, and the mean over the last 20 episodes is 1020.5000
+678
+The reward at episode 678 is 480.0000, and the mean over the last 20 episodes is 1037.5000
+679
+The reward at episode 679 is 360.0000, and the mean over the last 20 episodes is 895.0000
+680
+The reward at episode 680 is 280.0000, and the mean over the last 20 episodes is 856.0000
+681
+The reward at episode 681 is 740.0000, and the mean over the last 20 episodes is 871.0000
+682
+The reward at episode 682 is 420.0000, and the mean over the last 20 episodes is 838.5000
+683
+The reward at episode 683 is 1340.0000, and the mean over the last 20 episodes is 858.5000
+684
+The reward at episode 684 is 990.0000, and the mean over the last 20 episodes is 823.0000
+685
+The reward at episode 685 is 1610.0000, and the mean over the last 20 episodes is 896.5000
+686
+The reward at episode 686 is 480.0000, and the mean over the last 20 episodes is 890.5000
+687
+The reward at episode 687 is 220.0000, and the mean over the last 20 episodes is 808.5000
+688
+The reward at episode 688 is 480.0000, and the mean over the last 20 episodes is 712.0000
+689
+The reward at episode 689 is 720.0000, and the mean over the last 20 episodes is 621.0000
+690
+The reward at episode 690 is 680.0000, and the mean over the last 20 episodes is 605.5000
+691
+The reward at episode 691 is 200.0000, and the mean over the last 20 episodes is 596.5000
+692
+The reward at episode 692 is 520.0000, and the mean over the last 20 episodes is 604.5000
+693
+The reward at episode 693 is 660.0000, and the mean over the last 20 episodes is 615.5000
+694
+The reward at episode 694 is 930.0000, and the mean over the last 20 episodes is 631.0000
+695
+The reward at episode 695 is 1980.0000, and the mean over the last 20 episodes is 688.5000
+696
+The reward at episode 696 is 1530.0000, and the mean over the last 20 episodes is 752.0000
+697
+The reward at episode 697 is 260.0000, and the mean over the last 20 episodes is 744.0000
+698
+The reward at episode 698 is 2950.0000, and the mean over the last 20 episodes is 867.5000
+699
+The reward at episode 699 is 500.0000, and the mean over the last 20 episodes is 874.5000
+700
+The reward at episode 700 is 600.0000, and the mean over the last 20 episodes is 890.5000
+701
+The reward at episode 701 is 420.0000, and the mean over the last 20 episodes is 874.5000
+702
+The reward at episode 702 is 200.0000, and the mean over the last 20 episodes is 863.5000
+703
+The reward at episode 703 is 2480.0000, and the mean over the last 20 episodes is 920.5000
+704
+The reward at episode 704 is 2090.0000, and the mean over the last 20 episodes is 975.5000
+705
+The reward at episode 705 is 400.0000, and the mean over the last 20 episodes is 915.0000
+706
+The reward at episode 706 is 320.0000, and the mean over the last 20 episodes is 907.0000
+707
+The reward at episode 707 is 460.0000, and the mean over the last 20 episodes is 919.0000
+708
+The reward at episode 708 is 380.0000, and the mean over the last 20 episodes is 914.0000
+709
+The reward at episode 709 is 340.0000, and the mean over the last 20 episodes is 895.0000
+710
+The reward at episode 710 is 200.0000, and the mean over the last 20 episodes is 871.0000
+711
+The reward at episode 711 is 1840.0000, and the mean over the last 20 episodes is 953.0000
+712
+The reward at episode 712 is 2200.0000, and the mean over the last 20 episodes is 1037.0000
+713
+The reward at episode 713 is 990.0000, and the mean over the last 20 episodes is 1053.5000
+714
+The reward at episode 714 is 260.0000, and the mean over the last 20 episodes is 1020.0000
+715
+The reward at episode 715 is 500.0000, and the mean over the last 20 episodes is 946.0000
+716
+The reward at episode 716 is 260.0000, and the mean over the last 20 episodes is 882.5000
+717
+The reward at episode 717 is 1270.0000, and the mean over the last 20 episodes is 933.0000
+718
+The reward at episode 718 is 1460.0000, and the mean over the last 20 episodes is 858.5000
+719
+The reward at episode 719 is 200.0000, and the mean over the last 20 episodes is 843.5000
+720
+The reward at episode 720 is 200.0000, and the mean over the last 20 episodes is 823.5000
+721
+The reward at episode 721 is 520.0000, and the mean over the last 20 episodes is 828.5000
+722
+The reward at episode 722 is 200.0000, and the mean over the last 20 episodes is 828.5000
+723
+The reward at episode 723 is 460.0000, and the mean over the last 20 episodes is 727.5000
+724
+The reward at episode 724 is 540.0000, and the mean over the last 20 episodes is 650.0000
+725
+The reward at episode 725 is 180.0000, and the mean over the last 20 episodes is 639.0000
+726
+The reward at episode 726 is 480.0000, and the mean over the last 20 episodes is 647.0000
+727
+The reward at episode 727 is 1030.0000, and the mean over the last 20 episodes is 675.5000
+728
+The reward at episode 728 is 340.0000, and the mean over the last 20 episodes is 673.5000
+729
+The reward at episode 729 is 420.0000, and the mean over the last 20 episodes is 677.5000
+730
+The reward at episode 730 is 420.0000, and the mean over the last 20 episodes is 688.5000
+731
+The reward at episode 731 is 200.0000, and the mean over the last 20 episodes is 606.5000
+732
+The reward at episode 732 is 500.0000, and the mean over the last 20 episodes is 521.5000
+733
+The reward at episode 733 is 460.0000, and the mean over the last 20 episodes is 495.0000
+734
+The reward at episode 734 is 200.0000, and the mean over the last 20 episodes is 492.0000
+735
+The reward at episode 735 is 600.0000, and the mean over the last 20 episodes is 497.0000
+736
+The reward at episode 736 is 360.0000, and the mean over the last 20 episodes is 502.0000
+737
+The reward at episode 737 is 480.0000, and the mean over the last 20 episodes is 462.5000
+738
+The reward at episode 738 is 420.0000, and the mean over the last 20 episodes is 410.5000
+739
+The reward at episode 739 is 660.0000, and the mean over the last 20 episodes is 433.5000
+740
+The reward at episode 740 is 260.0000, and the mean over the last 20 episodes is 436.5000
+741
+The reward at episode 741 is 420.0000, and the mean over the last 20 episodes is 431.5000
+742
+The reward at episode 742 is 1800.0000, and the mean over the last 20 episodes is 511.5000
+743
+The reward at episode 743 is 620.0000, and the mean over the last 20 episodes is 519.5000
+744
+The reward at episode 744 is 940.0000, and the mean over the last 20 episodes is 539.5000
+745
+The reward at episode 745 is 500.0000, and the mean over the last 20 episodes is 555.5000
+746
+The reward at episode 746 is 600.0000, and the mean over the last 20 episodes is 561.5000
+747
+The reward at episode 747 is 500.0000, and the mean over the last 20 episodes is 535.0000
+748
+The reward at episode 748 is 440.0000, and the mean over the last 20 episodes is 540.0000
+749
+The reward at episode 749 is 1030.0000, and the mean over the last 20 episodes is 570.5000
+750
+The reward at episode 750 is 1320.0000, and the mean over the last 20 episodes is 615.5000
+751
+The reward at episode 751 is 500.0000, and the mean over the last 20 episodes is 630.5000
+752
+The reward at episode 752 is 440.0000, and the mean over the last 20 episodes is 627.5000
+753
+The reward at episode 753 is 420.0000, and the mean over the last 20 episodes is 625.5000
+754
+The reward at episode 754 is 380.0000, and the mean over the last 20 episodes is 634.5000
+755
+The reward at episode 755 is 420.0000, and the mean over the last 20 episodes is 625.5000
+756
+The reward at episode 756 is 420.0000, and the mean over the last 20 episodes is 628.5000
+757
+The reward at episode 757 is 320.0000, and the mean over the last 20 episodes is 620.5000
+758
+The reward at episode 758 is 200.0000, and the mean over the last 20 episodes is 609.5000
+759
+The reward at episode 759 is 160.0000, and the mean over the last 20 episodes is 584.5000
+760
+The reward at episode 760 is 140.0000, and the mean over the last 20 episodes is 578.5000
+761
+The reward at episode 761 is 140.0000, and the mean over the last 20 episodes is 564.5000
+762
+The reward at episode 762 is 140.0000, and the mean over the last 20 episodes is 481.5000
+763
+The reward at episode 763 is 520.0000, and the mean over the last 20 episodes is 476.5000
+764
+The reward at episode 764 is 380.0000, and the mean over the last 20 episodes is 448.5000
+765
+The reward at episode 765 is 140.0000, and the mean over the last 20 episodes is 430.5000
+766
+The reward at episode 766 is 180.0000, and the mean over the last 20 episodes is 409.5000
+767
+The reward at episode 767 is 360.0000, and the mean over the last 20 episodes is 402.5000
+768
+The reward at episode 768 is 320.0000, and the mean over the last 20 episodes is 396.5000
+769
+The reward at episode 769 is 540.0000, and the mean over the last 20 episodes is 372.0000
+770
+The reward at episode 770 is 400.0000, and the mean over the last 20 episodes is 326.0000
+771
+The reward at episode 771 is 460.0000, and the mean over the last 20 episodes is 324.0000
+772
+The reward at episode 772 is 260.0000, and the mean over the last 20 episodes is 315.0000
+773
+The reward at episode 773 is 380.0000, and the mean over the last 20 episodes is 313.0000
+774
+The reward at episode 774 is 500.0000, and the mean over the last 20 episodes is 319.0000
+775
+The reward at episode 775 is 220.0000, and the mean over the last 20 episodes is 309.0000
+776
+The reward at episode 776 is 520.0000, and the mean over the last 20 episodes is 314.0000
+777
+The reward at episode 777 is 340.0000, and the mean over the last 20 episodes is 315.0000
+778
+The reward at episode 778 is 120.0000, and the mean over the last 20 episodes is 311.0000
+779
+The reward at episode 779 is 360.0000, and the mean over the last 20 episodes is 321.0000
+780
+The reward at episode 780 is 200.0000, and the mean over the last 20 episodes is 324.0000
+781
+The reward at episode 781 is 800.0000, and the mean over the last 20 episodes is 357.0000
+782
+The reward at episode 782 is 1540.0000, and the mean over the last 20 episodes is 427.0000
+783
+The reward at episode 783 is 600.0000, and the mean over the last 20 episodes is 431.0000
+784
+The reward at episode 784 is 540.0000, and the mean over the last 20 episodes is 439.0000
+785
+The reward at episode 785 is 460.0000, and the mean over the last 20 episodes is 455.0000
+786
+The reward at episode 786 is 890.0000, and the mean over the last 20 episodes is 490.5000
+787
+The reward at episode 787 is 220.0000, and the mean over the last 20 episodes is 483.5000
+788
+The reward at episode 788 is 400.0000, and the mean over the last 20 episodes is 487.5000
+789
+The reward at episode 789 is 500.0000, and the mean over the last 20 episodes is 485.5000
+790
+The reward at episode 790 is 480.0000, and the mean over the last 20 episodes is 489.5000
+791
+The reward at episode 791 is 440.0000, and the mean over the last 20 episodes is 488.5000
+792
+The reward at episode 792 is 360.0000, and the mean over the last 20 episodes is 493.5000
+793
+The reward at episode 793 is 200.0000, and the mean over the last 20 episodes is 484.5000
+794
+The reward at episode 794 is 780.0000, and the mean over the last 20 episodes is 498.5000
+795
+The reward at episode 795 is 500.0000, and the mean over the last 20 episodes is 512.5000
+796
+The reward at episode 796 is 960.0000, and the mean over the last 20 episodes is 534.5000
+797
+The reward at episode 797 is 460.0000, and the mean over the last 20 episodes is 540.5000
+798
+The reward at episode 798 is 200.0000, and the mean over the last 20 episodes is 544.5000
+799
+The reward at episode 799 is 580.0000, and the mean over the last 20 episodes is 555.5000
+800
+The reward at episode 800 is 1610.0000, and the mean over the last 20 episodes is 626.0000
+801
+The reward at episode 801 is 560.0000, and the mean over the last 20 episodes is 614.0000
+802
+The reward at episode 802 is 680.0000, and the mean over the last 20 episodes is 571.0000
+803
+The reward at episode 803 is 280.0000, and the mean over the last 20 episodes is 555.0000
+804
+The reward at episode 804 is 480.0000, and the mean over the last 20 episodes is 552.0000
+805
+The reward at episode 805 is 300.0000, and the mean over the last 20 episodes is 544.0000
+806
+The reward at episode 806 is 240.0000, and the mean over the last 20 episodes is 511.5000
+807
+The reward at episode 807 is 300.0000, and the mean over the last 20 episodes is 515.5000
+808
+The reward at episode 808 is 460.0000, and the mean over the last 20 episodes is 518.5000
+809
+The reward at episode 809 is 1730.0000, and the mean over the last 20 episodes is 580.0000
+810
+The reward at episode 810 is 340.0000, and the mean over the last 20 episodes is 573.0000
+811
+The reward at episode 811 is 460.0000, and the mean over the last 20 episodes is 574.0000
+812
+The reward at episode 812 is 420.0000, and the mean over the last 20 episodes is 577.0000
+813
+The reward at episode 813 is 440.0000, and the mean over the last 20 episodes is 589.0000
+814
+The reward at episode 814 is 520.0000, and the mean over the last 20 episodes is 576.0000
+815
+The reward at episode 815 is 480.0000, and the mean over the last 20 episodes is 575.0000
+816
+The reward at episode 816 is 620.0000, and the mean over the last 20 episodes is 558.0000
+817
+The reward at episode 817 is 1540.0000, and the mean over the last 20 episodes is 612.0000
+818
+The reward at episode 818 is 460.0000, and the mean over the last 20 episodes is 625.0000
+819
+The reward at episode 819 is 180.0000, and the mean over the last 20 episodes is 605.0000
+820
+The reward at episode 820 is 500.0000, and the mean over the last 20 episodes is 549.5000
+821
+The reward at episode 821 is 360.0000, and the mean over the last 20 episodes is 539.5000
+822
+The reward at episode 822 is 480.0000, and the mean over the last 20 episodes is 529.5000
+823
+The reward at episode 823 is 200.0000, and the mean over the last 20 episodes is 525.5000
+824
+The reward at episode 824 is 260.0000, and the mean over the last 20 episodes is 514.5000
+825
+The reward at episode 825 is 360.0000, and the mean over the last 20 episodes is 517.5000
+826
+The reward at episode 826 is 260.0000, and the mean over the last 20 episodes is 518.5000
+827
+The reward at episode 827 is 1050.0000, and the mean over the last 20 episodes is 556.0000
+828
+The reward at episode 828 is 220.0000, and the mean over the last 20 episodes is 544.0000
+829
+The reward at episode 829 is 200.0000, and the mean over the last 20 episodes is 467.5000
+830
+The reward at episode 830 is 2470.0000, and the mean over the last 20 episodes is 574.0000
+831
+The reward at episode 831 is 420.0000, and the mean over the last 20 episodes is 572.0000
+832
+The reward at episode 832 is 580.0000, and the mean over the last 20 episodes is 580.0000
+833
+The reward at episode 833 is 600.0000, and the mean over the last 20 episodes is 588.0000
+834
+The reward at episode 834 is 260.0000, and the mean over the last 20 episodes is 575.0000
+835
+The reward at episode 835 is 580.0000, and the mean over the last 20 episodes is 580.0000
+836
+The reward at episode 836 is 520.0000, and the mean over the last 20 episodes is 575.0000
+837
+The reward at episode 837 is 1370.0000, and the mean over the last 20 episodes is 566.5000
+838
+The reward at episode 838 is 320.0000, and the mean over the last 20 episodes is 559.5000
+839
+The reward at episode 839 is 580.0000, and the mean over the last 20 episodes is 579.5000
+840
+The reward at episode 840 is 990.0000, and the mean over the last 20 episodes is 604.0000
+841
+The reward at episode 841 is 400.0000, and the mean over the last 20 episodes is 606.0000
+842
+The reward at episode 842 is 520.0000, and the mean over the last 20 episodes is 608.0000
+843
+The reward at episode 843 is 3310.0000, and the mean over the last 20 episodes is 763.5000
+844
+The reward at episode 844 is 540.0000, and the mean over the last 20 episodes is 777.5000
+845
+The reward at episode 845 is 220.0000, and the mean over the last 20 episodes is 770.5000
+846
+The reward at episode 846 is 810.0000, and the mean over the last 20 episodes is 798.0000
+847
+The reward at episode 847 is 1310.0000, and the mean over the last 20 episodes is 811.0000
+848
+The reward at episode 848 is 540.0000, and the mean over the last 20 episodes is 827.0000
+849
+The reward at episode 849 is 620.0000, and the mean over the last 20 episodes is 848.0000
+850
+The reward at episode 850 is 540.0000, and the mean over the last 20 episodes is 751.5000
+851
+The reward at episode 851 is 1800.0000, and the mean over the last 20 episodes is 820.5000
+852
+The reward at episode 852 is 440.0000, and the mean over the last 20 episodes is 813.5000
+853
+The reward at episode 853 is 280.0000, and the mean over the last 20 episodes is 797.5000
+854
+The reward at episode 854 is 400.0000, and the mean over the last 20 episodes is 804.5000
+855
+The reward at episode 855 is 200.0000, and the mean over the last 20 episodes is 785.5000
+856
+The reward at episode 856 is 480.0000, and the mean over the last 20 episodes is 783.5000
+857
+The reward at episode 857 is 320.0000, and the mean over the last 20 episodes is 731.0000
+858
+The reward at episode 858 is 1690.0000, and the mean over the last 20 episodes is 799.5000
+859
+The reward at episode 859 is 400.0000, and the mean over the last 20 episodes is 790.5000
+860
+The reward at episode 860 is 620.0000, and the mean over the last 20 episodes is 772.0000
+861
+The reward at episode 861 is 220.0000, and the mean over the last 20 episodes is 763.0000
+862
+The reward at episode 862 is 460.0000, and the mean over the last 20 episodes is 760.0000
+863
+The reward at episode 863 is 420.0000, and the mean over the last 20 episodes is 615.5000
+864
+The reward at episode 864 is 480.0000, and the mean over the last 20 episodes is 612.5000
+865
+The reward at episode 865 is 640.0000, and the mean over the last 20 episodes is 633.5000
+866
+The reward at episode 866 is 420.0000, and the mean over the last 20 episodes is 614.0000
+867
+The reward at episode 867 is 400.0000, and the mean over the last 20 episodes is 568.5000
+868
+The reward at episode 868 is 180.0000, and the mean over the last 20 episodes is 550.5000
+869
+The reward at episode 869 is 440.0000, and the mean over the last 20 episodes is 541.5000
+870
+The reward at episode 870 is 320.0000, and the mean over the last 20 episodes is 530.5000
+871
+The reward at episode 871 is 340.0000, and the mean over the last 20 episodes is 457.5000
+872
+The reward at episode 872 is 460.0000, and the mean over the last 20 episodes is 458.5000
+873
+The reward at episode 873 is 480.0000, and the mean over the last 20 episodes is 468.5000
+874
+The reward at episode 874 is 480.0000, and the mean over the last 20 episodes is 472.5000
+875
+The reward at episode 875 is 960.0000, and the mean over the last 20 episodes is 510.5000
+876
+The reward at episode 876 is 580.0000, and the mean over the last 20 episodes is 515.5000
+877
+The reward at episode 877 is 520.0000, and the mean over the last 20 episodes is 525.5000
+878
+The reward at episode 878 is 900.0000, and the mean over the last 20 episodes is 486.0000
+879
+The reward at episode 879 is 360.0000, and the mean over the last 20 episodes is 484.0000
+880
+The reward at episode 880 is 280.0000, and the mean over the last 20 episodes is 467.0000
+881
+The reward at episode 881 is 260.0000, and the mean over the last 20 episodes is 469.0000
+882
+The reward at episode 882 is 480.0000, and the mean over the last 20 episodes is 470.0000
+883
+The reward at episode 883 is 280.0000, and the mean over the last 20 episodes is 463.0000
+884
+The reward at episode 884 is 460.0000, and the mean over the last 20 episodes is 462.0000
+885
+The reward at episode 885 is 260.0000, and the mean over the last 20 episodes is 443.0000
+886
+The reward at episode 886 is 140.0000, and the mean over the last 20 episodes is 429.0000
+887
+The reward at episode 887 is 300.0000, and the mean over the last 20 episodes is 424.0000
+888
+The reward at episode 888 is 540.0000, and the mean over the last 20 episodes is 442.0000
+889
+The reward at episode 889 is 420.0000, and the mean over the last 20 episodes is 441.0000
+890
+The reward at episode 890 is 480.0000, and the mean over the last 20 episodes is 449.0000
+891
+The reward at episode 891 is 200.0000, and the mean over the last 20 episodes is 442.0000
+892
+The reward at episode 892 is 1630.0000, and the mean over the last 20 episodes is 500.5000
+893
+The reward at episode 893 is 520.0000, and the mean over the last 20 episodes is 502.5000
+894
+The reward at episode 894 is 560.0000, and the mean over the last 20 episodes is 506.5000
+895
+The reward at episode 895 is 850.0000, and the mean over the last 20 episodes is 501.0000
+896
+The reward at episode 896 is 300.0000, and the mean over the last 20 episodes is 487.0000
+897
+The reward at episode 897 is 440.0000, and the mean over the last 20 episodes is 483.0000
+898
+The reward at episode 898 is 140.0000, and the mean over the last 20 episodes is 445.0000
+899
+The reward at episode 899 is 460.0000, and the mean over the last 20 episodes is 450.0000
+900
+The reward at episode 900 is 260.0000, and the mean over the last 20 episodes is 449.0000
+901
+The reward at episode 901 is 460.0000, and the mean over the last 20 episodes is 459.0000
+902
+The reward at episode 902 is 1570.0000, and the mean over the last 20 episodes is 513.5000
+903
+The reward at episode 903 is 240.0000, and the mean over the last 20 episodes is 511.5000
+904
+The reward at episode 904 is 360.0000, and the mean over the last 20 episodes is 506.5000
+905
+The reward at episode 905 is 500.0000, and the mean over the last 20 episodes is 518.5000
+906
+The reward at episode 906 is 400.0000, and the mean over the last 20 episodes is 531.5000
+907
+The reward at episode 907 is 360.0000, and the mean over the last 20 episodes is 534.5000
+908
+The reward at episode 908 is 580.0000, and the mean over the last 20 episodes is 536.5000
+909
+The reward at episode 909 is 660.0000, and the mean over the last 20 episodes is 548.5000
+910
+The reward at episode 910 is 520.0000, and the mean over the last 20 episodes is 550.5000
+911
+The reward at episode 911 is 600.0000, and the mean over the last 20 episodes is 570.5000
+912
+The reward at episode 912 is 1420.0000, and the mean over the last 20 episodes is 560.0000
+913
+The reward at episode 913 is 1850.0000, and the mean over the last 20 episodes is 626.5000
+914
+The reward at episode 914 is 320.0000, and the mean over the last 20 episodes is 614.5000
+915
+The reward at episode 915 is 380.0000, and the mean over the last 20 episodes is 591.0000
+916
+The reward at episode 916 is 1100.0000, and the mean over the last 20 episodes is 631.0000
+917
+The reward at episode 917 is 1890.0000, and the mean over the last 20 episodes is 703.5000
+918
+The reward at episode 918 is 1410.0000, and the mean over the last 20 episodes is 767.0000
+919
+The reward at episode 919 is 400.0000, and the mean over the last 20 episodes is 764.0000
+920
+The reward at episode 920 is 340.0000, and the mean over the last 20 episodes is 768.0000
+921
+The reward at episode 921 is 1900.0000, and the mean over the last 20 episodes is 840.0000
+922
+The reward at episode 922 is 2590.0000, and the mean over the last 20 episodes is 891.0000
+923
+The reward at episode 923 is 1040.0000, and the mean over the last 20 episodes is 931.0000
+924
+The reward at episode 924 is 440.0000, and the mean over the last 20 episodes is 935.0000
+925
+The reward at episode 925 is 2000.0000, and the mean over the last 20 episodes is 1010.0000
+926
+The reward at episode 926 is 400.0000, and the mean over the last 20 episodes is 1010.0000
+927
+The reward at episode 927 is 2170.0000, and the mean over the last 20 episodes is 1100.5000
+928
+The reward at episode 928 is 560.0000, and the mean over the last 20 episodes is 1099.5000
+929
+The reward at episode 929 is 2170.0000, and the mean over the last 20 episodes is 1175.0000
+930
+The reward at episode 930 is 340.0000, and the mean over the last 20 episodes is 1166.0000
+931
+The reward at episode 931 is 900.0000, and the mean over the last 20 episodes is 1181.0000
+932
+The reward at episode 932 is 200.0000, and the mean over the last 20 episodes is 1120.0000
+933
+The reward at episode 933 is 1270.0000, and the mean over the last 20 episodes is 1091.0000
+934
+The reward at episode 934 is 950.0000, and the mean over the last 20 episodes is 1122.5000
+935
+The reward at episode 935 is 1870.0000, and the mean over the last 20 episodes is 1197.0000
+936
+The reward at episode 936 is 1520.0000, and the mean over the last 20 episodes is 1218.0000
+937
+The reward at episode 937 is 950.0000, and the mean over the last 20 episodes is 1171.0000
+938
+The reward at episode 938 is 300.0000, and the mean over the last 20 episodes is 1115.5000
+939
+The reward at episode 939 is 2260.0000, and the mean over the last 20 episodes is 1208.5000
+940
+The reward at episode 940 is 2480.0000, and the mean over the last 20 episodes is 1315.5000
+941
+The reward at episode 941 is 3040.0000, and the mean over the last 20 episodes is 1372.5000
+942
+The reward at episode 942 is 940.0000, and the mean over the last 20 episodes is 1290.0000
+943
+The reward at episode 943 is 360.0000, and the mean over the last 20 episodes is 1256.0000
+944
+The reward at episode 944 is 1370.0000, and the mean over the last 20 episodes is 1302.5000
+945
+The reward at episode 945 is 1290.0000, and the mean over the last 20 episodes is 1267.0000
+946
+The reward at episode 946 is 2380.0000, and the mean over the last 20 episodes is 1366.0000
+947
+The reward at episode 947 is 520.0000, and the mean over the last 20 episodes is 1283.5000
+948
+The reward at episode 948 is 500.0000, and the mean over the last 20 episodes is 1280.5000
+949
+The reward at episode 949 is 1260.0000, and the mean over the last 20 episodes is 1235.0000
+950
+The reward at episode 950 is 360.0000, and the mean over the last 20 episodes is 1236.0000
+951
+The reward at episode 951 is 1410.0000, and the mean over the last 20 episodes is 1261.5000
+952
+The reward at episode 952 is 400.0000, and the mean over the last 20 episodes is 1271.5000
+953
+The reward at episode 953 is 2860.0000, and the mean over the last 20 episodes is 1351.0000
+954
+The reward at episode 954 is 480.0000, and the mean over the last 20 episodes is 1327.5000
+955
+The reward at episode 955 is 260.0000, and the mean over the last 20 episodes is 1247.0000
+956
+The reward at episode 956 is 500.0000, and the mean over the last 20 episodes is 1196.0000
+957
+The reward at episode 957 is 380.0000, and the mean over the last 20 episodes is 1167.5000
+958
+The reward at episode 958 is 2230.0000, and the mean over the last 20 episodes is 1264.0000
+959
+The reward at episode 959 is 1400.0000, and the mean over the last 20 episodes is 1221.0000
+960
+The reward at episode 960 is 1880.0000, and the mean over the last 20 episodes is 1191.0000
+961
+The reward at episode 961 is 540.0000, and the mean over the last 20 episodes is 1066.0000
+962
+The reward at episode 962 is 600.0000, and the mean over the last 20 episodes is 1049.0000
+963
+The reward at episode 963 is 320.0000, and the mean over the last 20 episodes is 1047.0000
+964
+The reward at episode 964 is 920.0000, and the mean over the last 20 episodes is 1024.5000
+965
+The reward at episode 965 is 1380.0000, and the mean over the last 20 episodes is 1029.0000
+966
+The reward at episode 966 is 520.0000, and the mean over the last 20 episodes is 936.0000
+967
+The reward at episode 967 is 680.0000, and the mean over the last 20 episodes is 944.0000
+968
+The reward at episode 968 is 280.0000, and the mean over the last 20 episodes is 933.0000
+969
+The reward at episode 969 is 320.0000, and the mean over the last 20 episodes is 886.0000
+970
+The reward at episode 970 is 280.0000, and the mean over the last 20 episodes is 882.0000
+971
+The reward at episode 971 is 440.0000, and the mean over the last 20 episodes is 833.5000
+972
+The reward at episode 972 is 340.0000, and the mean over the last 20 episodes is 830.5000
+973
+The reward at episode 973 is 300.0000, and the mean over the last 20 episodes is 702.5000
+974
+The reward at episode 974 is 1270.0000, and the mean over the last 20 episodes is 742.0000
+975
+The reward at episode 975 is 920.0000, and the mean over the last 20 episodes is 775.0000
+976
+The reward at episode 976 is 420.0000, and the mean over the last 20 episodes is 771.0000
+977
+The reward at episode 977 is 120.0000, and the mean over the last 20 episodes is 758.0000
+978
+The reward at episode 978 is 1670.0000, and the mean over the last 20 episodes is 730.0000
+979
+The reward at episode 979 is 3230.0000, and the mean over the last 20 episodes is 821.5000
+980
+The reward at episode 980 is 380.0000, and the mean over the last 20 episodes is 746.5000
+981
+The reward at episode 981 is 320.0000, and the mean over the last 20 episodes is 735.5000
+982
+The reward at episode 982 is 420.0000, and the mean over the last 20 episodes is 726.5000
+983
+The reward at episode 983 is 2060.0000, and the mean over the last 20 episodes is 813.5000
+984
+The reward at episode 984 is 1220.0000, and the mean over the last 20 episodes is 828.5000
+985
+The reward at episode 985 is 200.0000, and the mean over the last 20 episodes is 769.5000
+986
+The reward at episode 986 is 460.0000, and the mean over the last 20 episodes is 766.5000
+987
+The reward at episode 987 is 1930.0000, and the mean over the last 20 episodes is 829.0000
+988
+The reward at episode 988 is 3430.0000, and the mean over the last 20 episodes is 986.5000
+989
+The reward at episode 989 is 260.0000, and the mean over the last 20 episodes is 983.5000
+990
+The reward at episode 990 is 300.0000, and the mean over the last 20 episodes is 984.5000
+991
+The reward at episode 991 is 340.0000, and the mean over the last 20 episodes is 979.5000
+992
+The reward at episode 992 is 440.0000, and the mean over the last 20 episodes is 984.5000
+993
+The reward at episode 993 is 560.0000, and the mean over the last 20 episodes is 997.5000
+994
+The reward at episode 994 is 160.0000, and the mean over the last 20 episodes is 942.0000
+995
+The reward at episode 995 is 460.0000, and the mean over the last 20 episodes is 919.0000
+996
+The reward at episode 996 is 990.0000, and the mean over the last 20 episodes is 947.5000
+997
+The reward at episode 997 is 440.0000, and the mean over the last 20 episodes is 963.5000
+998
+The reward at episode 998 is 160.0000, and the mean over the last 20 episodes is 888.0000
+999
+The reward at episode 999 is 420.0000, and the mean over the last 20 episodes is 747.5000
+1000
+The reward at episode 1000 is 360.0000, and the mean over the last 20 episodes is 746.5000
+The best model has achieved 3860.0 as reward....

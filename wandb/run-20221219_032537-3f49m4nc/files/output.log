@@ -1,0 +1,10 @@
+
+1
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:289: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.
+  logger.warn(
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:289: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.
+  logger.warn(

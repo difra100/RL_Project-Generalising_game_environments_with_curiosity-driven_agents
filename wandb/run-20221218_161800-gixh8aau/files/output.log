@@ -1,0 +1,76 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:435: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+2.042114969342947
+float64
+float64
+2.0061457589268685
+The reward at episode 1 is 160.0000, and the mean over the last 20 episodes is 160.0000
+2
+2.0413343708962204
+float64
+float64
+2.004228102043271
+The reward at episode 2 is 60.0000, and the mean over the last 20 episodes is 110.0000
+3
+2.025890863314271
+float64
+float64
+1.9868145700544118
+The reward at episode 3 is 180.0000, and the mean over the last 20 episodes is 133.3333
+4
+2.0060929975472392
+float64
+float64
+1.966257456317544
+The reward at episode 4 is 140.0000, and the mean over the last 20 episodes is 135.0000
+5
+2.0008516755700114
+float64
+float64
+1.9603493805229664
+The reward at episode 5 is 160.0000, and the mean over the last 20 episodes is 140.0000
+6
+1.9968298039088648
+float64
+float64
+1.9557713487495978
+The reward at episode 6 is 200.0000, and the mean over the last 20 episodes is 150.0000
+7
+1.9927607757172416
+float64
+float64
+1.9512524694736515
+The reward at episode 7 is 220.0000, and the mean over the last 20 episodes is 160.0000
+8
+1.984016128210351
+float64
+float64
+1.9422794952522964
+The reward at episode 8 is 80.0000, and the mean over the last 20 episodes is 150.0000
+9
+1.9748608377037777
+float64
+float64
+1.9328793083007136
+The reward at episode 9 is 220.0000, and the mean over the last 20 episodes is 157.7778
+10
+1.9571345506608488
+float64
+float64
+1.9148479769378899
+The reward at episode 10 is 220.0000, and the mean over the last 20 episodes is 164.0000
+11
+1.945783935301006
+float64
+float64
+1.9028695241971447
+The reward at episode 11 is 320.0000, and the mean over the last 20 episodes is 178.1818
+12
+1.9330833084570866
+float64
+float64
+1.8897093433421102
+The reward at episode 12 is 80.0000, and the mean over the last 20 episodes is 170.0000
+13

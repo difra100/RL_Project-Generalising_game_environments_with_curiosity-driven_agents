@@ -1,0 +1,58 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:435: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+2.0508566442877054
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+2.0120633713901044
+The reward at episode 1 is 320.0000, and the mean over the last 20 episodes is 320.0000
+2
+2.0328534077852964
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9950449304655193
+The reward at episode 2 is 80.0000, and the mean over the last 20 episodes is 200.0000
+3
+2.017203651120265
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9788099672645327
+The reward at episode 3 is 60.0000, and the mean over the last 20 episodes is 153.3333
+4
+2.0043314366601406
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9643166522495448
+The reward at episode 4 is 260.0000, and the mean over the last 20 episodes is 180.0000
+5
+2.0033765971660613
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9628023536503314
+The reward at episode 5 is 680.0000, and the mean over the last 20 episodes is 280.0000
+6
+1.997619819454849
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9569819880028565
+The reward at episode 6 is 240.0000, and the mean over the last 20 episodes is 273.3333
+7
+1.9892757823956866
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9481669356780391
+The reward at episode 7 is 120.0000, and the mean over the last 20 episodes is 251.4286
+8
+1.9808094310574234
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9390738117741422
+The reward at episode 8 is 260.0000, and the mean over the last 20 episodes is 252.5000
+9
+1.9727555703578723
+<class 'numpy.float64'>
+<class 'numpy.float64'>
+1.9303452542879518
+The reward at episode 9 is 200.0000, and the mean over the last 20 episodes is 246.6667
+10

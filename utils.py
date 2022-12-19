@@ -1,10 +1,11 @@
 from torchvision import transforms
 import gym
 from torch.utils.data import Dataset, DataLoader
-
+from collections import deque
 from variables import *
 from PIL import Image
 import torch
+import numpy as np
 
 
 env = gym.make(game)
@@ -44,7 +45,7 @@ class BufferDataset(Dataset): # Dataset class pytorch.
 
     def __getitem__(self, idx):
 
-        return self.data.states[idx], self.data.R[idx], self.data.actions[idx], self.data.logP[idx], self.data.values[idx], self.data.advantages[idx]
+        return self.data.states[idx], self.data.R[idx], self.data.actions[idx], self.data.logP[idx], self.data.values[idx], self.data.advantages[idx], self.data.next_states[idx]
 
 def evaluate_agent(agent, n_eval_episodes = 1, render = False):
 
@@ -66,10 +67,15 @@ def evaluate_agent(agent, n_eval_episodes = 1, render = False):
                 total_reward = 0
                 done = False
                 s, _ = env.reset()
-                for i in range(max_steps_per_episode):
+                # reward_deque = deque(maxlen = 100)
+                while not done:
                     action = agent.act(s)
                     
                     s, reward, done, truncated, _ = env.step(action)
+                    # print(reward)
+                    # reward_deque.append(reward)
+                    # if np.mean(reward_deque) == 0.0:
+                    #     print('stuck....')
                     if render:
                         env.render()
                     total_reward += reward
@@ -79,7 +85,7 @@ def evaluate_agent(agent, n_eval_episodes = 1, render = False):
                 
                 
 
-                return sum(rewards)/len(rewards)
+            return sum(rewards)/len(rewards)
 
 
 class Rollout_arguments:

@@ -13,24 +13,29 @@ transform_diz = {
                 }
 
 ''' TRAINING VARIABLES '''
-model_name = 'extrinsic_reward_agent.pt'#game[4:] + '.pt'
+# model_name = 'only_intrinsic_agent.pt'#game[4:] + '.pt'
 seed = 30
 gamma = 0.99
 lamb = 0.95
 n_frames = 6
 n_epochs = 10
-batch_size = 32
+batch_size = 64
 loss_eps = 0.1 #eps for the clip of the loss # ATARI Games uses 0.1
-M = 128 # rollout steps
+M = 256 # rollout steps
+patience = 128
 c1 = 1 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
-training_episodes = 2000
+training_episodes = 100
 n_actors = 8
 n_steps = ((M/batch_size)*n_actors)*training_episodes
 lr = 0.00025 # Adam optimizer learning rate
+eta = 0.01
 lr_annealing = True
 eps_annealing = True
-
+w1 = 1
+w2 = 0.5
+# ext = False
+# intr = True
 
 
 
@@ -68,7 +73,7 @@ cnn = {'mid_feat': 32,
         'linear_hidden_size': 64}
 
 
-state_net = {'lin_feat': 7 * 7 * 64,
+state_net = {'lin_feat': 1024,
              'out_size': 512    
             }
 
@@ -80,7 +85,8 @@ Buffer ={'states' : 0,
          'actions' : 2,
          'LogProb' : 3,
          'values' : 4,
-         'advantages' : 5}
+         'advantages' : 5,
+         'next_states' : 6}
 
 
 
