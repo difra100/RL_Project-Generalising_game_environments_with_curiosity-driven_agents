@@ -193,7 +193,7 @@ class ICM(nn.Module):
 
 class Policy(nn.Module):
 
-    def __init__(self, model_name, ext, intr, load = False):
+    def __init__(self, model_name, ext, intr, seed = 30, maximum = 0, load = False):
         super(Policy, self).__init__()
 
       
@@ -208,7 +208,7 @@ class Policy(nn.Module):
         self.batch_size = batch_size # total number of sample is 128 at most.
         self.eps = loss_eps
         self.M = M #rollout steps, this is an arbitrary number dependant on the environment
-        self.maximum = 0
+        self.maximum = maximum
         self.c1 = c1  # These are hyperparameters
         self.c2 = c2 # These are hyperparameters
         self.n_actors = n_actors

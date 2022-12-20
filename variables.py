@@ -1,7 +1,7 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
 ''' SETTING VARIABLES '''
-wb = False
+wb = True
 game = "ALE/Phoenix-v5"
 project_name = 'RL_Curiosity_agent'
 
@@ -14,7 +14,7 @@ transform_diz = {
 
 ''' TRAINING VARIABLES '''
 # model_name = 'only_intrinsic_agent.pt'#game[4:] + '.pt'
-seed = 30
+# seed = 30
 gamma = 0.99
 lamb = 0.95
 n_frames = 6
@@ -25,7 +25,7 @@ M = 256 # rollout steps
 patience = 128
 c1 = 1 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
-training_episodes = 100
+training_episodes = 1000
 n_actors = 8
 n_steps = ((M/batch_size)*n_actors)*training_episodes
 lr = 0.00025 # Adam optimizer learning rate
