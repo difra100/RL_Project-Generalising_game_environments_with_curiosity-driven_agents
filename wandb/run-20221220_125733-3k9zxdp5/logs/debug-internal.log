@@ -1,0 +1,579 @@
+2022-12-20 12:57:33,129 INFO    StreamThr :230118 [internal.py:wandb_internal():87] W&B internal server running at pid: 230118, started at: 2022-12-20 12:57:33.126734
+2022-12-20 12:57:33,132 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: status
+2022-12-20 12:57:33,134 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: status
+2022-12-20 12:57:33,143 DEBUG   SenderThread:230118 [sender.py:send():303] send: header
+2022-12-20 12:57:33,144 INFO    WriterThread:230118 [datastore.py:open_for_write():75] open: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/run-3k9zxdp5.wandb
+2022-12-20 12:57:33,152 DEBUG   SenderThread:230118 [sender.py:send():303] send: run
+2022-12-20 12:57:33,556 INFO    SenderThread:230118 [dir_watcher.py:__init__():216] watching files in: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files
+2022-12-20 12:57:33,556 INFO    SenderThread:230118 [sender.py:_start_run_threads():928] run started: 3k9zxdp5 with start time 1671537453.124834
+2022-12-20 12:57:33,556 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:33,556 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:33,557 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: check_version
+2022-12-20 12:57:33,557 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: check_version
+2022-12-20 12:57:33,639 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: run_start
+2022-12-20 12:57:33,640 DEBUG   HandlerThread:230118 [system_info.py:__init__():31] System info init
+2022-12-20 12:57:33,640 DEBUG   HandlerThread:230118 [system_info.py:__init__():46] System info init done
+2022-12-20 12:57:33,640 INFO    HandlerThread:230118 [system_monitor.py:start():150] Starting system monitor
+2022-12-20 12:57:33,640 INFO    SystemMonitor:230118 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-20 12:57:33,640 INFO    HandlerThread:230118 [system_monitor.py:probe():171] Collecting system info
+2022-12-20 12:57:33,640 INFO    SystemMonitor:230118 [interfaces.py:start():168] Started cpu
+2022-12-20 12:57:33,640 INFO    SystemMonitor:230118 [interfaces.py:start():168] Started disk
+2022-12-20 12:57:33,640 INFO    SystemMonitor:230118 [interfaces.py:start():168] Started gpu
+2022-12-20 12:57:33,641 INFO    SystemMonitor:230118 [interfaces.py:start():168] Started memory
+2022-12-20 12:57:33,641 INFO    SystemMonitor:230118 [interfaces.py:start():168] Started network
+2022-12-20 12:57:33,688 DEBUG   HandlerThread:230118 [system_info.py:probe():195] Probing system
+2022-12-20 12:57:33,689 DEBUG   HandlerThread:230118 [system_info.py:_probe_git():180] Probing git
+2022-12-20 12:57:33,695 DEBUG   HandlerThread:230118 [system_info.py:_probe_git():188] Probing git done
+2022-12-20 12:57:33,695 DEBUG   HandlerThread:230118 [system_info.py:probe():241] Probing system done
+2022-12-20 12:57:33,695 DEBUG   HandlerThread:230118 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2022-12-20T11:57:33.688543', 'startedAt': '2022-12-20T11:57:33.118851', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'RL_project-jvsc-1fc4325c-f652-4110-963c-43bfdc899c19f70b51d2-e3a3-4b91-9e2a-ccfd25257356.ipynb', 'root': '/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents', 'git': {'remote': 'https://github.com/difra100/RL_Project-Generalising_game_environments_with_curiosity-driven_agents.git', 'commit': '362dd9013fe7311fc55608a42069311ae7858195'}, 'email': 'difrancesco.1836928@studenti.uniroma1.it', 'host': 'peppe-Z690-AORUS-ELITE-DDR4', 'username': 'peppe', 'executable': '/home/peppe/anaconda3/envs/my_env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3431.3937999999994, 'min': 800.0, 'max': 5820.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 1266.478, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 959.11, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}], 'disk': {'total': 928.9834289550781, 'used': 122.16409301757812}, 'gpu': 'NVIDIA GeForce RTX 3090 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090 Ti', 'memory_total': 25757220864}], 'memory': {'total': 62.64408874511719}}
+2022-12-20 12:57:33,696 INFO    HandlerThread:230118 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-20 12:57:33,696 INFO    HandlerThread:230118 [system_monitor.py:probe():184] Publishing system info
+2022-12-20 12:57:33,696 DEBUG   HandlerThread:230118 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-20 12:57:33,696 DEBUG   HandlerThread:230118 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-20 12:57:33,696 DEBUG   HandlerThread:230118 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-12-20 12:57:34,557 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/requirements.txt
+2022-12-20 12:57:34,557 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/conda-environment.yaml
+2022-12-20 12:57:34,557 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:36,157 DEBUG   HandlerThread:230118 [system_info.py:_save_conda():86] Saving conda packages done
+2022-12-20 12:57:36,157 INFO    HandlerThread:230118 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-20 12:57:36,158 DEBUG   SenderThread:230118 [sender.py:send():303] send: files
+2022-12-20 12:57:36,158 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-20 12:57:36,163 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 12:57:36,163 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 12:57:36,166 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: pause
+2022-12-20 12:57:36,166 INFO    HandlerThread:230118 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-20 12:57:36,166 INFO    HandlerThread:230118 [system_monitor.py:finish():160] Stopping system monitor
+2022-12-20 12:57:36,167 DEBUG   SystemMonitor:230118 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-20 12:57:36,167 INFO    HandlerThread:230118 [interfaces.py:finish():175] Joined cpu
+2022-12-20 12:57:36,167 DEBUG   SystemMonitor:230118 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-12-20 12:57:36,167 INFO    HandlerThread:230118 [interfaces.py:finish():175] Joined disk
+2022-12-20 12:57:36,167 DEBUG   SystemMonitor:230118 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-12-20 12:57:36,228 INFO    HandlerThread:230118 [interfaces.py:finish():175] Joined gpu
+2022-12-20 12:57:36,228 INFO    HandlerThread:230118 [interfaces.py:finish():175] Joined memory
+2022-12-20 12:57:36,228 INFO    HandlerThread:230118 [interfaces.py:finish():175] Joined network
+2022-12-20 12:57:36,356 DEBUG   SenderThread:230118 [sender.py:send():303] send: telemetry
+2022-12-20 12:57:36,357 DEBUG   SenderThread:230118 [sender.py:send():303] send: stats
+2022-12-20 12:57:36,557 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/conda-environment.yaml
+2022-12-20 12:57:36,558 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-metadata.json
+2022-12-20 12:57:36,716 INFO    Thread-33 :230118 [upload_job.py:push():143] Uploaded file /tmp/tmpnjfiab53wandb/2sk70c8y-wandb-metadata.json
+2022-12-20 12:57:42,015 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: resume
+2022-12-20 12:57:42,015 INFO    HandlerThread:230118 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-12-20 12:57:42,084 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,085 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,085 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,086 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,189 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,189 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,189 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,190 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,269 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,270 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,270 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,270 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,351 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,352 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,352 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,352 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,442 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,442 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,442 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,442 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,529 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,529 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,530 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,530 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,560 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:42,623 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,624 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,624 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,624 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,740 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,741 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,741 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,741 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,828 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,829 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,829 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,829 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:42,915 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:42,915 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:42,915 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:42,915 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,004 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,004 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,004 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,005 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,112 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,112 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,112 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,112 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,219 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,220 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,220 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,220 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,312 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,312 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,313 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,313 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,400 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,401 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,401 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,401 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,523 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,523 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,523 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,523 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,560 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:43,594 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,595 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,595 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,595 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,712 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,713 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,713 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,713 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,814 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,814 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,814 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,814 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:43,921 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:43,921 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:43,921 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:43,922 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,038 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,039 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,039 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,039 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,148 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,148 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,148 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,149 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,229 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,229 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,229 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,230 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,332 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,333 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,333 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,334 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,433 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,433 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,433 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,433 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,526 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,526 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,527 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,527 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,561 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:44,607 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,607 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,607 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,607 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,700 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,700 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,701 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,701 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,803 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,804 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,804 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,804 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:44,930 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:44,931 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:44,931 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:44,931 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,017 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,018 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,018 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,018 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,115 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,116 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,116 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,116 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,202 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,203 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,203 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,203 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,319 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,319 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,319 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,320 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,409 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,409 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,409 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,410 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,517 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,517 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,517 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,517 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,561 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:45,641 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,641 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,642 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,642 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,705 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,705 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,705 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,705 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,835 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,835 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,836 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,836 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:45,920 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:45,920 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:45,920 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:45,921 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,006 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,006 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,006 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,006 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,101 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,102 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,102 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,102 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,172 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,173 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,173 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,174 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,282 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,283 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,283 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,283 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,395 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,396 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,396 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,396 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,513 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,513 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,513 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,514 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,562 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:46,615 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,615 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,616 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,616 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,699 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,699 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,699 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,699 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,796 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,796 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,796 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,797 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:46,917 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:46,918 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:46,918 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:46,918 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,014 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,015 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,015 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,015 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,115 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,115 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,116 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,116 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,196 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,196 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,197 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,197 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,334 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,335 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,335 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,335 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,442 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,442 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,442 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,442 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,562 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:47,563 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,564 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,564 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,564 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,645 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,646 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,646 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,646 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,753 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,754 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,754 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,754 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,834 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,834 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,834 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,834 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:47,941 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:47,941 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:47,942 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:47,942 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,053 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,053 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,053 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,053 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,151 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,151 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,151 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,152 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,238 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,238 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,239 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,240 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,331 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,331 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,331 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,332 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,424 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,424 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,425 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,425 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,499 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,500 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,500 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,500 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,562 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:48,586 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,587 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,587 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,587 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,678 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,678 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,679 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,679 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,761 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,761 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,761 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,761 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,840 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,840 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,840 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,841 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,898 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,898 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,899 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,899 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:48,985 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:48,985 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:48,986 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:48,986 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,070 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,070 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,070 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,071 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,165 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,166 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,166 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,166 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,273 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,273 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,273 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,274 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,402 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,402 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,402 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,403 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,508 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,508 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,509 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,509 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,563 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:49,611 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,611 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,611 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,612 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,691 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,692 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,692 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,693 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,801 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,801 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,801 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,801 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,902 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,903 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,903 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,903 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:49,962 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:49,962 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:49,962 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:49,963 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,072 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,072 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,072 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,073 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,193 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,194 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,194 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,195 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,310 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,311 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,311 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,314 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,392 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,392 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,393 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,393 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,481 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,481 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,481 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,482 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,563 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:50,573 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,573 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,573 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,574 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,681 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,682 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,682 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,682 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,794 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,794 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,794 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,794 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:50,917 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:50,917 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:50,917 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:50,918 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,012 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,013 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,013 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,013 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,107 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,107 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,107 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,108 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,206 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,207 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,207 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,207 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,298 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,299 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,299 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,299 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,375 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 12:57:51,375 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 12:57:51,415 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,527 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,563 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:51,599 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,600 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,600 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,600 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,600 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,608 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,649 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,649 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,649 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,650 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,756 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,757 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,757 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,757 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,888 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 12:57:51,888 DEBUG   SenderThread:230118 [sender.py:send():303] send: history
+2022-12-20 12:57:51,888 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,889 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,889 DEBUG   SenderThread:230118 [sender.py:send():303] send: telemetry
+2022-12-20 12:57:51,889 DEBUG   SenderThread:230118 [sender.py:send():303] send: exit
+2022-12-20 12:57:51,889 INFO    SenderThread:230118 [sender.py:send_exit():442] handling exit code: 0
+2022-12-20 12:57:51,889 INFO    SenderThread:230118 [sender.py:send_exit():444] handling runtime: 12
+2022-12-20 12:57:51,897 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,897 INFO    SenderThread:230118 [sender.py:send_exit():450] send defer
+2022-12-20 12:57:51,897 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,898 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 0
+2022-12-20 12:57:51,898 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 1
+2022-12-20 12:57:51,898 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,898 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 1
+2022-12-20 12:57:51,898 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 2
+2022-12-20 12:57:51,898 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,898 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 2
+2022-12-20 12:57:51,898 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 3
+2022-12-20 12:57:51,898 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,898 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 3
+2022-12-20 12:57:51,898 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-12-20 12:57:51,898 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 4
+2022-12-20 12:57:51,898 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,898 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 4
+2022-12-20 12:57:51,898 DEBUG   SenderThread:230118 [sender.py:send():303] send: summary
+2022-12-20 12:57:51,899 INFO    SenderThread:230118 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 12:57:51,899 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,899 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-12-20 12:57:51,899 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 5
+2022-12-20 12:57:51,899 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:51,899 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 5
+2022-12-20 12:57:51,899 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:51,899 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-12-20 12:57:52,111 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 6
+2022-12-20 12:57:52,111 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:52,111 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 6
+2022-12-20 12:57:52,111 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:52,111 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-12-20 12:57:52,111 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 7
+2022-12-20 12:57:52,111 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:52,112 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 7
+2022-12-20 12:57:52,112 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:52,112 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-12-20 12:57:52,112 INFO    SenderThread:230118 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-20 12:57:52,564 INFO    Thread-30 :230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/config.yaml
+2022-12-20 12:57:52,564 INFO    SenderThread:230118 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:52,565 INFO    SenderThread:230118 [dir_watcher.py:finish():392] scan: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files
+2022-12-20 12:57:52,565 INFO    SenderThread:230118 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/conda-environment.yaml conda-environment.yaml
+2022-12-20 12:57:52,565 INFO    SenderThread:230118 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/config.yaml config.yaml
+2022-12-20 12:57:52,567 INFO    SenderThread:230118 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json wandb-summary.json
+2022-12-20 12:57:52,567 INFO    SenderThread:230118 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/requirements.txt requirements.txt
+2022-12-20 12:57:52,567 INFO    SenderThread:230118 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-metadata.json wandb-metadata.json
+2022-12-20 12:57:52,569 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 8
+2022-12-20 12:57:52,571 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:52,571 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 8
+2022-12-20 12:57:52,572 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:52,572 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-12-20 12:57:52,572 INFO    SenderThread:230118 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-20 12:57:52,890 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 12:57:52,890 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 12:57:53,119 INFO    Thread-34 :230118 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/conda-environment.yaml
+2022-12-20 12:57:53,122 INFO    Thread-37 :230118 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/requirements.txt
+2022-12-20 12:57:53,128 INFO    Thread-35 :230118 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/config.yaml
+2022-12-20 12:57:53,569 INFO    Thread-36 :230118 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/files/wandb-summary.json
+2022-12-20 12:57:53,769 INFO    Thread-29 (_thread_body):230118 [sender.py:transition_state():463] send defer: 9
+2022-12-20 12:57:53,770 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:53,770 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 9
+2022-12-20 12:57:53,770 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:53,770 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-12-20 12:57:53,770 INFO    SenderThread:230118 [file_pusher.py:join():173] waiting for file pusher
+2022-12-20 12:57:53,770 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 10
+2022-12-20 12:57:53,771 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:53,771 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 10
+2022-12-20 12:57:53,771 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:53,771 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-12-20 12:57:53,890 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 12:57:53,927 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 11
+2022-12-20 12:57:53,927 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 12:57:53,927 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:53,928 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 11
+2022-12-20 12:57:53,928 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:53,928 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-12-20 12:57:53,928 INFO    SenderThread:230118 [sender.py:transition_state():463] send defer: 12
+2022-12-20 12:57:53,928 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 12:57:53,928 INFO    HandlerThread:230118 [handler.py:handle_request_defer():162] handle defer: 12
+2022-12-20 12:57:53,928 DEBUG   SenderThread:230118 [sender.py:send():303] send: final
+2022-12-20 12:57:53,929 DEBUG   SenderThread:230118 [sender.py:send():303] send: footer
+2022-12-20 12:57:53,929 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: defer
+2022-12-20 12:57:53,929 INFO    SenderThread:230118 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-12-20 12:57:53,929 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 12:57:53,929 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 12:57:53,930 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: server_info
+2022-12-20 12:57:53,930 DEBUG   SenderThread:230118 [sender.py:send_request():317] send_request: server_info
+2022-12-20 12:57:53,930 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: get_summary
+2022-12-20 12:57:53,931 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: sampled_history
+2022-12-20 12:57:54,302 DEBUG   HandlerThread:230118 [handler.py:handle_request():139] handle_request: shutdown
+2022-12-20 12:57:54,302 INFO    HandlerThread:230118 [handler.py:finish():814] shutting down handler
+2022-12-20 12:57:54,929 INFO    WriterThread:230118 [datastore.py:close():279] close: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_125733-3k9zxdp5/run-3k9zxdp5.wandb
+2022-12-20 12:57:55,299 INFO    SenderThread:230118 [sender.py:finish():1331] shutting down sender
+2022-12-20 12:57:55,300 INFO    SenderThread:230118 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-20 12:57:55,300 INFO    SenderThread:230118 [file_pusher.py:join():173] waiting for file pusher
+2022-12-20 13:09:24,005 INFO    MainThread:230118 [internal.py:handle_exit():77] Internal process exited
+2022-12-20 13:09:24,005 INFO    MainThread:230118 [internal.py:handle_exit():77] Internal process exited

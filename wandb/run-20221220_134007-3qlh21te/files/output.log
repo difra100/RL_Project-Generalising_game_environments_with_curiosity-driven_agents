@@ -1,0 +1,13 @@
+
+1
+/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/model.py:443: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  args_outer.advantages = torch.cat((args_outer.advantages, torch.tensor(args_inner.advantages, device = self.device).unsqueeze(0)))
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3432: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+The reward at episode 1 is 47.0000, and the mean over the last 100 episodes is nan
+2
+3
+4
+5

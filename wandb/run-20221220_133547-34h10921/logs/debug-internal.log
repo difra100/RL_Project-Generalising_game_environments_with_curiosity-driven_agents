@@ -1,0 +1,263 @@
+2022-12-20 13:35:47,238 INFO    StreamThr :236066 [internal.py:wandb_internal():87] W&B internal server running at pid: 236066, started at: 2022-12-20 13:35:47.237977
+2022-12-20 13:35:47,240 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: status
+2022-12-20 13:35:47,240 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: status
+2022-12-20 13:35:47,243 DEBUG   SenderThread:236066 [sender.py:send():303] send: header
+2022-12-20 13:35:47,243 INFO    WriterThread:236066 [datastore.py:open_for_write():75] open: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/run-34h10921.wandb
+2022-12-20 13:35:47,247 DEBUG   SenderThread:236066 [sender.py:send():303] send: run
+2022-12-20 13:35:47,656 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: check_version
+2022-12-20 13:35:47,659 INFO    SenderThread:236066 [dir_watcher.py:__init__():216] watching files in: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files
+2022-12-20 13:35:47,660 INFO    SenderThread:236066 [sender.py:_start_run_threads():928] run started: 34h10921 with start time 1671539747.234954
+2022-12-20 13:35:47,660 DEBUG   SenderThread:236066 [sender.py:send():303] send: summary
+2022-12-20 13:35:47,660 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:35:47,660 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: check_version
+2022-12-20 13:35:47,773 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: run_start
+2022-12-20 13:35:47,780 DEBUG   HandlerThread:236066 [system_info.py:__init__():31] System info init
+2022-12-20 13:35:47,780 DEBUG   HandlerThread:236066 [system_info.py:__init__():46] System info init done
+2022-12-20 13:35:47,780 INFO    HandlerThread:236066 [system_monitor.py:start():150] Starting system monitor
+2022-12-20 13:35:47,781 INFO    SystemMonitor:236066 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-20 13:35:47,781 INFO    HandlerThread:236066 [system_monitor.py:probe():171] Collecting system info
+2022-12-20 13:35:47,781 INFO    SystemMonitor:236066 [interfaces.py:start():168] Started cpu
+2022-12-20 13:35:47,781 INFO    SystemMonitor:236066 [interfaces.py:start():168] Started disk
+2022-12-20 13:35:47,782 INFO    SystemMonitor:236066 [interfaces.py:start():168] Started gpu
+2022-12-20 13:35:47,782 INFO    SystemMonitor:236066 [interfaces.py:start():168] Started memory
+2022-12-20 13:35:47,782 INFO    SystemMonitor:236066 [interfaces.py:start():168] Started network
+2022-12-20 13:35:47,804 DEBUG   HandlerThread:236066 [system_info.py:probe():195] Probing system
+2022-12-20 13:35:47,806 DEBUG   HandlerThread:236066 [system_info.py:_probe_git():180] Probing git
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_info.py:_probe_git():188] Probing git done
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_info.py:probe():241] Probing system done
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2022-12-20T12:35:47.804772', 'startedAt': '2022-12-20T12:35:47.229866', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'RL_project-jvsc-806d9d1e-b7cd-4d12-a1f2-1784d8f061f0ca8d2b02-39ca-4de8-a9cb-47aad4415d6a.ipynb', 'root': '/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents', 'git': {'remote': 'https://github.com/difra100/RL_Project-Generalising_game_environments_with_curiosity-driven_agents.git', 'commit': '362dd9013fe7311fc55608a42069311ae7858195'}, 'email': 'difrancesco.1836928@studenti.uniroma1.it', 'host': 'peppe-Z690-AORUS-ELITE-DDR4', 'username': 'peppe', 'executable': '/home/peppe/anaconda3/envs/my_env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3751.1794499999996, 'min': 800.0, 'max': 5820.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 4665.462, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 4684.575, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3449.958, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}], 'disk': {'total': 928.9834289550781, 'used': 122.16826629638672}, 'gpu': 'NVIDIA GeForce RTX 3090 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090 Ti', 'memory_total': 25757220864}], 'memory': {'total': 62.64408874511719}}
+2022-12-20 13:35:47,809 INFO    HandlerThread:236066 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-20 13:35:47,809 INFO    HandlerThread:236066 [system_monitor.py:probe():184] Publishing system info
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-20 13:35:47,809 DEBUG   HandlerThread:236066 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-12-20 13:35:48,660 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/conda-environment.yaml
+2022-12-20 13:35:48,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-summary.json
+2022-12-20 13:35:48,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/requirements.txt
+2022-12-20 13:35:50,170 DEBUG   HandlerThread:236066 [system_info.py:_save_conda():86] Saving conda packages done
+2022-12-20 13:35:50,171 INFO    HandlerThread:236066 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-20 13:35:50,196 DEBUG   SenderThread:236066 [sender.py:send():303] send: files
+2022-12-20 13:35:50,197 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-20 13:35:50,204 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:35:50,204 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:35:50,425 DEBUG   SenderThread:236066 [sender.py:send():303] send: telemetry
+2022-12-20 13:35:50,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/conda-environment.yaml
+2022-12-20 13:35:50,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-metadata.json
+2022-12-20 13:35:50,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:35:50,768 INFO    Thread-16 :236066 [upload_job.py:push():143] Uploaded file /tmp/tmpuxuiw68jwandb/l70mg4cs-wandb-metadata.json
+2022-12-20 13:35:52,661 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:35:55,662 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:36:05,428 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:36:05,428 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:36:18,259 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 13:36:18,260 DEBUG   SenderThread:236066 [sender.py:send():303] send: history
+2022-12-20 13:36:18,260 DEBUG   SenderThread:236066 [sender.py:send():303] send: summary
+2022-12-20 13:36:18,262 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:36:18,668 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-summary.json
+2022-12-20 13:36:18,669 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/config.yaml
+2022-12-20 13:36:20,633 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:36:20,634 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:36:20,669 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:36:30,672 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:36:35,861 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:36:35,861 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:36:38,674 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:36:47,782 DEBUG   SystemMonitor:236066 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-20 13:36:47,784 DEBUG   SenderThread:236066 [sender.py:send():303] send: stats
+2022-12-20 13:36:48,677 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:36:51,039 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:36:51,039 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:36:58,679 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:37:06,301 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:37:06,301 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:37:08,681 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:37:17,784 DEBUG   SenderThread:236066 [sender.py:send():303] send: stats
+2022-12-20 13:37:18,684 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:37:21,502 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:37:21,502 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:37:28,686 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:37:36,683 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:37:36,683 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:37:38,689 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:37:47,785 DEBUG   SenderThread:236066 [sender.py:send():303] send: stats
+2022-12-20 13:37:51,870 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:37:51,870 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:37:55,695 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 13:37:55,695 DEBUG   SenderThread:236066 [sender.py:send():303] send: history
+2022-12-20 13:37:55,696 DEBUG   SenderThread:236066 [sender.py:send():303] send: summary
+2022-12-20 13:37:55,697 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:37:56,692 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-summary.json
+2022-12-20 13:37:56,692 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:38:06,694 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:38:07,049 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:38:07,049 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:38:16,696 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:38:17,785 DEBUG   SenderThread:236066 [sender.py:send():303] send: stats
+2022-12-20 13:38:18,820 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: pause
+2022-12-20 13:38:18,820 INFO    HandlerThread:236066 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-20 13:38:18,820 INFO    HandlerThread:236066 [system_monitor.py:finish():160] Stopping system monitor
+2022-12-20 13:38:18,821 DEBUG   SystemMonitor:236066 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-12-20 13:38:18,821 DEBUG   SystemMonitor:236066 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-12-20 13:38:18,822 INFO    HandlerThread:236066 [interfaces.py:finish():175] Joined cpu
+2022-12-20 13:38:18,822 INFO    HandlerThread:236066 [interfaces.py:finish():175] Joined disk
+2022-12-20 13:38:18,878 INFO    HandlerThread:236066 [interfaces.py:finish():175] Joined gpu
+2022-12-20 13:38:18,878 INFO    HandlerThread:236066 [interfaces.py:finish():175] Joined memory
+2022-12-20 13:38:18,878 INFO    HandlerThread:236066 [interfaces.py:finish():175] Joined network
+2022-12-20 13:38:18,878 DEBUG   SenderThread:236066 [sender.py:send():303] send: stats
+2022-12-20 13:38:22,277 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:38:22,277 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:38:37,467 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:38:37,467 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:38:52,666 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:38:52,667 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:39:07,886 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:39:07,886 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:39:23,093 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:39:23,094 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:39:38,301 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:39:38,301 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:39:53,522 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:39:53,523 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:39:56,887 DEBUG   SenderThread:236066 [sender.py:send():303] send: exit
+2022-12-20 13:39:56,888 INFO    SenderThread:236066 [sender.py:send_exit():442] handling exit code: 0
+2022-12-20 13:39:56,888 INFO    SenderThread:236066 [sender.py:send_exit():444] handling runtime: 151
+2022-12-20 13:39:56,889 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:39:56,889 INFO    SenderThread:236066 [sender.py:send_exit():450] send defer
+2022-12-20 13:39:56,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,890 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 0
+2022-12-20 13:39:56,890 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 1
+2022-12-20 13:39:56,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,890 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 1
+2022-12-20 13:39:56,890 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 2
+2022-12-20 13:39:56,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,890 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 2
+2022-12-20 13:39:56,890 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 3
+2022-12-20 13:39:56,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,890 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 3
+2022-12-20 13:39:56,890 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-12-20 13:39:56,890 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 4
+2022-12-20 13:39:56,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,891 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 4
+2022-12-20 13:39:56,891 DEBUG   SenderThread:236066 [sender.py:send():303] send: summary
+2022-12-20 13:39:56,897 INFO    SenderThread:236066 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:39:56,898 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,898 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-12-20 13:39:56,898 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 5
+2022-12-20 13:39:56,898 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,898 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 5
+2022-12-20 13:39:56,898 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,898 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-12-20 13:39:56,898 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 6
+2022-12-20 13:39:56,898 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:56,898 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 6
+2022-12-20 13:39:56,898 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:56,898 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-12-20 13:39:57,745 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-summary.json
+2022-12-20 13:39:57,888 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 13:39:59,446 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 7
+2022-12-20 13:39:59,447 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 13:39:59,447 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:59,447 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 7
+2022-12-20 13:39:59,447 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:59,447 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-12-20 13:39:59,447 INFO    SenderThread:236066 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-20 13:39:59,746 INFO    Thread-13 :236066 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log
+2022-12-20 13:39:59,746 INFO    SenderThread:236066 [dir_watcher.py:finish():392] scan: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files
+2022-12-20 13:39:59,746 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/conda-environment.yaml conda-environment.yaml
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/config.yaml config.yaml
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-summary.json wandb-summary.json
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/requirements.txt requirements.txt
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/wandb-metadata.json wandb-metadata.json
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/files/output.log output.log
+2022-12-20 13:39:59,747 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 8
+2022-12-20 13:39:59,747 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:39:59,747 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 8
+2022-12-20 13:39:59,750 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:39:59,751 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-12-20 13:39:59,751 INFO    SenderThread:236066 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-20 13:40:00,189 INFO    Thread-12 (_thread_body):236066 [sender.py:transition_state():463] send defer: 9
+2022-12-20 13:40:00,189 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:40:00,190 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 9
+2022-12-20 13:40:00,190 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:40:00,190 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-12-20 13:40:00,190 INFO    SenderThread:236066 [file_pusher.py:join():173] waiting for file pusher
+2022-12-20 13:40:00,190 INFO    SenderThread:236066 [sender.py:transition_state():463] send defer: 10
+2022-12-20 13:40:00,190 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 13:40:00,190 INFO    HandlerThread:236066 [handler.py:handle_request_defer():162] handle defer: 10
+2022-12-20 13:40:00,190 DEBUG   SenderThread:236066 [sender.py:send_request():317] send_request: defer
+2022-12-20 13:40:00,190 INFO    SenderThread:236066 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-12-20 13:40:00,681 ERROR   FileStreamThread:236066 [file_stream.py:_thread_except_body():493] generic exception in filestream thread
+Traceback (most recent call last):
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 489, in _thread_except_body
+    self._thread_body()
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 445, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 534, in _send
+    self._handle_response(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 500, in _handle_response
+    wandb.termerror(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 61, in termerror
+    _log(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 95, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/click/utils.py", line 299, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe
+2022-12-20 13:40:02,685 ERROR   SenderThread:236066 [file_stream.py:finish():598] FileStream exception
+Traceback (most recent call last):
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 489, in _thread_except_body
+    self._thread_body()
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 445, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 534, in _send
+    self._handle_response(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 500, in _handle_response
+    wandb.termerror(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 61, in termerror
+    _log(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 95, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/click/utils.py", line 299, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe
+2022-12-20 13:40:02,890 DEBUG   HandlerThread:236066 [handler.py:handle_request():139] handle_request: keepalive
+2022-12-20 13:40:02,890 INFO    HandlerThread:236066 [handler.py:finish():814] shutting down handler
+2022-12-20 13:40:02,892 INFO    WriterThread:236066 [datastore.py:close():279] close: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_133547-34h10921/run-34h10921.wandb
+2022-12-20 13:40:03,478 ERROR   StreamThr :236066 [internal.py:wandb_internal():162] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/internal.py", line 309, in _process
+    self._sm.send(record)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 305, in send
+    send_handler(record)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 319, in send_request
+    send_handler(record)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 508, in send_request_defer
+    self._fs.finish(self._exit_code)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 601, in finish
+    raise self._exc_info[1].with_traceback(self._exc_info[2])
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 489, in _thread_except_body
+    self._thread_body()
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 445, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 534, in _send
+    self._handle_response(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/sdk/internal/file_stream.py", line 500, in _handle_response
+    wandb.termerror(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 61, in termerror
+    _log(
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/wandb/errors/term.py", line 95, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/peppe/anaconda3/envs/my_env/lib/python3.10/site-packages/click/utils.py", line 299, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,8 +1,8 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
 ''' SETTING VARIABLES '''
-wb = False
-game = "ALE/Phoenix-v5"
+wb = True
+game = 'ALE/Phoenix-v5'
 project_name = 'RL_Curiosity_agent'
 
 # This dictionary contains the values to remove the irrelevant/non-informative features from the images/state representation. 
@@ -25,7 +25,7 @@ M = 256 # rollout steps
 patience = 128
 c1 = 1 # Lv weight in the objective
 c2 = 0.01 # Entropy weight in the objective
-training_episodes = 1000
+training_episodes = 100
 n_actors = 8
 n_steps = ((M/batch_size)*n_actors)*training_episodes
 lr = 0.00025 # Adam optimizer learning rate
@@ -34,6 +34,7 @@ lr_annealing = True
 eps_annealing = True
 w1 = 1
 w2 = 0.5
+eval_step = 10
 # ext = False
 # intr = True
 
@@ -87,6 +88,36 @@ Buffer ={'states' : 0,
          'values' : 4,
          'advantages' : 5,
          'next_states' : 6}
+
+# FINE-TUNING stuff.
+
+transform_action_diz = {
+
+        'ALE/SpaceInvaders-v5' :{0:0,   # NOOP --> NOOP
+                                1:1,    # FIRE --> FIRE
+                                2:2,    # RIGHT --> RIGHT
+                                3:3,    # LEFT --> LEFT
+                                4:0,    # DOWN --> NOOP
+                                5:4,    # RIGHTFIRE --> RIGHTFIRE
+                                6:5,    # LEFTFIRE --> LEFTFIRE
+                                7:0},   # DOWNFIRE --> NOOP
+        'ALE/Assault-v5' :{0:0,   # NOOP --> NOOP
+                           1:1,    # FIRE --> FIRE
+                           2:3,    # RIGHT --> RIGHT
+                           3:4,    # LEFT --> LEFT
+                           4:0,    # DOWN --> NOOP
+                           5:4,    # RIGHTFIRE --> RIGHTFIRE
+                           6:5,    # LEFTFIRE --> LEFTFIRE
+                           7:0},    # DOWNFIRE --> NOOP 
+        "ALE/Phoenix-v5" :{0:0,   # NOOP --> NOOP
+                           1:1,    # FIRE --> FIRE
+                           2:2,    # RIGHT --> RIGHT
+                           3:3,    # LEFT --> LEFT
+                           4:4,    # DOWN --> NOOP
+                           5:5,    # RIGHTFIRE --> RIGHTFIRE
+                           6:6,    # LEFTFIRE --> LEFTFIRE
+                           7:7}    # DOWNFIRE --> NOOP           
+                        }
 
 
 

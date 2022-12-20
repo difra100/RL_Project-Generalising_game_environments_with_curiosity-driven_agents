@@ -193,12 +193,11 @@ class ICM(nn.Module):
 
 class Policy(nn.Module):
 
-    def __init__(self, model_name, ext, intr, seed = 30, maximum = 0, load = False):
+    def __init__(self, model_name_load, model_name_save, ext, intr, seed = 30, maximum = 0, load = False):
         super(Policy, self).__init__()
 
       
         # Get the state space and action space
-        n_actions = env.action_space.n
         self.seed_everything(seed = seed)
         
         self.gamma = gamma
@@ -216,9 +215,11 @@ class Policy(nn.Module):
         self.intr = intr
 
         # NETWORK INIT. #
-        self.actor = actor_net(n_actions = n_actions) 
+        self.actor = actor_net(n_actions) 
         self.critic = critic_net()
-        self.model_name = model_name
+        self.model_name_load = model_name_load
+        self.model_name_save = model_name_save
+
         self.states = deque(maxlen = self.n_frames)
         self.new_states = deque(maxlen = self.n_frames) # New states are required for the ICM module.
 
@@ -406,7 +407,7 @@ class Policy(nn.Module):
                     
                     
                     
-                    # Penalty if the agent do not gain enough 
+                    # Penalty if the agent do not gain rewards for too long
                     if np.mean(reward_deque) == 0.0:
                         reward-=1
 
@@ -516,17 +517,19 @@ class Policy(nn.Module):
                 epsilon_now = self.eps * frac
             
               
+            mean_tot_loss = sum(tot_loss)/len(tot_loss)
             
+
+            if self.intr:
+                mean_intr_loss = sum(intr_loss_list)/len(intr_loss_list)
+                intr_loss_deque.append(mean_intr_loss)
             self.eval()
-            if i_episode%1 == 0:
+            if i_episode in [1, 10, 50, 100]:
                 
                 
-                mean_reward = evaluate_agent(self, n_eval_episodes = 1)
+                mean_reward = evaluate_agent(self, n_eval_episodes = 10)
                 scores_deque.append(mean_reward)
-                mean_tot_loss = sum(tot_loss)/len(tot_loss)
-                if self.intr:
-                    mean_intr_loss = sum(intr_loss_list)/len(intr_loss_list)
-                    intr_loss_deque.append(mean_intr_loss)
+                
                 # print(np.mean(intr_loss_deque))
                 # print(np.mean(intr_loss_deque).dtype)
                 # print(np.mean(tot_loss_deque).dtype)
@@ -549,22 +552,25 @@ class Policy(nn.Module):
                     })
 
 
-                if mean_reward > self.maximum:
-                    self.maximum = mean_reward
-                    self.save()
+                #if mean_reward > self.maximum or True:
+                self.maximum = mean_reward
+                self.save(ep = i_episode)
                 print("The reward at episode {} is {:.4f}, and the mean over the last 100 episodes is {:.4f}".format(i_episode, mean_reward, np.mean(scores_deque)))
             
-            
+            else:
+                mean_reward = evaluate_agent(self, n_eval_episodes = 1)
+                scores_deque.append(mean_reward)
             # evaluation step
         print('The best model has achieved {} as reward....'.format(self.maximum))
         if wb:
             wandb.finish()
 
-    def save(self):
-        torch.save(self.state_dict(), self.model_name)
+    def save(self, ep):
+        model_name = str(ep) + self.model_name_save
+        torch.save(self.state_dict(), model_name)
 
     def load(self):
-        self.load_state_dict(torch.load(self.model_name, map_location=self.device))
+        self.load_state_dict(torch.load(self.model_name_load, map_location=self.device))
 
     def to(self, device):
         ret = super().to(device)

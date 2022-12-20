@@ -1,0 +1,470 @@
+2022-12-20 13:42:17,514 INFO    StreamThr :236986 [internal.py:wandb_internal():87] W&B internal server running at pid: 236986, started at: 2022-12-20 13:42:17.514429
+2022-12-20 13:42:17,515 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: status
+2022-12-20 13:42:17,516 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: status
+2022-12-20 13:42:17,521 DEBUG   SenderThread:236986 [sender.py:send():303] send: header
+2022-12-20 13:42:17,521 INFO    WriterThread:236986 [datastore.py:open_for_write():75] open: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/run-vuho51f4.wandb
+2022-12-20 13:42:17,524 DEBUG   SenderThread:236986 [sender.py:send():303] send: run
+2022-12-20 13:42:17,942 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: check_version
+2022-12-20 13:42:17,942 INFO    SenderThread:236986 [dir_watcher.py:__init__():216] watching files in: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files
+2022-12-20 13:42:17,942 INFO    SenderThread:236986 [sender.py:_start_run_threads():928] run started: vuho51f4 with start time 1671540137.512649
+2022-12-20 13:42:17,942 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 13:42:17,942 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:42:17,942 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: check_version
+2022-12-20 13:42:18,038 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: run_start
+2022-12-20 13:42:18,043 DEBUG   HandlerThread:236986 [system_info.py:__init__():31] System info init
+2022-12-20 13:42:18,043 DEBUG   HandlerThread:236986 [system_info.py:__init__():46] System info init done
+2022-12-20 13:42:18,043 INFO    HandlerThread:236986 [system_monitor.py:start():150] Starting system monitor
+2022-12-20 13:42:18,044 INFO    SystemMonitor:236986 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-20 13:42:18,044 INFO    HandlerThread:236986 [system_monitor.py:probe():171] Collecting system info
+2022-12-20 13:42:18,044 INFO    SystemMonitor:236986 [interfaces.py:start():168] Started cpu
+2022-12-20 13:42:18,044 INFO    SystemMonitor:236986 [interfaces.py:start():168] Started disk
+2022-12-20 13:42:18,044 INFO    SystemMonitor:236986 [interfaces.py:start():168] Started gpu
+2022-12-20 13:42:18,045 INFO    SystemMonitor:236986 [interfaces.py:start():168] Started memory
+2022-12-20 13:42:18,045 INFO    SystemMonitor:236986 [interfaces.py:start():168] Started network
+2022-12-20 13:42:18,064 DEBUG   HandlerThread:236986 [system_info.py:probe():195] Probing system
+2022-12-20 13:42:18,065 DEBUG   HandlerThread:236986 [system_info.py:_probe_git():180] Probing git
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_info.py:_probe_git():188] Probing git done
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_info.py:probe():241] Probing system done
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2022-12-20T12:42:18.064540', 'startedAt': '2022-12-20T12:42:17.508404', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'RL_project-jvsc-b807a845-b10e-4321-93cb-a997d56f9884251944a7-5c5c-4433-9608-e9b2820a7c2c.ipynb', 'root': '/home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents', 'git': {'remote': 'https://github.com/difra100/RL_Project-Generalising_game_environments_with_curiosity-driven_agents.git', 'commit': '362dd9013fe7311fc55608a42069311ae7858195'}, 'email': 'difrancesco.1836928@studenti.uniroma1.it', 'host': 'peppe-Z690-AORUS-ELITE-DDR4', 'username': 'peppe', 'executable': '/home/peppe/anaconda3/envs/my_env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3636.35585, 'min': 800.0, 'max': 5820.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6400.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 4327.117, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 6300.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}, {'current': 3600.0, 'min': 800.0, 'max': 3800.0}], 'disk': {'total': 928.9834289550781, 'used': 122.18263244628906}, 'gpu': 'NVIDIA GeForce RTX 3090 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090 Ti', 'memory_total': 25757220864}], 'memory': {'total': 62.64408874511719}}
+2022-12-20 13:42:18,068 INFO    HandlerThread:236986 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-20 13:42:18,068 INFO    HandlerThread:236986 [system_monitor.py:probe():184] Publishing system info
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-20 13:42:18,068 DEBUG   HandlerThread:236986 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-12-20 13:42:18,943 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/requirements.txt
+2022-12-20 13:42:18,943 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 13:42:18,943 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/conda-environment.yaml
+2022-12-20 13:42:20,429 DEBUG   HandlerThread:236986 [system_info.py:_save_conda():86] Saving conda packages done
+2022-12-20 13:42:20,429 INFO    HandlerThread:236986 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-20 13:42:20,450 DEBUG   SenderThread:236986 [sender.py:send():303] send: files
+2022-12-20 13:42:20,450 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-20 13:42:20,457 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:42:20,457 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:42:20,641 DEBUG   SenderThread:236986 [sender.py:send():303] send: telemetry
+2022-12-20 13:42:20,944 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/conda-environment.yaml
+2022-12-20 13:42:20,944 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-metadata.json
+2022-12-20 13:42:20,944 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_created():275] file/dir created: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:42:20,982 INFO    Thread-16 :236986 [upload_job.py:push():143] Uploaded file /tmp/tmptfsg7f79wandb/126slech-wandb-metadata.json
+2022-12-20 13:42:22,944 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:42:25,945 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:42:35,644 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:42:35,644 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:42:37,546 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 13:42:37,547 DEBUG   SenderThread:236986 [sender.py:send():303] send: history
+2022-12-20 13:42:37,547 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 13:42:37,549 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:42:37,948 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 13:42:38,948 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:42:48,950 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:42:48,951 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/config.yaml
+2022-12-20 13:42:50,823 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:42:50,824 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:43:00,953 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:43:06,014 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:43:06,014 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:43:10,956 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:43:18,045 DEBUG   SystemMonitor:236986 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-20 13:43:18,046 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:43:20,958 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:43:21,206 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:43:21,207 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:43:32,961 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:43:36,395 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:43:36,396 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:43:42,963 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:43:48,046 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:43:51,604 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:43:51,604 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:43:52,966 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:02,969 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:06,806 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:44:06,806 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:44:18,046 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:44:18,329 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 13:44:18,329 DEBUG   SenderThread:236986 [sender.py:send():303] send: history
+2022-12-20 13:44:18,329 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 13:44:18,330 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:44:18,973 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 13:44:20,974 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:21,998 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:44:21,998 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:44:30,976 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:37,247 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:44:37,247 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:44:40,979 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:48,048 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:44:50,982 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:44:52,465 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:44:52,465 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:45:00,985 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:45:07,667 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:45:07,667 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:45:12,988 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:45:18,048 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:45:22,921 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:45:22,922 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:45:22,990 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:45:32,993 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:45:38,143 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:45:38,143 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:45:44,997 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:45:48,049 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:45:53,342 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:45:53,342 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:45:54,999 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:07,002 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:08,526 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:46:08,526 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:46:17,004 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:18,049 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:46:23,728 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:46:23,728 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:46:27,006 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:37,009 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:38,930 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:46:38,930 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:46:48,049 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:46:49,012 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:46:54,118 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:46:54,118 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:46:59,015 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:09,018 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:09,305 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:47:09,305 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:47:18,050 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:47:21,021 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:24,495 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:47:24,495 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:47:31,023 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:39,691 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:47:39,691 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:47:41,026 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:48,051 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:47:53,030 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:47:54,872 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:47:54,872 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:48:03,033 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:10,066 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:48:10,066 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:48:13,035 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:18,051 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:48:23,038 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:25,257 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:48:25,257 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:48:33,041 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:40,444 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:48:40,444 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:48:43,044 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:48,051 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:48:53,045 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:48:56,060 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:48:56,061 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:49:05,048 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:49:11,260 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:49:11,261 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:49:15,050 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:49:18,052 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:49:25,052 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:49:26,454 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:49:26,454 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:49:35,055 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:49:41,642 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:49:41,642 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:49:47,059 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:49:48,053 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:49:56,829 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:49:56,829 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:49:57,062 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:07,065 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:12,011 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:50:12,011 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:50:18,053 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:50:19,067 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:27,232 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:50:27,232 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:50:30,071 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:40,073 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:42,426 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:50:42,426 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:50:48,054 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:50:52,077 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:50:57,614 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:50:57,614 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:51:02,079 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:51:12,082 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:51:12,799 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:51:12,799 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:51:18,054 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:51:24,939 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 13:51:24,940 DEBUG   SenderThread:236986 [sender.py:send():303] send: history
+2022-12-20 13:51:24,940 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 13:51:24,941 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 13:51:25,086 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 13:51:27,989 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:51:27,989 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:51:28,088 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:51:38,090 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:51:43,181 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:51:43,181 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:51:48,055 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:51:50,094 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:51:58,373 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:51:58,373 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:52:00,097 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:12,100 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:13,560 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:52:13,561 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:52:18,055 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:52:20,102 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:28,752 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:52:28,752 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:52:30,104 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:40,106 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:43,987 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:52:43,987 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:52:48,055 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:52:50,108 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:52:59,172 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:52:59,172 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:53:00,111 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:12,114 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:14,375 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:53:14,375 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:53:18,056 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:53:22,117 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:29,565 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:53:29,565 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:53:32,120 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:42,122 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:44,780 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:53:44,780 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:53:48,056 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:53:52,125 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:53:59,985 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:53:59,985 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:54:02,128 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:54:12,131 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:54:15,214 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:54:15,215 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:54:18,057 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:54:22,133 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:54:30,402 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:54:30,402 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:54:32,136 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:54:44,138 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:54:45,594 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:54:45,594 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:54:48,058 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:54:54,140 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:00,788 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:55:00,788 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:55:04,143 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:14,145 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:15,968 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:55:15,968 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:55:18,058 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:55:24,147 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:31,188 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:55:31,188 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:55:34,149 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:44,151 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:55:46,379 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:55:46,380 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:55:48,058 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:55:54,153 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:01,568 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:56:01,568 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:56:04,155 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:14,158 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:16,753 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:56:16,753 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:56:18,059 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:56:24,160 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:31,946 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:56:31,947 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:56:34,163 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:44,165 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:56:47,149 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:56:47,149 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:56:48,059 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:56:56,168 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:02,338 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:57:02,339 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:57:06,171 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:16,173 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:17,520 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:57:17,521 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:57:18,060 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:57:26,176 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:32,716 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:57:32,716 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:57:36,179 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:46,181 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:57:47,913 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:57:47,913 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:57:48,100 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:57:56,184 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:03,103 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:58:03,103 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:58:06,187 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:16,189 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:18,061 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:58:18,290 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:58:18,291 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:58:28,192 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:33,493 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:58:33,493 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:58:38,195 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:48,061 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:58:48,197 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:58:48,689 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:58:48,689 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:58:58,199 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:03,886 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:59:03,886 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:59:08,201 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:18,062 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:59:18,204 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:19,083 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:59:19,083 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:59:28,205 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:34,264 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:59:34,264 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 13:59:38,207 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:48,062 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 13:59:48,210 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 13:59:49,453 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 13:59:49,453 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:00:00,737 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-20 14:00:00,738 DEBUG   SenderThread:236986 [sender.py:send():303] send: history
+2022-12-20 14:00:00,738 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 14:00:00,739 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 14:00:01,213 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 14:00:02,213 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 14:00:04,634 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 14:00:04,634 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:00:14,216 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 14:00:18,063 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 14:00:19,819 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 14:00:19,819 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:00:23,993 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: pause
+2022-12-20 14:00:23,993 INFO    HandlerThread:236986 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-20 14:00:23,993 INFO    HandlerThread:236986 [system_monitor.py:finish():160] Stopping system monitor
+2022-12-20 14:00:23,994 DEBUG   SystemMonitor:236986 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-12-20 14:00:23,994 DEBUG   SystemMonitor:236986 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-12-20 14:00:23,995 INFO    HandlerThread:236986 [interfaces.py:finish():175] Joined cpu
+2022-12-20 14:00:23,995 INFO    HandlerThread:236986 [interfaces.py:finish():175] Joined disk
+2022-12-20 14:00:24,043 INFO    HandlerThread:236986 [interfaces.py:finish():175] Joined gpu
+2022-12-20 14:00:24,043 INFO    HandlerThread:236986 [interfaces.py:finish():175] Joined memory
+2022-12-20 14:00:24,043 INFO    HandlerThread:236986 [interfaces.py:finish():175] Joined network
+2022-12-20 14:00:24,044 DEBUG   SenderThread:236986 [sender.py:send():303] send: stats
+2022-12-20 14:00:24,219 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 14:00:35,042 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 14:00:35,043 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:00:50,251 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 14:00:50,251 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:01:05,467 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-20 14:01:05,468 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: stop_status
+2022-12-20 14:01:13,277 DEBUG   SenderThread:236986 [sender.py:send():303] send: exit
+2022-12-20 14:01:13,277 INFO    SenderThread:236986 [sender.py:send_exit():442] handling exit code: 0
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:send_exit():444] handling runtime: 1086
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:send_exit():450] send defer
+2022-12-20 14:01:13,278 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,278 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 0
+2022-12-20 14:01:13,278 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 1
+2022-12-20 14:01:13,278 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,278 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 1
+2022-12-20 14:01:13,278 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-12-20 14:01:13,278 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 2
+2022-12-20 14:01:13,278 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,279 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 2
+2022-12-20 14:01:13,279 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,279 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-12-20 14:01:13,279 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 3
+2022-12-20 14:01:13,279 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,279 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 3
+2022-12-20 14:01:13,279 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,279 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-12-20 14:01:13,279 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 4
+2022-12-20 14:01:13,279 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,279 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 4
+2022-12-20 14:01:13,279 DEBUG   SenderThread:236986 [sender.py:send():303] send: summary
+2022-12-20 14:01:13,286 INFO    SenderThread:236986 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-20 14:01:13,286 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,286 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-12-20 14:01:13,286 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 5
+2022-12-20 14:01:13,286 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,286 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 5
+2022-12-20 14:01:13,286 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,286 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-12-20 14:01:13,286 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 6
+2022-12-20 14:01:13,287 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:13,287 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 6
+2022-12-20 14:01:13,287 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:13,287 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-12-20 14:01:14,244 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 14:01:14,278 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 14:01:14,397 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 7
+2022-12-20 14:01:14,397 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 14:01:14,397 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:14,397 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 7
+2022-12-20 14:01:14,398 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:14,398 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-12-20 14:01:14,398 INFO    SenderThread:236986 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-20 14:01:15,244 INFO    Thread-13 :236986 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 14:01:15,246 INFO    SenderThread:236986 [dir_watcher.py:finish():392] scan: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files
+2022-12-20 14:01:15,246 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/conda-environment.yaml conda-environment.yaml
+2022-12-20 14:01:15,247 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/config.yaml config.yaml
+2022-12-20 14:01:15,247 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json wandb-summary.json
+2022-12-20 14:01:15,253 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/requirements.txt requirements.txt
+2022-12-20 14:01:15,253 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-metadata.json wandb-metadata.json
+2022-12-20 14:01:15,253 INFO    SenderThread:236986 [dir_watcher.py:finish():406] scan save: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log output.log
+2022-12-20 14:01:15,253 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 8
+2022-12-20 14:01:15,273 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:15,273 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 8
+2022-12-20 14:01:15,275 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:15,276 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-12-20 14:01:15,276 INFO    SenderThread:236986 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-20 14:01:15,279 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 14:01:15,280 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 14:01:15,849 INFO    Thread-20 :236986 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/requirements.txt
+2022-12-20 14:01:15,850 INFO    Thread-18 :236986 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/config.yaml
+2022-12-20 14:01:15,851 INFO    Thread-21 :236986 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/output.log
+2022-12-20 14:01:15,868 INFO    Thread-17 :236986 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/conda-environment.yaml
+2022-12-20 14:01:15,871 INFO    Thread-19 :236986 [upload_job.py:push():143] Uploaded file /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/files/wandb-summary.json
+2022-12-20 14:01:16,071 INFO    Thread-12 (_thread_body):236986 [sender.py:transition_state():463] send defer: 9
+2022-12-20 14:01:16,072 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:16,072 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 9
+2022-12-20 14:01:16,073 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:16,073 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-12-20 14:01:16,073 INFO    SenderThread:236986 [file_pusher.py:join():173] waiting for file pusher
+2022-12-20 14:01:16,073 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 10
+2022-12-20 14:01:16,074 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:16,074 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 10
+2022-12-20 14:01:16,074 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:16,075 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-12-20 14:01:16,281 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-20 14:01:16,574 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 11
+2022-12-20 14:01:16,574 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: poll_exit
+2022-12-20 14:01:16,575 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:16,576 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 11
+2022-12-20 14:01:16,576 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:16,577 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-12-20 14:01:16,577 INFO    SenderThread:236986 [sender.py:transition_state():463] send defer: 12
+2022-12-20 14:01:16,578 DEBUG   HandlerThread:236986 [handler.py:handle_request():139] handle_request: defer
+2022-12-20 14:01:16,578 INFO    HandlerThread:236986 [handler.py:handle_request_defer():162] handle defer: 12
+2022-12-20 14:01:16,578 DEBUG   SenderThread:236986 [sender.py:send():303] send: final
+2022-12-20 14:01:16,579 DEBUG   SenderThread:236986 [sender.py:send():303] send: footer
+2022-12-20 14:01:16,579 DEBUG   SenderThread:236986 [sender.py:send_request():317] send_request: defer
+2022-12-20 14:01:16,579 INFO    SenderThread:236986 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-12-20 14:01:23,550 WARNING StreamThr :236986 [internal.py:is_dead():386] Internal process exiting, parent pid 236940 disappeared
+2022-12-20 14:01:23,550 ERROR   StreamThr :236986 [internal.py:wandb_internal():146] Internal process shutdown.
+2022-12-20 14:01:23,580 INFO    SenderThread:236986 [sender.py:finish():1331] shutting down sender
+2022-12-20 14:01:23,580 INFO    SenderThread:236986 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-20 14:01:23,580 INFO    SenderThread:236986 [file_pusher.py:join():173] waiting for file pusher
+2022-12-20 14:01:23,580 INFO    WriterThread:236986 [datastore.py:close():279] close: /home/peppe/Desktop/Università/Projects/RL_Project-Generalising_game_environments_with_curiosity-driven_agents/wandb/run-20221220_134217-vuho51f4/run-vuho51f4.wandb
+2022-12-20 14:01:23,585 INFO    HandlerThread:236986 [handler.py:finish():814] shutting down handler
