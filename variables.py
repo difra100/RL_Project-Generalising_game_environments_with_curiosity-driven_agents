@@ -1,7 +1,7 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
 ''' SETTING VARIABLES '''
-wb = True
+wb = False
 game = "ALE/Phoenix-v5"
 project_name = 'RL_Curiosity_agent'
 
