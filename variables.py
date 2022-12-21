@@ -1,8 +1,8 @@
 # Variables are freely inspired by https://github.com/DarylRodrigo/rl_lib/tree/master/PPO, and the original PPO paper https://arxiv.org/pdf/1707.06347.pdf
 
 ''' SETTING VARIABLES '''
-wb = True
-game = 'ALE/Phoenix-v5'
+wb = False
+game = 'ALE/SpaceInvaders-v5'
 project_name = 'RL_Curiosity_agent'
 
 # This dictionary contains the values to remove the irrelevant/non-informative features from the images/state representation. 

@@ -25,7 +25,6 @@ def transform_state(state, game, device):
     state = state[transform_diz[game][0]:transform_diz[game][1], :, :].transpose(2,0,1)
     state = torch.from_numpy(state)
 
-
     state_new = transform(state)
 
 
@@ -55,7 +54,6 @@ def evaluate_agent(agent, n_eval_episodes = 1, render = False):
             OUTPUT: Reward statistics of the agent. '''
 
   
-        max_steps_per_episode = 2000
         if render:
             env = gym.make(game, render_mode = 'human')
         else:
