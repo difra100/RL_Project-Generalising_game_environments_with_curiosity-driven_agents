@@ -1,4 +1,4 @@
-# RL_Project-Generalising_game_environments_with_curiosity-driven_agents
+# RL_Project:  Generalizing Game Environments through Curiosity-Driven Exploration
 ## Project abstract
 
 This project aims to develop a curiosity-driven agent that learns a policy for a specific game, which can be later extended to similar, but different ones.  
