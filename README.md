@@ -10,6 +10,7 @@ The policy gradient method that was employed is the [PPO](https://arxiv.org/abs/
 The most of the experiments were conducted in [Phoenix](https://en.wikipedia.org/wiki/Phoenix_(video_game)), and then with zero-shot/few-shot learning the agent were evaluated on different games, such as [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders) or [Assault](https://en.wikipedia.org/wiki/Assault_(1988_video_game)).  
 
 ![image](http://drive.google.com/uc?export=view&id=1UZFn65-qTL_EHCfiUGLf19OPNm1ybtWd)  
+The details on the results are explained in the presentation.pptx file. The agent learnt to play at Phoenix, and it shown some ability in transferring its knowledge to SpaceInvaders. This was possible to assess, by comparing a trained-from-scratch agent in SpaceInvaders against a SpaceInvaders agent pre-trained to play on Phoenix.
 
 ## How to use this repository
 * To train and evaluate the agents open the 'main.ipynb' file, where it is possible to install the requested libraries.  
@@ -28,4 +29,5 @@ The most of the experiments were conducted in [Phoenix](https://en.wikipedia.org
     * utils.py : This script contain various utilities, such as the image preprocessing functions, and the agent evaluation functionality.  
     * variables.py : This script contains the variables to set to modify the learning strategies, but also the models' parameters, as the video-game itself.  
 * main.ipynb : main of the project, here is possible to start the trainings, by loading pretrained models, or from scratch. It is also possible to evaluate the agents.  
+* presentation.pptx : Presentation of the project.  
 
