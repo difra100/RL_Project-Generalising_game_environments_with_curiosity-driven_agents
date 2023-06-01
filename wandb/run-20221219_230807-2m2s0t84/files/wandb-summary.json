@@ -1,1 +1,0 @@
-{"loss": 2.7314685875433495, "reward_per_episodes": 540.0, "last100eps_mean_reward": 766.9, "Intrinsic_loss": 0.6639108642208594, "_timestamp": 1671499158.3734097, "_runtime": 11471.274431705475, "_step": 999, "_wandb": {"runtime": 11470}}
