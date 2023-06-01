@@ -22,7 +22,7 @@ The most of the experiments were conducted in [Phoenix](https://en.wikipedia.org
     * space_invaders.npy  
 * models/ : This folder contain the pretrained models, notice that only models for Phoenix and Space Invaders are available. Further information in the 'main.ipynb' file.  
     * old_models/ : These are some additonal models, there are not any specific features. Can be tested anyway in the main.  
-    * ${Name-of-the-game}_${ExtrinsicRewardEnabled}_${IntrinsicRewardEnabled}.pt  
+    * ${Name-of-the-game}\_${ifExtrinsic-Reward-Enabled}\_${ifIntrinsic-Reward-Enabled}.pt  
 * src/    : Source code.  
     * model.py : PPO algorithm, and training code is contained in this script.  
     * utils.py : This script contain various utilities, such as the image preprocessing functions, and the agent evaluation functionality.  
